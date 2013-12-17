@@ -1,0 +1,111 @@
+{
+"picasso_wheels_R": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Picasso Rear 18 inches Wheels",
+	}
+    "slotType" : "picasso_wheels_R",
+	"selfCollisionThickness":1,
+	"remoteCollisionThickness":1,
+	"scalenodeWeight":0.89,
+	"scalebeamSpring":0.83,
+	"scalebeamDamp":0.84,
+	"scalebeamDeform":0.6,
+	"scalebeamStrength":0.84,
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+		 //wheels
+		 ["rear_right_wheel", ["rear_right_wheel"]],
+		 ["rear_left_wheel", ["rear_left_wheel"]],
+	],
+	"nodes": [
+		 ["id", "posX", "posY", "posZ"],
+		 //rear wheel nodes
+		 {"frictionCoef":0.7},
+		 {"nodeMaterial":"|NM_METAL"},
+		 {"selfCollision":true}
+		 {"collision":true}
+		 {"nodeWeight":6.0},
+		 {"group":"rear_right_wheel"},
+		 ["ax1r", -0.685, 3.7923, 0.3442],
+		 {"group":"rear_left_wheel"},
+		 ["ax1l", 0.685, 3.7923, 0.3442],
+		 {"selfCollision":true}
+		 {"collision":true}
+		 {"group":"rear_right_wheel"},
+		 ["axwr", -0.85, 3.7923, 0.3442],
+		 {"group":"rear_left_wheel"},
+		 ["axwl", 0.85, 3.7923, 0.3442],
+		 {"group":""},
+	],
+	
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  //rear wheels
+		  {"breakGroupType":0},
+		  {"beamSpring":7001000,"beamDamp":45},
+		  {"beamDeform":65000,"beamStrength":620000},
+		  ["ax1r","axwr"],
+		  ["ax1l","axwl"],
+		  {"breakGroup":""},
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  
+	],
+	"hubWheels": [
+            ["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"], 
+			{"enableTireSideSupportBeams":true},
+			
+			//general settings
+			{"radius":0.330},
+			{"hubRadius":0.260},
+			{"wheelOffset":-0.065},
+			{"hubWidth":0.225},
+			{"tireWidth":0.225},
+			{"numRays":16},
+			
+			//hub options
+			{"hubBeamSpring":1281000, "hubBeamDamp":15}
+			{"beamSpring":1281000, "beamDamp":15},
+			{"hubBeamDeform":90000, "hubBeamStrength":160000},
+			{"beamDeform":120000,"beamStrength":320000},
+			{"hubNodeWeight":0.4},
+			{"hubNodeMaterial":"|NM_METAL"},
+			{"hubFrictionCoef":0.7},
+			
+			//tire options
+			{"wheelTreadBeamSpring":291000,"wheelTreadBeamDamp":45,"wheelTreadBeamDeform":35000,"wheelTreadBeamStrength":35000},
+			{"wheelPeripheryBeamSpring":291000,"wheelPeripheryBeamDamp":45,"wheelPeripheryBeamDeform":35000,"wheelPeripheryBeamStrength":35000},
+			{"springExpansion":551000, "dampExpansion":15},
+			{"nodeWeight":0.4},
+			{"nodeMaterial":"|NM_RUBBER"},
+			{"frictionCoef":1.6},
+			
+			//
+			{"pressurePSI":50},
+			{"maxPressurePSI":1400},
+			{"reinforcementPressurePSI":70},
+			{"pressureSpring":1751000},
+			{"reinforcementPressureSpring":149000},
+			{"pressureDamp":75},
+			{"reinforcementPressureDamp":75},
+			
+			//rear
+			{"selfCollision":true}
+			{"collision":true}
+			{"enableHubcaps":false},
+			{"axleBeams":["axle_RR"]}
+            ["RR", "rear_right_wheel", "axwr", "ax1r", 9999,  "aclr1", 1, {"speedo" : true}],
+			{"axleBeams":["axle_RL"]}
+            ["RL", "rear_left_wheel", "axwl", "ax1l", 9999,  "acll1",-1]
+			{"selfCollision":true}
+			{"axleBeams":[]}
+			{"enableABS":false}
+			{"propulsed":0}
+	],
+	"triangles": [
+			["id1:","id2:","id3:"],
+			{"group":""},
+	],
+}
+}

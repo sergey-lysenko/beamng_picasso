@@ -1,0 +1,378 @@
+{"picasso_suspension_R": {
+	
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Rear H-Air Suspension",
+	}
+    "slotType" : "picasso_suspension_R",
+	"slots": [
+		["type", "default", "description"],
+		["picasso_suspension_R_aircushion", "picasso_suspension_R_aircushion", "Rear Suspension Air Cushion"],
+		["picasso_shocks_R", "picasso_shocks_R", "Rear Shock Absorbers"],
+		["picasso_wheels_R", "picasso_wheels_R", "Rear Wheels"],
+	],
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
+	"flexbodies": [
+         ["mesh", "[group]:"],
+		 ["rear_suspension", ["rear_suspension"]],
+	],
+	"nodes": [
+		 ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":2},
+         {"group":"rear_suspension"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true}
+         {"selfCollision":true}
+		 ["rsbc1",0.000,3.398,0.214],
+		 ["rsbc2",0.000,3.418,0.360],
+		 ["rsbc3",0.000,3.737,0.362],
+		 ["rsbc4",0.000,3.762,0.215],
+
+  		 ["rsbl0",-0.720,3.263,0.266],
+  		 ["rsbr0",0.720,3.263,0.266],
+
+ 		 ["rsbl1",-0.561,3.466,0.233],
+ 		 ["rsbl2",-0.576,3.510,0.289],
+ 		 ["rsbl3",-0.573,3.550,0.290],
+ 		 ["rsbl4",-0.559,3.578,0.234],
+ 		 ["rsbr1",0.561,3.466,0.233],
+ 		 ["rsbr2",0.576,3.510,0.289],
+ 		 ["rsbr3",0.573,3.550,0.290],
+ 		 ["rsbr4",0.559,3.578,0.234],
+		 
+  		 ["rsbl5",-0.621,3.438,0.233],
+ 		 ["rsbl6",-0.663,3.458,0.289],
+ 		 ["rsbl7",-0.694,3.450,0.289],
+ 		 ["rsbl8",-0.709,3.462,0.232],
+  		 ["rsbr5",0.621,3.438,0.233],
+ 		 ["rsbr6",0.663,3.458,0.289],
+ 		 ["rsbr7",0.694,3.450,0.289],
+ 		 ["rsbr8",0.709,3.462,0.232],
+
+  		 ["rsbl9",-0.730,3.579,0.238],
+ 		 ["rsbl10",-0.702,3.584,0.300],
+  		 ["rsbr9",0.730,3.579,0.238],
+ 		 ["rsbr10",0.702,3.584,0.300],
+
+ 		 ["rsbl15",-0.751,3.847,0.418],
+ 		 ["rsbl16",-0.751,3.877,0.291],
+ 		 ["rsbl17",-0.616,3.790,0.274],
+
+ 		 ["rsbr15",0.751,3.847,0.418],
+ 		 ["rsbr16",0.751,3.877,0.291],
+ 		 ["rsbr17",0.616,3.790,0.274],
+
+
+         {"nodeWeight":4},
+ 		 ["rsbr13",0.751,3.688,0.247],
+ 		 ["rsbr14",0.751,3.711,0.398],
+ 		 ["rsbl13",-0.751,3.688,0.247],
+ 		 ["rsbl14",-0.751,3.711,0.398],
+ 		 ["rsbl11",-0.669,3.623,0.300],
+ 		 ["rsbl12",-0.646,3.638,0.235],
+ 		 ["rsbr11",0.669,3.623,0.300],
+ 		 ["rsbr12",0.646,3.638,0.235],
+		 
+		 ],
+	
+	"beams": [
+		  ["id1:", "id2:"],
+          {"beamSpring":1800000,"beamDamp":100},
+          {"beamDeform":100000,"beamStrength":"1600000"},
+
+		  // Transverse
+		  ["rsbc1","rsbc2"],["rsbc2","rsbc3"],["rsbc3","rsbc4"],["rsbc4","rsbc1"],
+		  ["rsbl1","rsbl2"],["rsbl2","rsbl3"],["rsbl3","rsbl4"],["rsbl4","rsbl1"],
+		  ["rsbr1","rsbr2"],["rsbr2","rsbr3"],["rsbr3","rsbr4"],["rsbr4","rsbr1"],
+
+		  // Transverse diagonal
+		  ["rsbc1","rsbc3"],["rsbc2","rsbc4"],["rsbc3","rsbc1"],["rsbc4","rsbc2"],
+		  ["rsbl1","rsbl3"],["rsbl2","rsbl4"],["rsbl3","rsbl1"],["rsbl4","rsbl2"],
+		  ["rsbr1","rsbr3"],["rsbr2","rsbr4"],["rsbr3","rsbr1"],["rsbr4","rsbr2"],
+
+  		  // Longitudinal
+		  ["rsbc1","rsbl1"],["rsbc2","rsbl2"],["rsbc3","rsbl3"],["rsbc4","rsbl4"],
+		  ["rsbc1","rsbr1"],["rsbc2","rsbr2"],["rsbc3","rsbr3"],["rsbc4","rsbr4"],
+
+  		  // Longitudinal diagonal
+		  ["rsbc1","rsbl2"],["rsbc2","rsbl3"],["rsbc3","rsbl4"],["rsbc4","rsbl1"],
+		  ["rsbl1","rsbc2"],["rsbl2","rsbc3"],["rsbl3","rsbc4"],["rsbl4","rsbc1"],
+		  ["rsbc1","rsbr2"],["rsbc2","rsbr3"],["rsbc3","rsbr4"],["rsbc4","rsbr1"],
+		  ["rsbr1","rsbc2"],["rsbr2","rsbc3"],["rsbr3","rsbc4"],["rsbr4","rsbc1"],
+
+  		  // Internal diagonal
+		  ["rsbc1","rsbl3"],["rsbc2","rsbl4"],["rsbc3","rsbl1"],["rsbc4","rsbl2"],
+		  ["rsbc1","rsbr3"],["rsbc2","rsbr4"],["rsbc3","rsbr1"],["rsbc4","rsbr2"],
+
+  		  // Transverse
+          ["rsbl5","rsbl6"],["rsbl6","rsbl7"],["rsbl7","rsbl8"],["rsbl8","rsbl5"],
+          ["rsbl9","rsbl10"],["rsbl10","rsbl11"],["rsbl11","rsbl12"],["rsbl12","rsbl9"],
+          ["rsbr5","rsbr6"],["rsbr6","rsbr7"],["rsbr7","rsbr8"],["rsbr8","rsbr5"],
+          ["rsbr9","rsbr10"],["rsbr10","rsbr11"],["rsbr11","rsbr12"],["rsbr12","rsbr9"],
+		  
+		  // Transverse diagonal
+          ["rsbl5","rsbl7"],["rsbl6","rsbl8"],["rsbl7","rsbl5"],["rsbl8","rsbl6"],
+          ["rsbl9","rsbl11"],["rsbl10","rsbl12"],["rsbl11","rsbl9"],["rsbl12","rsbl10"],
+          ["rsbr5","rsbr7"],["rsbr6","rsbr8"],["rsbr7","rsbr5"],["rsbr8","rsbr6"],
+          ["rsbr9","rsbr11"],["rsbr10","rsbr12"],["rsbr11","rsbr9"],["rsbr12","rsbr10"],
+
+   		  // Longitudinal
+          ["rsbl1","rsbl5"],["rsbl2","rsbl6"],["rsbl3","rsbl11"],["rsbl4","rsbl12"],["rsbl7","rsbl10"],["rsbl8","rsbl9"],
+          ["rsbr1","rsbr5"],["rsbr2","rsbr6"],["rsbr3","rsbr11"],["rsbr4","rsbr12"],["rsbr7","rsbr10"],["rsbr8","rsbr9"],
+		  
+  		  // Longitudinal diagonal
+          ["rsbl1","rsbl6"],["rsbl2","rsbl5"],["rsbl3","rsbl12"],["rsbl4","rsbl11"],["rsbl7","rsbl9"],["rsbl8","rsbl10"],
+          ["rsbr1","rsbr6"],["rsbr2","rsbr5"],["rsbr3","rsbr12"],["rsbr4","rsbr11"],["rsbr7","rsbr9"],["rsbr8","rsbr10"],
+
+  		  // External diagonal
+		  ["rsbl1","rsbl12"],["rsbl1","rsbl9"],["rsbl1","rsbl8"],
+		  ["rsbl2","rsbl11"],["rsbl2","rsbl10"],["rsbl2","rsbl7"],
+		  ["rsbl3","rsbl10"],["rsbl3","rsbl7"],["rsbl3","rsbl6"],
+		  ["rsbl4","rsbl9"],["rsbl4","rsbl8"],["rsbl4","rsbl5"],
+		  ["rsbl5","rsbl12"],["rsbl5","rsbl9"],
+		  ["rsbl6","rsbl11"],["rsbl6","rsbl10"],
+		  ["rsbl7","rsbl11"],
+		  ["rsbl8","rsbl12"],
+		  
+		  ["rsbr1","rsbr12"],["rsbr1","rsbr9"],["rsbr1","rsbr8"],
+		  ["rsbr2","rsbr11"],["rsbr2","rsbr10"],["rsbr2","rsbr7"],
+		  ["rsbr3","rsbr10"],["rsbr3","rsbr7"],["rsbr3","rsbr6"],
+		  ["rsbr4","rsbr9"],["rsbr4","rsbr8"],["rsbr4","rsbr5"],
+		  ["rsbr5","rsbr12"],["rsbr5","rsbr9"],
+		  ["rsbr6","rsbr11"],["rsbr6","rsbr10"],
+		  ["rsbr7","rsbr11"],
+		  ["rsbr8","rsbr12"],
+
+   		  // Internal diagonal
+		  ["rsbl2","rsbl12"],["rsbl2","rsbl9"],["rsbl2","rsbl8"],
+		  ["rsbl1","rsbl11"],["rsbl1","rsbl10"],["rsbl1","rsbl7"],
+		  ["rsbl4","rsbl10"],["rsbl4","rsbl7"],["rsbl4","rsbl6"],
+		  ["rsbl3","rsbl9"],["rsbl3","rsbl8"],["rsbl3","rsbl5"],
+		  ["rsbl6","rsbl12"],["rsbl6","rsbl9"],
+		  ["rsbl5","rsbl11"],["rsbl5","rsbl10"],
+		  ["rsbl8","rsbl11"],
+		  ["rsbl7","rsbl12"],
+
+		  ["rsbr2","rsbr12"],["rsbr2","rsbr9"],["rsbr2","rsbr8"],
+		  ["rsbr1","rsbr11"],["rsbr1","rsbr10"],["rsbr1","rsbr7"],
+		  ["rsbr4","rsbr10"],["rsbr4","rsbr7"],["rsbr4","rsbr6"],
+		  ["rsbr3","rsbr9"],["rsbr3","rsbr8"],["rsbr3","rsbr5"],
+		  ["rsbr6","rsbr12"],["rsbr6","rsbr9"],
+		  ["rsbr5","rsbr11"],["rsbr5","rsbr10"],
+		  ["rsbr8","rsbr11"],
+		  ["rsbr7","rsbr12"],
+		  
+		  // Link arm
+		  ["rsbl0","rsbl5"],["rsbl0","rsbl6"],["rsbl0","rsbl7"],["rsbl0","rsbl8"],
+		  ["rsbr0","rsbr5"],["rsbr0","rsbr6"],["rsbr0","rsbr7"],["rsbr0","rsbr8"],
+		  
+		  // Wheel arm
+          ["rsbl13","rsbl9"],["rsbl13","rsbl10"],["rsbl13","rsbl11"],["rsbl13","rsbl12"],["rsbl13","rsbl15"], 
+          ["rsbl14","rsbl9"],["rsbl14","rsbl10"],["rsbl14","rsbl11"],["rsbl14","rsbl12"],["rsbl13","rsbl16"], 
+          ["rsbl15","rsbl9"],["rsbl15","rsbl10"],["rsbl15","rsbl11"],["rsbl15","rsbl12"], 
+          ["rsbl16","rsbl9"],["rsbl16","rsbl10"],["rsbl16","rsbl11"],["rsbl16","rsbl12"], 
+          ["rsbl17","rsbl9"],["rsbl17","rsbl10"],["rsbl17","rsbl11"],["rsbl17","rsbl12"], 
+          ["rsbl17","rsbl13"],["rsbl17","rsbl14"],["rsbl17","rsbl15"],["rsbl17","rsbl16"],
+
+          ["rsbr13","rsbr9"],["rsbr13","rsbr10"],["rsbr13","rsbr11"],["rsbr13","rsbr12"],["rsbr13","rsbr15"], 
+          ["rsbr14","rsbr9"],["rsbr14","rsbr10"],["rsbr14","rsbr11"],["rsbr14","rsbr12"],["rsbr13","rsbr16"], 
+          ["rsbr15","rsbr9"],["rsbr15","rsbr10"],["rsbr15","rsbr11"],["rsbr15","rsbr12"], 
+          ["rsbr16","rsbr9"],["rsbr16","rsbr10"],["rsbr16","rsbr11"],["rsbr16","rsbr12"], 
+          ["rsbr17","rsbr9"],["rsbr17","rsbr10"],["rsbr17","rsbr11"],["rsbr17","rsbr12"], 
+          ["rsbr17","rsbr13"],["rsbr17","rsbr14"],["rsbr17","rsbr15"],["rsbr17","rsbr16"],
+
+		  
+   		  // Internal Diagonal
+		  
+		  ["rsbl9","ax1r"],["rsbl10","ax1r"],["rsbl11","ax1r"],["rsbl12","ax1r"],["rsbl13","ax1r"],["rsbl14","ax1r"],["rsbl15","ax1r"],["rsbl16","ax1r"],["rsbl17","ax1r"],
+		  ["rsbr9","ax1l"],["rsbr10","ax1l"],["rsbr11","ax1l"],["rsbr12","ax1l"],["rsbr13","ax1l"],["rsbr14","ax1l"],["rsbr15","ax1l"],["rsbr16","ax1l"],["rsbr17","ax1l"],
+
+  		  ["rsbl9","axwr"],["rsbl10","axwr"],["rsbl11","axwr"],["rsbl12","axwr"],["rsbl13","axwr"],["rsbl14","axwr"],["rsbl15","axwr"],["rsbl16","axwr"],["rsbl17","axwr"],
+		  ["rsbr9","axwl"],["rsbr10","axwl"],["rsbr11","axwl"],["rsbr12","axwl"],["rsbr13","axwl"],["rsbr14","axwl"],["rsbr15","axwl"],["rsbr16","axwl"],["rsbr17","axwl"],
+
+ 		  //["rsbl13","rsbr13"],["rsbl14","rsbr14"],["rsbl15","rsbr15"],["rsbl16","rsbr16"],["rsbl17","rsbr17"],
+ 		  //["rsbl13","rsbr14"],["rsbl14","rsbr15"],["rsbl15","rsbr16"],["rsbl16","rsbr13"],
+ 		  //["rsbl13","rsbr16"],["rsbl14","rsbr13"],["rsbl15","rsbr14"],["rsbl16","rsbr15"],
+
+ 		  ["rsbl13","rsbc1"],["rsbl14","rsbc2"],["rsbl15","rsbc3"],["rsbl16","rsbc4"],
+ 		  ["rsbr13","rsbc1"],["rsbr14","rsbc2"],["rsbr15","rsbc3"],["rsbr16","rsbc4"],
+ 		  ["rsbl13","rsbc3"],["rsbl14","rsbc4"],["rsbl15","rsbc1"],["rsbl16","rsbc2"],
+ 		  ["rsbr13","rsbc3"],["rsbr14","rsbc4"],["rsbr15","rsbc1"],["rsbr16","rsbc2"],
+          ["rsbl0","rsbc1"],["rsbl0","rsbc2"],["rsbl0","rsbc3"],["rsbl0","rsbc4"],
+ 		  ["rsbr0","rsbc1"],["rsbr0","rsbc2"],["rsbr0","rsbc3"],["rsbr0","rsbc4"],
+		  
+		  
+  	   // Additional beams for place of contact with air cushion
+	  ["acll1","rsbl13"],["acll1","rsbl14"],["acll1","rsbl15"],["acll1","rsbl16"],
+	  ["acll2","rsbl13"],["acll2","rsbl14"],["acll2","rsbl15"],["acll2","rsbl16"],
+	  ["acll3","rsbl13"],["acll3","rsbl14"],["acll3","rsbl15"],["acll3","rsbl16"],
+	  ["aclr1","rsbr13"],["aclr1","rsbr14"],["aclr1","rsbr15"],["aclr1","rsbr16"],
+	  ["aclr2","rsbr13"],["aclr2","rsbr14"],["aclr2","rsbr15"],["aclr2","rsbr16"],
+	  ["aclr3","rsbr13"],["aclr3","rsbr14"],["aclr3","rsbr15"],["aclr3","rsbr16"],
+
+	  // Additional beams for place of contact with air cushion
+	  ["acul1","rftl2"],["acul1","rftl3"],["acul1","rftl4"],["acul1","rftl6"],
+	  ["acul2","rftl2"],["acul2","rftl3"],["acul2","rftl4"],["acul2","rftl6"],
+	  ["acul3","rftl2"],["acul3","rftl3"],["acul3","rftl4"],["acul3","rftl6"],
+	  ["acur1","rftr2"],["acur1","rftr3"],["acur1","rftr4"],["acur1","rftr6"],
+	  ["acur2","rftr2"],["acur2","rftr3"],["acur2","rftr4"],["acur2","rftr6"],
+	  ["acur3","rftr2"],["acur3","rftr3"],["acur3","rftr4"],["acur3","rftr6"],
+
+	  
+	       {"beamSpring":2500000,"beamDamp":20},
+	  // Link
+	 ["rsmol1","rsbl0"],["rsmol2","rsbl0"],["rsmol3","rsbl0"],["rsmil1","rsbl0"],["rsmil2","rsbl0"],["rsmil3","rsbl0"],
+  	 ["rsmor1","rsbr0"],["rsmor2","rsbr0"],["rsmor3","rsbr0"],["rsmir1","rsbr0"],["rsmir2","rsbr0"],["rsmir3","rsbr0"],
+
+      {"beamPrecompression":0.70, "beamType":"|SUPPORT", "beamLongBound":10,}, 
+      {"beamSpring":20000000,"beamDamp":1},
+      ["rftl2","rsbl1"],["rftl2","rsbl4"],["rftl2","rsbl8"],["rftl2","rsbl12"],
+	  ["rftl4","rsbl1"],["rftl4","rsbl4"],["rftl4","rsbl8"],["rftl4","rsbl12"],
+	  ["rftl2","rsbl13"],["rftl2","rsbl16"],["rftl2","rsbl17"],
+	  ["rftl4","rsbl13"],["rftl4","rsbl16"],["rftl4","rsbl17"],
+      ["rftr2","rsbr1"],["rftr2","rsbr4"],["rftr2","rsbr8"],["rftr2","rsbr12"],
+	  ["rftr4","rsbr1"],["rftr4","rsbr4"],["rftr4","rsbr8"],["rftr4","rsbr12"],
+	  ["rftr2","rsbr13"],["rftr2","rsbr16"],["rftr2","rsbr17"],
+	  ["rftr4","rsbr13"],["rftr4","rsbr16"],["rftr4","rsbr17"],
+
+	],
+}
+
+"picasso_shocks_R": {
+	
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Rear Shocks",
+	}
+    "slotType" : "picasso_shocks_R",
+
+	"flexbodies": [
+         ["mesh", "[group]:"],
+		 ["rear_suspension_shock", ["rear_suspension_shock"]],
+	],
+	"nodes": [
+		 ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":4},
+         {"group":"rear_suspension_shock"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":false}
+         {"selfCollision":false}
+		 
+		 ["rshl1l",0.60870,3.60211,0.26952],
+		 ["rshl2l",0.62942,3.61895,0.27006],
+		 ["rshu1l",0.49303,3.73660,0.47001],
+		 ["rshu2l",0.51375,3.75344,0.47055],
+		 ["rshl1r",-0.60870,3.60211,0.26952],
+		 ["rshl2r",-0.62942,3.61895,0.27006],
+		 ["rshu1r",-0.49303,3.73660,0.47001],
+		 ["rshu2r",-0.51375,3.75344,0.47055],
+		 ],
+	
+	"beams": [
+		  ["id1:", "id2:"],
+		  
+         {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":0.85, "beamShortBound":0.85}, 
+         {"beamSpring":30,"beamDamp":2500},
+         {"beamDeform":100000,"beamStrength":"14600000"},
+		 {"beamLimitSpring":500000,"beamLimitDamp":100}
+
+		 ["rshl1l","rshu1l"],["rshl1l","rshu2l"],["rshu1l","rsbr3"],["rshu1l","rsbr4"],
+		 ["rshl2l","rshu1l"],["rshl2l","rshu2l"],["rshu2l","rsbr11"],["rshu2l","rsbr12"],
+
+ 		 ["rshl1r","rshu1r"],["rshl1r","rshu2r"],["rshu1r","rsbl3"],["rshu1r","rsbl4"],
+		 ["rshl2r","rshu1r"],["rshl2r","rshu2r"],["rshu2r","rsbl11"],["rshu2r","rsbl12"],
+
+		 {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+         {"beamSpring":300000,"beamDamp":100},
+         {"beamDeform":100000,"beamStrength":"400000"},
+		 ["rshl1l","rsbr1"],["rshl1l","rsbr2"],["rshl1l","rsbr3"],["rshl1l","rsbr4"],["rshl1l","rsbr9"],["rshl1l","rsbr10"],["rshl1l","rsbr11"],["rshl1l","rsbr12"],
+		 ["rshl2l","rsbr1"],["rshl2l","rsbr2"],["rshl2l","rsbr3"],["rshl2l","rsbr4"],["rshl2l","rsbr9"],["rshl2l","rsbr10"],["rshl2l","rsbr11"],["rshl2l","rsbr12"],
+		 ["rshu1l","rshu2l"],["rshl1l","rshl2l"],
+		 ["rshu1l","rfbr1"],["rshu1l","rfbr2"],["rshu1l","rfbr3"],["rshu1l","rfbr4"],["rshu1l","rftr1"],["rshu1l","rftr2"],["rshu1l","rftr3"],["rshu1l","rftr4"],
+		 ["rshu1l","rfbr1"],["rshu1l","rfbr2"],["rshu1l","rfbr3"],["rshu1l","rfbr4"],["rshu2l","rftr1"],["rshu2l","rftr2"],["rshu2l","rftr3"],["rshu2l","rftr4"],
+
+		 ["rshl1r","rsbl1"],["rshl1r","rsbl2"],["rshl1r","rsbl3"],["rshl1r","rsbl4"],["rshl1r","rsbl9"],["rshl1r","rsbl10"],["rshl1r","rsbl11"],["rshl1r","rsbl12"],
+		 ["rshl2r","rsbl1"],["rshl2r","rsbl2"],["rshl2r","rsbl3"],["rshl2r","rsbl4"],["rshl2r","rsbl9"],["rshl2r","rsbl10"],["rshl2r","rsbl11"],["rshl2r","rsbl12"],
+		 ["rshu1r","rshu2r"],["rshl1r","rshl2r"],
+		 ["rshu1r","rfbl1"],["rshu1r","rfbl2"],["rshu1r","rfbl3"],["rshu1r","rfbl4"],["rshu1r","rftl1"],["rshu1r","rftl2"],["rshu1r","rftl3"],["rshu1r","rftl4"],
+		 ["rshu1r","rfbl1"],["rshu1r","rfbl2"],["rshu1r","rfbl3"],["rshu1r","rfbl4"],["rshu2r","rftl1"],["rshu2r","rftl2"],["rshu2r","rftl3"],["rshu2r","rftl4"],
+
+
+		 
+	],
+}
+
+"picasso_suspension_R_aircushion": {
+	
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Rear Air Suspension",
+	}
+    "slotType" : "picasso_suspension_R_aircushion",
+
+	"flexbodies": [
+         ["mesh", "[group]:"],
+		 ["rear_suspension_cushion", ["rear_suspension_cushion"]],
+	],
+	"nodes": [
+		 ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":1.2},
+         {"group":"rear_suspension_cushion"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_RUBBER"},
+         {"collision":false}
+         {"selfCollision":false}
+		 
+		 
+		 ["acul1",-0.664,3.756,0.426],
+		 ["acul2",-0.567,3.756,0.426],
+		 ["acul3",-0.604,3.848,0.426],
+		 ["acll1",-0.655,3.763,0.267],
+		 ["acll2",-0.576,3.763,0.267],
+		 ["acll3",-0.625,3.836,0.267],
+		 ["acur1",0.664,3.756,0.426],
+		 ["acur2",0.567,3.756,0.426],
+		 ["acur3",0.604,3.848,0.426],
+		 ["aclr1",0.655,3.763,0.267],
+		 ["aclr2",0.576,3.763,0.267],
+		 ["aclr3",0.625,3.836,0.267],
+		 ],
+	
+	"beams": [
+		  ["id1:", "id2:"],
+		  
+         {"beamPrecompression":1.1, "beamType":"|BOUNDED", "beamLongBound":0.65, "beamShortBound":0.65}, 
+         {"beamSpring":6000,"beamDamp":20},
+		 {"beamLimitSpring":1000000,"beamLimitDamp":100}
+		  // Transverse
+		  ["acul1","acul2"],["acul2","acul3"],["acul3","acul1"],["acll1","acll2"],["acll2","acll3"],["acll3","acll1"],
+		  ["acur1","acur2"],["acur2","acur3"],["acur3","acur1"],["aclr1","aclr2"],["aclr2","aclr3"],["aclr3","aclr1"],
+
+  		  // Longitudinal
+		  ["acul1","acll1"],["acul2","acll2"],["acul3","acll3"],
+		  ["acur1","aclr1"],["acur2","aclr2"],["acur3","aclr3"],
+
+  		  // Diagonal
+  		  ["acul1","acll2"],["acul2","acll3"],["acul3","acll1"],
+		  ["acur1","aclr2"],["acur2","aclr3"],["acur3","aclr1"],
+
+  		  ["rsbl17","acul1"],["rsbl17","acul2"],["rsbl17","acul3"],["rfbl4","acll1"],["rfbl4","acll2"],["rfbl4","acll3"],
+  		  ["rsbr17","acur1"],["rsbr17","acur2"],["rsbr17","acur3"],["rfbr4","aclr1"],["rfbr4","aclr2"],["rfbr4","aclr3"],
+  		  ["rsbl17","acll1"],["rsbl17","acll2"],["rsbl17","acll3"],["rfbl4","acul1"],["rfbl4","acul2"],["rfbl4","acul3"],
+  		  ["rsbr17","aclr1"],["rsbr17","aclr2"],["rsbr17","aclr3"],["rfbr4","acur1"],["rfbr4","acur2"],["rfbr4","acur3"],
+
+
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":300000,"beamDamp":100},
+          {"beamDeform":100000,"beamStrength":"400000"},
+		  
+	],
+}
+
+}
