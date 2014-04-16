@@ -138,10 +138,10 @@
 	"scalebeamStrength":1,
 	"slots": [
 	["type", "default", "description"],
-	 //["picasso_glassdoor", "picasso_glassdoor", "Glass Door"],
+	 ["picasso_glassdoor", "picasso_glassdoor", "Glass Door"],
 	 // light base is temporarly intergated with door
 	 //["picasso_inner_taillights", "picasso_inner_taillights", "Inner Tail Lights"],
-	 ["picasso_back_door_bumper", "picasso_back_door_bumper", "Glass Door"],
+	 ["picasso_back_door_bumper", "picasso_back_door_bumper", "Tailgate Bumper"],
 	],
 
 	"flexbodies": [
@@ -414,7 +414,7 @@
 "picasso_back_door_bumper": {
 	"information":{
 		"authors":"Sergey Lysenko",
-		"name":"Back Door Bumper",
+		"name":"Tailgate Bumper",
 	}
     "slotType" : "picasso_back_door_bumper",
 	"scalenodeWeight":1,

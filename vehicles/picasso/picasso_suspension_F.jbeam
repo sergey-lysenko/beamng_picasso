@@ -213,7 +213,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
           {"beamPrecompression":1.35, "beamType":"|BOUNDED", "beamLongBound":0.5, "beamShortBound":0.5}, 
-		  {"beamSpring":14000,"beamDamp":1550},
+		  {"beamSpring":13000,"beamDamp":1500},
           {"beamLimitSpring":450000,"beamLimitDamp":100}
 		  {"beamDeform":165000,"beamStrength":2000000},
 
@@ -269,7 +269,7 @@
 		  // Temporary virtual beams
 		  {"beamSpring":4000000},
 		  ["lnul3","stml0"],["lnul1","stml0"],["lnur3","stmr0"],["lnur1","stmr0"],
-		  ["lsfl2","stcl"],["lsfl1","stcl"],["lsfr2","stcr"],["lsfr1","stcr"],
+		  //["lsfl2","stcl"],["lsfl1","stcl"],["lsfr2","stcr"],["lsfr1","stcr"],
 
   		  // Strut to longeron
 		  {"beamSpring":1000000},

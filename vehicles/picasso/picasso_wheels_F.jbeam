@@ -18,7 +18,7 @@
 		 {"nodeMaterial":"|NM_METAL"},
 		 {"selfCollision":false}
 		 {"collision":false}
-		 {"nodeWeight":6},
+		 {"nodeWeight":3},
 		 {"group":"front_right_wheel"},
 		 //["fwil", -0.38605, 0.9532, 0.33295],
 		 //["fwil", -0.57890, 0.95151, 0.33868],
@@ -41,7 +41,7 @@
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 		  //front wheels
 		  {"breakGroupType":0},
-		  {"beamSpring":6000000,"beamDamp":45},
+		  {"beamSpring":4000000,"beamDamp":145},
 		  {"beamDeform":65000,"beamStrength":620000},
 		  ["fwil","fwml"],
 		  ["fwir","fwmr"],
@@ -59,33 +59,33 @@
 			{"wheelOffset":0.01},
 			{"hubWidth":0.215},
 			{"tireWidth":0.215},
-			{"numRays":16},
+			{"numRays":12},
 			
 			//hub options
-			{"hubBeamSpring":1281000, "hubBeamDamp":15}
-			{"beamSpring":1281000, "beamDamp":15},
-			{"hubBeamDeform":90000, "hubBeamStrength":160000},
-			{"beamDeform":120000,"beamStrength":320000},
-			{"hubNodeWeight":0.5},
+			{"hubBeamSpring":1121000, "hubBeamDamp":8}
+			{"beamSpring":1121000, "beamDamp":8},
+			{"hubBeamDeform":34000, "hubBeamStrength":164000},
+			{"beamDeform":240000,"beamStrength":380000},
+			{"hubNodeWeight":0.41},
 			{"hubNodeMaterial":"|NM_METAL"},
 			{"hubFrictionCoef":0.7},
 			
 			//tire options
-			{"wheelTreadBeamSpring":291000,"wheelTreadBeamDamp":45,"wheelTreadBeamDeform":35000,"wheelTreadBeamStrength":35000},
-			{"wheelPeripheryBeamSpring":291000,"wheelPeripheryBeamDamp":45,"wheelPeripheryBeamDeform":35000,"wheelPeripheryBeamStrength":35000},
-			{"springExpansion":1500000, "dampExpansion":15},
-			{"nodeWeight":0.4},
+			{"wheelTreadBeamSpring":221000,"wheelTreadBeamDamp":16,"wheelTreadBeamDeform":38000,"wheelTreadBeamStrength":55000},
+			{"wheelPeripheryBeamSpring":221000,"wheelPeripheryBeamDamp":16,"wheelPeripheryBeamDeform":38000,"wheelPeripheryBeamStrength":55000},
+			{"springExpansion":351000, "dampExpansion":8},
+			{"nodeWeight":0.21},
 			{"nodeMaterial":"|NM_RUBBER"},
-			{"frictionCoef":1.6},
+			{"frictionCoef":1.5},
 			
 			//
-			{"pressurePSI":50},
+			{"pressurePSI":30},
 			{"maxPressurePSI":1400},
-			{"reinforcementPressurePSI":70},
-			{"pressureSpring":1751000},
-			{"reinforcementPressureSpring":149000},
-			{"pressureDamp":75},
-			{"reinforcementPressureDamp":75},
+			{"reinforcementPressurePSI":30},
+			{"pressureSpring":501000},
+			{"reinforcementPressureSpring":101000},
+			{"pressureDamp":16},
+			{"reinforcementPressureDamp":16},
 			
 			//front
 			{"selfCollision":true}
