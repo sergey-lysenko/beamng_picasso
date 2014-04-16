@@ -20,7 +20,7 @@
 		 {"nodeMaterial":"|NM_PLASTIC"},
 		 {"selfCollision":true}
 		 {"collision":true}
-		 {"nodeWeight":0.5}
+		 {"nodeWeight":0.2}
          {"group":"front_bumper"},
 
 		 ["fbul2", -0.96304, 0.68132, 0.67271],
@@ -97,7 +97,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":15000,"beamDamp":100},
+		  {"beamSpring":15000,"beamDamp":50},
 		  {"beamDeform":5000,"beamStrength":5500},
 
 		  // Longitudinal
@@ -185,7 +185,12 @@
 		  
           // Mount
 		  {"beamSpring":50000,"beamDamp":100},
-          ["mcbul2","cbul2"],
+  		  // To fenders
+		  ["fell1","fbur2"],["feul1","fbur3"],["feul2","fbir5"],
+		  ["felr1","fbul2"],["feur1","fbul3"],["feur2","fbil5"],
+
+  		  // To crushbar
+		  ["mcbul2","cbul2"],
           ["mcbul1","cbul1"],
           ["mcbuc0","cbuc0"],
           ["mcbur1","cbur1"],
@@ -196,6 +201,7 @@
           ["mcblr1","cblr1"],
           ["mcblr2","cblr2"],
 
+  		  // To subframe
    		  ["msfl0r2","sfl0r2"],
  		  ["msfl0c0","sfl0c0"],
  		  ["msfl0l2","sfl0l2"],
@@ -256,11 +262,6 @@
 		"name":"Rear Bumper",
 	}
     "slotType" : "picasso_rear_bumper",
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],

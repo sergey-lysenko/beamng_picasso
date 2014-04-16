@@ -59,6 +59,11 @@
          ["ffi6r2", -0.87892, 0.50059, 0.77631],
          ["ffi6r3", -0.81760, 0.54948, 0.74897],
 
+         ["mlnul1",-0.446,0.427,0.671],
+         ["mlnul2",-0.559,0.427,0.671],
+         ["mlnur1",0.446,0.427,0.671],
+         ["mlnur2",0.559,0.427,0.671],
+
 
      ]
 	"beams": [
@@ -122,18 +127,20 @@
 		  ["ffi5r0","ffi4r2"],["ffi5r1","ffb7r2"],["ffi5r2","fft7r2"],["ffi5r3","ffi4r1"],
 		  ["ffi5r0","ffi6r2"],["ffi5r1","ffi6r3"],["ffi5r2","ffi6r0"],["ffi5r3","ffi6r1"],
 
+  		  ["mlnur2","mlnur1"],["mlnul2","mlnul1"],
+
    		  // Link with longeron
-		  ["ffi6l0","lnur1"],["ffi6l0","lnur2"],["ffi6l1","lnur1"],["ffi6l1","lnur2"],["ffi6l2","lnur1"],["ffi6l2","lnur2"],["ffi6l3","lnur1"],["ffi6l3","lnur2"],
-		  ["ffi6r0","lnul1"],["ffi6r0","lnul2"],["ffi6r1","lnul1"],["ffi6r1","lnul2"],["ffi6r2","lnul1"],["ffi6r2","lnul2"],["ffi6r3","lnul1"],["ffi6r3","lnul2"],
-		  
+		  ["ffi6l0","mlnur1"],["ffi6l0","mlnur2"],["ffi6l3","mlnur1"],["ffi6l3","mlnur2"],
+		  ["ffi6r0","mlnul1"],["ffi6r0","mlnul2"],["ffi6r3","mlnul1"],["ffi6r3","mlnul2"],
+
+		  ["ffi5l0","mlnur1"],["ffi5l0","mlnur2"],["ffi5l3","mlnur1"],["ffi5l3","mlnur2"],
+		  ["ffi5r0","mlnul1"],["ffi5r0","mlnul2"],["ffi5r3","mlnul1"],["ffi5r3","mlnul2"],
 		  
   		  // Antihinging
-		  ["ffi6l3","sfl0l2"],["ffi6r3","sfl0r2"],
-
-
-
-
-		  
+		  ["ffi6l3","sfl0l2"],["ffi6l3","sfl1l2"],
+		  ["ffi6r3","sfl0r2"],["ffi6r3","sfl1r2"],
+		  ["lnur1","mlnur1"],["lnur2","mlnur2"],
+		  ["lnul1","mlnul1"],["lnul2","mlnul2"],
      ]
 }
 
@@ -217,7 +224,7 @@
 
 		  
 		  // To other parts
-		  ["fell1","fbur2"],
+
 		  ["fell1","ffi6l2"],["fell1","ffi6l3"],
 		  ["fell2","ffi5l2"],["fell2","ffi5l3"],
 		  ["fell3","ffi4l2"],["fell3","ffb7l2"],
@@ -228,9 +235,9 @@
 		  ["fell8","ffb4l2"],["fell8","ffb4l3"],["fell8","fft4l3"],
 		  ["fell9","ffb4l2"],["fell9","ffb4l3"],["fell9","fft4l3"],
 
-		  ["feul1","fbur3"],
+		  
 		  ["feul2","ffi6l0"],["feul2","ffi6l1"],["feul2","ffi6l2"],["feul2","ffi6l3"],
-		  ["feul2","fbir5"],
+		  
 		  ["feul3","ffi5l0"],["feul3","ffi5l1"],["feul3","ffi5l2"],["feul3","ffi5l3"],
 		  ["feul4","ffi5l0"],["feul4","ffi5l1"],
 		  ["feul5","ffi4l1"],["feul6","fft7l2"],
@@ -330,7 +337,6 @@
 		  ["feur8","feir2"],["feur9","feir2"],
 
 		  // To other parts
-		  ["felr1","fbul2"],
 		  ["felr1","ffi6r2"],["felr1","ffi6r3"],
 		  ["felr2","ffi5r2"],["felr2","ffi5r3"],
 		  ["felr3","ffi4r2"],["felr3","ffb7r2"],
@@ -341,9 +347,9 @@
 		  ["felr8","ffb4r2"],["felr8","ffb4r3"],["felr8","fft4r3"],
 		  ["felr9","ffb4r2"],["felr9","ffb4r3"],["felr9","fft4r3"],
 
-		  ["feur1","fbul3"],
+		  
 		  ["feur2","ffi6r0"],["feur2","ffi6r1"],["feur2","ffi6r2"],["feur2","ffi6r3"],
-		  ["feur2","fbil5"],
+		  
 		  ["feur3","ffi5r0"],["feur3","ffi5r1"],["feur3","ffi5r2"],["feur3","ffi5r3"],
 		  ["feur4","ffi5r0"],["feur4","ffi5r1"],
 		  ["feur5","ffi4r1"],["feur6","fft7r2"],

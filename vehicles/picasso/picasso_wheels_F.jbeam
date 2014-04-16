@@ -5,13 +5,6 @@
 		"name":"18 inches Wheels",
 	}
     "slotType" : "picasso_wheels_F",
-	"selfCollisionThickness":1,
-	"remoteCollisionThickness":1,
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 	"flexbodies": [
 		 ["mesh", "[group]:", "nonFlexMaterials"],
 		 //wheels
