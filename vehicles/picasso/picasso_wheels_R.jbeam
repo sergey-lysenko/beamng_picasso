@@ -7,11 +7,11 @@
     "slotType" : "picasso_wheels_R",
 	"selfCollisionThickness":1,
 	"remoteCollisionThickness":1,
-	"scalenodeWeight":0.89,
-	"scalebeamSpring":0.83,
-	"scalebeamDamp":0.84,
-	"scalebeamDeform":0.6,
-	"scalebeamStrength":0.84,
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 		 ["mesh", "[group]:", "nonFlexMaterials"],
 		 //wheels
@@ -25,7 +25,7 @@
 		 {"nodeMaterial":"|NM_METAL"},
 		 {"selfCollision":true}
 		 {"collision":true}
-		 {"nodeWeight":6.0},
+		 {"nodeWeight":3.0},
 		 {"group":"rear_right_wheel"},
 		 ["ax1r", -0.685, 3.7923, 0.3442],
 		 {"group":"rear_left_wheel"},
@@ -44,7 +44,7 @@
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 		  //rear wheels
 		  {"breakGroupType":0},
-		  {"beamSpring":7001000,"beamDamp":45},
+		  {"beamSpring":3000000,"beamDamp":45},
 		  {"beamDeform":65000,"beamStrength":620000},
 		  ["ax1r","axwr"],
 		  ["ax1l","axwl"],
@@ -65,8 +65,8 @@
 			{"numRays":16},
 			
 			//hub options
-			{"hubBeamSpring":1281000, "hubBeamDamp":15}
-			{"beamSpring":1281000, "beamDamp":15},
+			{"hubBeamSpring":381000, "hubBeamDamp":15}
+			{"beamSpring":381000, "beamDamp":15},
 			{"hubBeamDeform":90000, "hubBeamStrength":160000},
 			{"beamDeform":120000,"beamStrength":320000},
 			{"hubNodeWeight":0.4},

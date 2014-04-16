@@ -5,6 +5,11 @@
 		"name":"Windshield",
 	}
     "slotType" : "picasso_windscreen",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["windshield", ["windshield"]],
@@ -17,43 +22,44 @@
          {"nodeMaterial":"|NM_GLASS"},
          {"collision":true}
          {"selfCollision":true}
-         {"nodeWeight":0.6},
-
+         {"nodeWeight":0.3},
    		 ["wnd1c1", 0.00000, 0.83056, 1.14386],
    		 ["wnd1l1", 0.40508, 0.84447, 1.14328],
    		 ["wnd1l2", 0.78349, 0.88491, 1.14164],
    		 ["wnd1r1", -.40508, 0.84447, 1.14328],
    		 ["wnd1r2", -.78349, 0.88491, 1.14164],
 
-   		 ["wnd2c1", 0.00000, 1.16942, 1.36332],
-   		 ["wnd2l1", 0.36992, 1.19612, 1.36493],
-   		 ["wnd2l2", 0.72664, 1.24288, 1.35288],
-   		 ["wnd2r1", -.36992, 1.19612, 1.36493],
    		 ["wnd2r2", -.72664, 1.24288, 1.35288],
+   		 ["wnd2r1", -.36992, 1.14612, 1.41493],
+   		 ["wnd2c1", 0.00000, 1.11942, 1.41332],
+   		 ["wnd2l1", 0.36992, 1.14612, 1.41493],
+   		 ["wnd2l2", 0.72664, 1.24288, 1.35288],
 
-   		 ["wnd3c1", 0.00000, 1.60082, 1.57416],
-   		 ["wnd3l1", 0.34508, 1.60648, 1.56682],
    		 ["wnd3l2", 0.67484, 1.62325, 1.53843],
-   		 ["wnd3r1", -.34508, 1.60648, 1.56682],
+   		 ["wnd3l1", 0.34508, 1.55648, 1.61682],
+   		 ["wnd3c1", 0.00000, 1.55082, 1.62416],
+   		 ["wnd3r1", -.34508, 1.55648, 1.61682],
    		 ["wnd3r2", -.67484, 1.62325, 1.53843],
 
-   		 ["wnd4c1", 0.00000, 1.97031, 1.68216],
-   		 ["wnd4l1", 0.32730, 1.97082, 1.67611],
    		 ["wnd4l2", 0.63700, 1.97139, 1.64815],
-   		 ["wnd4r1", -.32730, 1.97082, 1.67611],
+   		 ["wnd4l1", 0.32730, 1.92082, 1.72611],
+   		 ["wnd4c1", 0.00000, 1.92031, 1.73216],
+   		 ["wnd4r1", -.32730, 1.92082, 1.72611],
    		 ["wnd4r2", -.63700, 1.97139, 1.64815],
 
-   		 ["wnd5c1", 0.00000, 2.20728, 1.72724],
    		 ["wnd5l1", 0.32159, 2.20727, 1.72168],
-   		 ["wnd5l2", 0.62774, 2.07824, 1.67184],
+   		 ["wnd5c1", 0.00000, 2.20728, 1.72724],
    		 ["wnd5r1", -.32159, 2.20727, 1.72168],
+
+         {"nodeWeight":0.5},
+   		 ["wnd5l2", 0.62774, 2.07824, 1.67184],
    		 ["wnd5r2", -.62774, 2.07824, 1.67184],
 		 
      ]
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":600000,"beamDamp":100},
+		  {"beamSpring":150000,"beamDamp":75},
 		  {"beamDeform":10000,"beamStrength":15000},
 		  
 		  //first grade
@@ -142,26 +148,30 @@
 		  ["wnd1r2","wnd5l2"],["wnd5r2","wnd1l2"],
 		  
 		  // Mount
-
-
-		  // Beams
-
-		  {"beamSpring":400000,"beamDamp":100},
+		  {"beamSpring":100000,"beamDamp":75},
 		  
+		  ["wnd3l2","frp3l2"],["wnd2l2","frp4l2"],["wnd1l2","fgd2l2"],["wnd1l1","fgd2l1"],["wnd1c1","fgd2c0"],["wnd1r1","fgd2r1"],["wnd1r2","fgd2r2"],["wnd2r2","frp4r2"],["wnd3r2","frp3r2"],
+
+		  ["wnd4l2","frp3l3"],["wnd4l2","frp2l3"],["wnd4l2","frp1l3"],
+		  ["wnd5l2","frp6l3"],["wnd5l2","frp1l1"],["wnd5l2","frp2l1"],
+		  ["wnd5l1","frp7c3"],["wnd5l1","frp6l3"],["wnd5l1","frp1l1"],
+		  ["wnd5c1","frp7l3"],["wnd5c1","frp7c3"],["wnd5c1","frp7r3"],
+		  ["wnd5r1","frp7c3"],["wnd5r1","frp6r3"],["wnd5r1","frp1r1"],
+		  ["wnd5r2","frp6r3"],["wnd5r2","frp1r1"],["wnd5r2","frp2r1"],
+		  ["wnd4r2","frp3r3"],["wnd4r2","frp2r3"],["wnd4r2","frp1r3"],
+		  
+/*
+          ["wnd5c1","frp7c3"],["wnd5c1","frp7c1"],["wnd5c1","frp6l3"],["wnd5c1","frp6l1"],["wnd5c1","frp6r3"],["wnd5c1","frp6r1"],
 		  ["wnd5r2","frp2r3"],["wnd5r2","frp2r3"],["wnd5r2","frp2r1"],["wnd5r2","frp6r3"],["wnd5r2","frp6r1"],
           ["wnd5r1","frp6r2"],["wnd5r1","frp6r3"],["wnd5r1","frp6r1"],["wnd5r1","frp7c3"],["wnd5r1","frp7c1"],["wnd5r1","frp2r3"],["wnd5r1","frp2r1"],
-          ["wnd5c1","frp7c2"],["wnd5c1","frp7c3"],["wnd5c1","frp7c1"],["wnd5c1","frp6l3"],["wnd5c1","frp6l1"],["wnd5c1","frp6r3"],["wnd5c1","frp6r1"],
 		  ["wnd5l1","frp6l3"],["wnd5l1","frp6l1"],["wnd5l1","frp7c3"],["wnd5l1","frp7c1"],["wnd5l1","frp2l3"],["wnd5l1","frp2l3"],["wnd5l1","frp2l1"],
 		  ["wnd5l2","frp2l3"],["wnd5l2","frp2l3"],["wnd5l2","frp2l1"],["wnd5l2","frp6l3"],["wnd5l2","frp6l1"],
-          
 		  
 		  ["wnd1r2","fft7r2"],["wnd1r2","fft7r1"],//["wnd1r2","fgd3r2"],["wnd1r2","fgd3r1"],
 		  ["wnd1r1","fft7r2"],["wnd1r1","fft7c0"],//["wnd1r1","fgd3r2"],["wnd1r1","fgd3c0"],
 		  ["wnd1c1","fft7l1"],["wnd1c1","fft7r1"],
 		  ["wnd1l1","fft7l2"],["wnd1l1","fft7c0"],//["wnd1l1","fgd3l2"],["wnd1l1","fgd3c0"],
 		  ["wnd1l2","fft7l2"],["wnd1l2","fft7l1"],//["wnd1l2","fgd3l2"],["wnd1l2","fgd3l1"],
-
-		  
 
 		  ["wnd2l2","frp4l1"],["wnd2l2","frp4l2"],["wnd2l2","frp4l3"],
 		  ["wnd3l2","frp3l1"],["wnd3l2","frp3l2"],["wnd3l2","frp3l3"],
@@ -171,10 +181,6 @@
 		  ["wnd3r2","frp3r1"],["wnd3r2","frp3r2"],["wnd3r2","frp3r3"],
 		  ["wnd4r2","frp2r1"],["wnd4r2","frp2r2"],["wnd4r2","frp2r3"],
 		  
-		  
-		  
-		  
-		  
 		  // Point
 		  {"beamSpring":1500000,"beamDamp":50},
 		  ["wnd1r2","fgd2r2"],
@@ -182,6 +188,7 @@
 		  ["wnd1c1","fgd2c0"],
           ["wnd1l1","fgd2l1"],
 		  ["wnd1l2","fgd2l2"],
+*/		  
 
 
 		  

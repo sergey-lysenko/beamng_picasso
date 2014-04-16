@@ -26,13 +26,13 @@
 		 {"collision":true}
          {"group":"rear_floor"},
 		 
-         {"nodeWeight":2.3},
+         {"nodeWeight":2.2},
          ["rftl2",-0.687,3.397,0.558],
          ["rftr2",0.687,3.397,0.558],
          ["rftl1",-0.336,3.397,0.558],
          ["rftr1",0.336,3.397,0.558],
 
-         {"nodeWeight":1.7},
+         {"nodeWeight":1.6},
          ["rftc1",0,3.397,0.558],
 
          ["rfbl2",-0.687,3.397,0.342],
@@ -48,7 +48,8 @@
          ["rfbc3",0,4.257,0.442],
          ["rfbr5",0.336,4.257,0.442],
          ["rfbr6",0.67761,4.25712,0.44862],
-         ["rftl4",-0.687,3.79,0.558],
+         
+		 ["rftl4",-0.687,3.79,0.558],
          ["rftl3",-0.336,3.79,0.558],
          ["rftc2",0,3.79,0.558],
          ["rftr3",0.336,3.79,0.558],
@@ -159,18 +160,18 @@
           ["rfb1l2","rft1l1"],["rfb1l1","rft1c0"],["rfb1c0","rft1r1"],["rfb1r1","rft1r2"],
 	  
           // Internal rigidifying diagonals
-		  {"beamSpring":4000000,"beamDamp":50},
+		  {"beamSpring":3000000,"beamDamp":50},
           ["rftc1","rfbl3"],["rfbc1","rftl3"],["rftl1","rfbc2"],["rfbl1","rftc2"],["rftl1","rfbl4"],["rfbl1","rftl4"],["rftl2","rfbl3"],["rfbl2","rftl3"],
           ["rftc2","rfbl5"],["rfbc2","rftl5"],["rftl3","rfbc3"],["rfbl3","rftc3"],["rftl3","rfbl6"],["rfbl3","rftl6"],["rftl4","rfbl5"],["rfbl4","rftl5"],
           ["rftc1","rfbr3"],["rfbc1","rftr3"],["rftr1","rfbc2"],["rfbr1","rftc2"],["rftr1","rfbr4"],["rfbr1","rftr4"],["rftr2","rfbr3"],["rfbr2","rftr3"],
           ["rftc2","rfbr5"],["rfbc2","rftr5"],["rftr3","rfbc3"],["rfbr3","rftc3"],["rftr3","rfbr6"],["rfbr3","rftr6"],["rftr4","rfbr5"],["rfbr4","rftr5"],
 
-		  
           // To front floor
-		  {"beamSpring":1000000,"beamDamp":50},
+		  {"beamSpring":1000000,"beamDamp":250},
           ["rft1l2","fft1l2"],["rft1l1","fft1l1"],["rft1c0","fft1c0"],["rft1r1","fft1r1"],["rft1r2","fft1r2"],
           ["rfb1l2","ffb1l2"],["rfb1l1","ffb1l1"],["rfb1c0","ffb1c0"],["rfb1r1","ffb1r1"],["rfb1r2","ffb1r2"],
 
+		  /*
           ["rft1l2","fft1l2"],["rft1l2","fft2l3"],["rft1l2","fft2l2"],["rft1l2","fft2l1"],["rft1l2","ffb2l3"],["rft1l2","ffb2l2"],["rft1l2","ffb2l1"],
 		  ["rft1l1","fft1l1"],["rft1l1","fft2l2"],["rft1l1","fft2l1"],["rft1l1","fft2c0"],["rft1l1","ffb2l2"],["rft1l1","ffb2l1"],["rft1l1","ffb2c0"],
 		  ["rft1c0","fft1c0"],["rft1c0","fft2r1"],["rft1c0","fft2c0"],["rft1c0","fft2l1"],["rft1c0","ffb2r1"],["rft1c0","ffb2c0"],["rft1c0","ffb2l1"],
@@ -181,13 +182,20 @@
 		  ["rfb1c0","ffb1c0"],["rfb1c0","fft2r1"],["rfb1c0","fft2c0"],["rfb1c0","fft2l1"],["rfb1c0","ffb2r1"],["rfb1c0","ffb2c0"],["rfb1c0","ffb2l1"],
 		  ["rfb1r1","ffb1r1"],["rfb1r1","fft2r2"],["rfb1r1","fft2r1"],["rfb1r1","fft2c0"],["rfb1r1","ffb2r2"],["rfb1r1","ffb2r1"],["rfb1r1","ffb2c0"],
 		  ["rfb1r2","ffb1r2"],["rfb1r2","fft2r3"],["rfb1r2","fft2r2"],["rfb1r2","fft2r1"],["rfb1r2","ffb2r3"],["rfb1r2","ffb2r2"],["rfb1r2","ffb2r1"],
+		  */
 		  
 		  // Anti-hinging beams
-		  ["rftr1","fft2c0"],["rftr1","fft2l1"],["rftr1","fft2l2"],["rftr1","fft2l3"],["rftr1","ffb2l1"],["rftr1","ffb2l2"],["rftr1","ffb2l3"],
-		  ["rftr2","fft2c0"],["rftr2","fft2l1"],["rftr2","fft2l2"],["rftr2","fft2l3"],["rftr2","ffb2l1"],["rftr2","ffb2l2"],["rftr2","ffb2l3"],
-		  ["rftl1","fft2c0"],["rftl1","fft2r1"],["rftl1","fft2r2"],["rftl1","fft2r3"],["rftl1","ffb2r1"],["rftl1","ffb2r2"],["rftl1","ffb2r3"],
-		  ["rftl2","fft2c0"],["rftl2","fft2r1"],["rftl2","fft2r2"],["rftl2","fft2r3"],["rftl2","ffb2r1"],["rftl2","ffb2r2"],["rftl2","ffb2r3"],
-		  
+		  {"beamSpring":1000000,"beamDamp":500},
+		  ["rftr1","fft2l1"],
+		  ["rftr2","fft2l3"],
+		  ["rftl1","fft2r1"],
+		  ["rftl2","fft2r3"],
+		  /*
+		  ["rftr1","fft2c0"],["rftr1","fft2l2"],["rftr1","fft2l3"],["rftr1","ffb2l1"],["rftr1","ffb2l2"],["rftr1","ffb2l3"],
+		  ["rftr2","fft2c0"],["rftr2","fft2l1"],["rftr2","fft2l3"],["rftr2","ffb2l1"],["rftr2","ffb2l2"],["rftr2","ffb2l3"],
+		  ["rftl1","fft2c0"],["rftl1","fft2r2"],["rftl1","fft2r3"],["rftl1","ffb2r1"],["rftl1","ffb2r2"],["rftl1","ffb2r3"],
+		  ["rftl2","fft2c0"],["rftl2","fft2r1"],["rftl2","fft2r3"],["rftl2","ffb2r1"],["rftl2","ffb2r2"],["rftl2","ffb2r3"],
+		  */
 		  	  // other beams
      {"beamSpring":100000,"beamDamp":100},
      {"beamDeform":10000,"beamStrength":"50000"},
@@ -236,6 +244,11 @@
 	["type", "default", "description"],
      ["picasso_suspension_R", "picasso_suspension_R", "Rear Suspension"],
 	],
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],

@@ -5,12 +5,14 @@
 		"name":"Dashboard",
 	}
     "slotType" : "picasso_dashboard",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
     "slots": [
 	["type", "default", "description"],
  	 ["dashboard_compartment_cover", "dashboard_compartment_cover", "Dashboard Compartment Cover"],
- 	 ["picasso_bumper_rear_internal", "picasso_bumper_rear_internal", "Rear Internal Bumper"],
-	 //["picasso_rear_bumper", "picasso_rear_bumper", "Rear Bumper"],
-	 //["picasso_fender_back_internal", "picasso_fender_back_internal", "Back Internal Fenders"],
 	],
 
 	"flexbodies": [
@@ -74,7 +76,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":100000,"beamDamp":100},
+		  {"beamSpring":30000,"beamDamp":80},
 		  {"beamDeform":5000,"beamStrength":35500},
 		  
 		  //Longitudinal
@@ -162,6 +164,11 @@
 		"name":"Picasso Dashboard Boxes",
 	}
     "slotType" : "dashboard_compartment_cover",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["dashboard_compartment_cover", ["dashboard_compartment_cover"]],
@@ -192,7 +199,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":25000,"beamDamp":50},
+		  {"beamSpring":2500,"beamDamp":50},
 		  {"beamDeform":5000,"beamStrength":35500},
 		  
 		  //Longitudinal
@@ -217,14 +224,14 @@
 		  ["mdsh4r1","dsh4r1"],["mdsh4r2","dsh4r2"],
 
   		  //Spring
-		  {"beamSpring":500,"beamDamp":150},
+		  {"beamSpring":500,"beamDamp":50},
 		  {"beamPrecompression":1.3}, 
 		  ["mdsh3l1","dsh0l1"],["mdsh3l2","dsh0l1"],
 		  ["mdsh3r1","dsh0r1"],["mdsh3r2","dsh0r1"],
 		  {"beamPrecompression":1.3}, 
 		  
   		  //Lock
-		  {"beamSpring":50000,"beamDamp":150},
+		  {"beamSpring":5000,"beamDamp":50},
 		  {"beamStrength":250},
   		  ["mdsh3l1","dsh3l1"],["mdsh3l2","dsh3l2"],
 		  ["mdsh3r1","dsh3r1"],["mdsh3r2","dsh3r2"],

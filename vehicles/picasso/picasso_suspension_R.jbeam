@@ -22,7 +22,7 @@
 	],
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
-         {"nodeWeight":2},
+         {"nodeWeight":2.5},
          {"group":"rear_suspension"},
          {"frictionCoef":0.7},
          {"nodeMaterial":"|NM_METAL"},
@@ -67,8 +67,7 @@
  		 ["rsbr16",0.751,3.877,0.291],
  		 ["rsbr17",0.616,3.790,0.274],
 
-
-         {"nodeWeight":4},
+         {"nodeWeight":4.5},
  		 ["rsbr13",0.751,3.688,0.247],
  		 ["rsbr14",0.751,3.711,0.398],
  		 ["rsbl13",-0.751,3.688,0.247],
@@ -82,7 +81,7 @@
 	
 	"beams": [
 		  ["id1:", "id2:"],
-          {"beamSpring":1800000,"beamDamp":100},
+          {"beamSpring":5000000,"beamDamp":100},
           {"beamDeform":100000,"beamStrength":"1600000"},
 
 		  // Transverse
@@ -90,41 +89,49 @@
 		  ["rsbl1","rsbl2"],["rsbl2","rsbl3"],["rsbl3","rsbl4"],["rsbl4","rsbl1"],
 		  ["rsbr1","rsbr2"],["rsbr2","rsbr3"],["rsbr3","rsbr4"],["rsbr4","rsbr1"],
 
+          {"beamSpring":2000000,"beamDamp":100},
 		  // Transverse diagonal
 		  ["rsbc1","rsbc3"],["rsbc2","rsbc4"],["rsbc3","rsbc1"],["rsbc4","rsbc2"],
 		  ["rsbl1","rsbl3"],["rsbl2","rsbl4"],["rsbl3","rsbl1"],["rsbl4","rsbl2"],
 		  ["rsbr1","rsbr3"],["rsbr2","rsbr4"],["rsbr3","rsbr1"],["rsbr4","rsbr2"],
 
+          {"beamSpring":1400000,"beamDamp":100},
   		  // Longitudinal
 		  ["rsbc1","rsbl1"],["rsbc2","rsbl2"],["rsbc3","rsbl3"],["rsbc4","rsbl4"],
 		  ["rsbc1","rsbr1"],["rsbc2","rsbr2"],["rsbc3","rsbr3"],["rsbc4","rsbr4"],
 
+          {"beamSpring":1400000,"beamDamp":100},
   		  // Longitudinal diagonal
 		  ["rsbc1","rsbl2"],["rsbc2","rsbl3"],["rsbc3","rsbl4"],["rsbc4","rsbl1"],
 		  ["rsbl1","rsbc2"],["rsbl2","rsbc3"],["rsbl3","rsbc4"],["rsbl4","rsbc1"],
 		  ["rsbc1","rsbr2"],["rsbc2","rsbr3"],["rsbc3","rsbr4"],["rsbc4","rsbr1"],
 		  ["rsbr1","rsbc2"],["rsbr2","rsbc3"],["rsbr3","rsbc4"],["rsbr4","rsbc1"],
 
+          {"beamSpring":1400000,"beamDamp":100},
   		  // Internal diagonal
 		  ["rsbc1","rsbl3"],["rsbc2","rsbl4"],["rsbc3","rsbl1"],["rsbc4","rsbl2"],
 		  ["rsbc1","rsbr3"],["rsbc2","rsbr4"],["rsbc3","rsbr1"],["rsbc4","rsbr2"],
 
+          {"beamSpring":5000000,"beamDamp":100},
   		  // Transverse
           ["rsbl5","rsbl6"],["rsbl6","rsbl7"],["rsbl7","rsbl8"],["rsbl8","rsbl5"],
           ["rsbl9","rsbl10"],["rsbl10","rsbl11"],["rsbl11","rsbl12"],["rsbl12","rsbl9"],
           ["rsbr5","rsbr6"],["rsbr6","rsbr7"],["rsbr7","rsbr8"],["rsbr8","rsbr5"],
           ["rsbr9","rsbr10"],["rsbr10","rsbr11"],["rsbr11","rsbr12"],["rsbr12","rsbr9"],
 		  
+          {"beamSpring":1400000,"beamDamp":100},
 		  // Transverse diagonal
           ["rsbl5","rsbl7"],["rsbl6","rsbl8"],["rsbl7","rsbl5"],["rsbl8","rsbl6"],
           ["rsbl9","rsbl11"],["rsbl10","rsbl12"],["rsbl11","rsbl9"],["rsbl12","rsbl10"],
           ["rsbr5","rsbr7"],["rsbr6","rsbr8"],["rsbr7","rsbr5"],["rsbr8","rsbr6"],
           ["rsbr9","rsbr11"],["rsbr10","rsbr12"],["rsbr11","rsbr9"],["rsbr12","rsbr10"],
 
+          {"beamSpring":1400000,"beamDamp":100},
    		  // Longitudinal
           ["rsbl1","rsbl5"],["rsbl2","rsbl6"],["rsbl3","rsbl11"],["rsbl4","rsbl12"],["rsbl7","rsbl10"],["rsbl8","rsbl9"],
           ["rsbr1","rsbr5"],["rsbr2","rsbr6"],["rsbr3","rsbr11"],["rsbr4","rsbr12"],["rsbr7","rsbr10"],["rsbr8","rsbr9"],
 		  
+          {"beamSpring":1400000,"beamDamp":100},
   		  // Longitudinal diagonal
           ["rsbl1","rsbl6"],["rsbl2","rsbl5"],["rsbl3","rsbl12"],["rsbl4","rsbl11"],["rsbl7","rsbl9"],["rsbl8","rsbl10"],
           ["rsbr1","rsbr6"],["rsbr2","rsbr5"],["rsbr3","rsbr12"],["rsbr4","rsbr11"],["rsbr7","rsbr9"],["rsbr8","rsbr10"],
@@ -168,10 +175,12 @@
 		  ["rsbr7","rsbr12"],
 		  
 		  // Link arm
+          {"beamSpring":1400000,"beamDamp":100},
 		  ["rsbl0","rsbl5"],["rsbl0","rsbl6"],["rsbl0","rsbl7"],["rsbl0","rsbl8"],
 		  ["rsbr0","rsbr5"],["rsbr0","rsbr6"],["rsbr0","rsbr7"],["rsbr0","rsbr8"],
 		  
 		  // Wheel arm
+          {"beamSpring":1400000,"beamDamp":100},
           ["rsbl13","rsbl9"],["rsbl13","rsbl10"],["rsbl13","rsbl11"],["rsbl13","rsbl12"],["rsbl13","rsbl15"], 
           ["rsbl14","rsbl9"],["rsbl14","rsbl10"],["rsbl14","rsbl11"],["rsbl14","rsbl12"],["rsbl13","rsbl16"], 
           ["rsbl15","rsbl9"],["rsbl15","rsbl10"],["rsbl15","rsbl11"],["rsbl15","rsbl12"], 
@@ -188,7 +197,7 @@
 
 		  
    		  // Internal Diagonal
-		  
+          {"beamSpring":2400000,"beamDamp":100},
 		  ["rsbl9","ax1r"],["rsbl10","ax1r"],["rsbl11","ax1r"],["rsbl12","ax1r"],["rsbl13","ax1r"],["rsbl14","ax1r"],["rsbl15","ax1r"],["rsbl16","ax1r"],["rsbl17","ax1r"],
 		  ["rsbr9","ax1l"],["rsbr10","ax1l"],["rsbr11","ax1l"],["rsbr12","ax1l"],["rsbr13","ax1l"],["rsbr14","ax1l"],["rsbr15","ax1l"],["rsbr16","ax1l"],["rsbr17","ax1l"],
 
@@ -199,6 +208,7 @@
  		  //["rsbl13","rsbr14"],["rsbl14","rsbr15"],["rsbl15","rsbr16"],["rsbl16","rsbr13"],
  		  //["rsbl13","rsbr16"],["rsbl14","rsbr13"],["rsbl15","rsbr14"],["rsbl16","rsbr15"],
 
+          {"beamSpring":1400000,"beamDamp":100},
  		  ["rsbl13","rsbc1"],["rsbl14","rsbc2"],["rsbl15","rsbc3"],["rsbl16","rsbc4"],
  		  ["rsbr13","rsbc1"],["rsbr14","rsbc2"],["rsbr15","rsbc3"],["rsbr16","rsbc4"],
  		  ["rsbl13","rsbc3"],["rsbl14","rsbc4"],["rsbl15","rsbc1"],["rsbl16","rsbc2"],
@@ -207,6 +217,7 @@
  		  ["rsbr0","rsbc1"],["rsbr0","rsbc2"],["rsbr0","rsbc3"],["rsbr0","rsbc4"],
 		  
 		  
+          {"beamSpring":1400000,"beamDamp":100},
   	   // Additional beams for place of contact with air cushion
 	  ["acll1","rsbl13"],["acll1","rsbl14"],["acll1","rsbl15"],["acll1","rsbl16"],
 	  ["acll2","rsbl13"],["acll2","rsbl14"],["acll2","rsbl15"],["acll2","rsbl16"],
@@ -250,7 +261,11 @@
 		"name":"Rear Shocks",
 	}
     "slotType" : "picasso_shocks_R",
-
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
          ["mesh", "[group]:"],
 		 ["rear_suspension_shock", ["rear_suspension_shock"]],
@@ -278,7 +293,7 @@
 		  ["id1:", "id2:"],
 		  
          {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":0.85, "beamShortBound":0.85}, 
-         {"beamSpring":30,"beamDamp":2500},
+         {"beamSpring":30,"beamDamp":2050},
          {"beamDeform":100000,"beamStrength":"14600000"},
 		 {"beamLimitSpring":500000,"beamLimitDamp":100}
 
@@ -315,7 +330,11 @@
 		"name":"Rear Air Suspension",
 	}
     "slotType" : "picasso_suspension_R_aircushion",
-
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
          ["mesh", "[group]:"],
 		 ["rear_suspension_cushion", ["rear_suspension_cushion"]],

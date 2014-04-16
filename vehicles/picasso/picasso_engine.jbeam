@@ -5,6 +5,11 @@
 		"name":"EP6DT THP150",
 	}
     "slotType" : "picasso_engine",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"slots": [
 		["type", "default", "description"]
 		//["picasso_exhaust","picasso_exhaust", "Picasso Exhaust"],
@@ -44,7 +49,7 @@
 		 {"selfCollision":true},
 		 {"collision":true}
 		 {"group":"Engine"},
-         {"nodeWeight":5},
+         {"nodeWeight":4},
 		 ["enmlr1",-0.54453,0.74361,0.72368],
          ["enmlr2",-0.54453,0.84016,0.72368],
          ["enmlr3",-0.46224,0.84029,0.72383],
@@ -71,15 +76,12 @@
          ["engu2",0.06267,0.92472,0.36178],
          ["engu3",-.38103,0.92472,0.36178],
          ["engu4",-.38103,0.66092,0.36178],
-		 
-		 
-		 
 	],
 	
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":100000,"beamDamp":250},
+		  {"beamSpring":1300000,"beamDamp":200},
 		  {"beamDeform":2200000,"beamStrength":"FLT_MAX"},
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
          

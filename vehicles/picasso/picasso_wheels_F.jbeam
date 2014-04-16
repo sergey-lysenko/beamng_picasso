@@ -7,11 +7,11 @@
     "slotType" : "picasso_wheels_F",
 	"selfCollisionThickness":1,
 	"remoteCollisionThickness":1,
-	"scalenodeWeight":0.89,
-	"scalebeamSpring":0.83,
-	"scalebeamDamp":0.84,
-	"scalebeamDeform":0.6,
-	"scalebeamStrength":0.84,
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 		 ["mesh", "[group]:", "nonFlexMaterials"],
 		 //wheels
@@ -23,9 +23,9 @@
 		 //rear wheel nodes
 		 {"frictionCoef":0.7},
 		 {"nodeMaterial":"|NM_METAL"},
-		 {"selfCollision":true}
-		 {"collision":true}
-		 {"nodeWeight":3},
+		 {"selfCollision":false}
+		 {"collision":false}
+		 {"nodeWeight":6},
 		 {"group":"front_right_wheel"},
 		 //["fwil", -0.38605, 0.9532, 0.33295],
 		 //["fwil", -0.57890, 0.95151, 0.33868],
@@ -34,8 +34,8 @@
 		 //["fwir", 0.38605, 0.9532, 0.33295],
 		 //["fwir", 0.57890, 0.95151, 0.33868],
 		 ["fwir", 0.77174, 0.94983, 0.34440],
-		 {"selfCollision":true}
-		 {"collision":true}
+		 {"selfCollision":false}
+		 {"collision":false}
 		 {"group":"front_right_wheel"},
 		 ["fwml", -0.93414, 0.94839, 0.34905],
 		 {"group":"front_left_wheel"},
@@ -46,9 +46,9 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  //rear wheels
+		  //front wheels
 		  {"breakGroupType":0},
-		  {"beamSpring":7001000,"beamDamp":45},
+		  {"beamSpring":6000000,"beamDamp":45},
 		  {"beamDeform":65000,"beamStrength":620000},
 		  ["fwil","fwml"],
 		  ["fwir","fwmr"],
@@ -73,7 +73,7 @@
 			{"beamSpring":1281000, "beamDamp":15},
 			{"hubBeamDeform":90000, "hubBeamStrength":160000},
 			{"beamDeform":120000,"beamStrength":320000},
-			{"hubNodeWeight":0.4},
+			{"hubNodeWeight":0.5},
 			{"hubNodeMaterial":"|NM_METAL"},
 			{"hubFrictionCoef":0.7},
 			
@@ -83,7 +83,7 @@
 			{"springExpansion":1500000, "dampExpansion":15},
 			{"nodeWeight":0.4},
 			{"nodeMaterial":"|NM_RUBBER"},
-			{"frictionCoef":1.4},
+			{"frictionCoef":1.6},
 			
 			//
 			{"pressurePSI":50},

@@ -5,6 +5,11 @@
 		"name":"Rear Pillars",
 	}
     "slotType" : "picasso_rear_pillars",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"slots": [
 	["type", "default", "description"],
 	  ["picasso_rear_sideglass", "picasso_rear_sideglass", "Rear Side Glass"],
@@ -22,12 +27,18 @@
          {"nodeMaterial":"|NM_METAL"},
          {"collision":true}
          {"selfCollision":true}
+		 
+         {"nodeWeight":1.1},
+   		 ["rrp1l3", 0.32367, 3.79627, 1.51425],
+   		 ["rrp2l3", 0.57431, 3.81146, 1.49459],
+   		 ["rrp1c3", 0, 3.79367, 1.51868],
+
+   		 ["rrp3r1", -0.63442, 3.85577, 1.36498],
+   		 ["rrp3l1", 0.63442, 3.85577, 1.36498],
 
          {"nodeWeight":1},
-   		 ["rrp3l1", 0.63442, 3.85577, 1.36498],
    		 ["rrp3l2", 0.74014, 3.98172, 1.38580],
    		 ["rrp3l3", 0.65241, 3.95986, 1.38702],
-   		 ["rrp3r1", -0.63442, 3.85577, 1.36498],
    		 ["rrp3r2", -0.74014, 3.98172, 1.38580],
    		 ["rrp3r3", -0.65241, 3.95986, 1.38702],
 
@@ -37,14 +48,12 @@
    		 ["rrp4r1", -.76732, 3.46487, 1.39133],
    		 ["rrp4r2", -.74570, 3.59057, 1.39011],
    		 ["rrp4r3", -.68410, 3.51730, 1.38796],
-
+		 
          {"nodeWeight":0.8},
    		 ["rrp1l1", 0.32328, 3.60391, 1.54105],
    		 ["rrp1l2", 0.32529, 3.72235, 1.57675],
-   		 ["rrp1l3", 0.32367, 3.79627, 1.51425],
    		 ["rrp2l1", 0.52605, 3.65227, 1.52317],
    		 ["rrp2l2", 0.67493, 3.72353, 1.55743],
-   		 ["rrp2l3", 0.57431, 3.81146, 1.49459],
 
    		 ["rrp5l1", 0.66745, 3.49155, 1.59821],
    		 ["rrp5l2", 0.66120, 3.35293, 1.61897],
@@ -54,7 +63,6 @@
 		 
    		 ["rrp1c1", 0, 3.58374, 1.55335],
    		 ["rrp1c2", 0, 3.71297, 1.57692],
-   		 ["rrp1c3", 0, 3.79367, 1.51868],
 		 
    		 ["rrp1r1", -0.32328, 3.60391, 1.54105],
    		 ["rrp1r2", -0.32529, 3.72235, 1.57675],
@@ -86,7 +94,7 @@
  		 ["mbfi3r6", -.84993, 3.74501, 1.17402],
 		 
          {"group":""},
-         {"nodeWeight":0.8},
+         {"nodeWeight":1.0},
 		 ["rdhl", 0.40337, 3.76239, 1.54477],
 		 ["rdhr", -.40337, 3.76239, 1.54477],
 
@@ -94,11 +102,11 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":700000,"beamDamp":150},
+		  {"beamSpring":500000,"beamDamp":150},
 		  {"beamDeform":5000,"beamStrength":235500},
 		  
-		  ["rdhl","rrp1l1"],["rdhl","rrp1l3"],["rdhl","rrp2l1"],["rdhl","rrp2l2"],["rdhl","rrp2l3"],["rdhl","rrp3l1"],["rdhl","rrp3l2"],["rdhl","rrp3l3"],
-		  ["rdhr","rrp1r1"],["rdhr","rrp1r3"],["rdhr","rrp2r1"],["rdhr","rrp2r2"],["rdhr","rrp2r3"],["rdhr","rrp3r1"],["rdhr","rrp3r2"],["rdhr","rrp3r3"],
+		  ["rdhl","rrp1l1"],["rdhl","rrp1l3"],["rdhl","rrp2l1"],["rdhl","rrp2l2"],["rdhl","rrp2l3"],["rdhl","rrp3l1"],["rdhl","rrp3l2"],["rdhl","rrp3l3"],["rdhl","arc1l3"],["rdhl","arc2l3"],     		  
+		  ["rdhr","rrp1r1"],["rdhr","rrp1r3"],["rdhr","rrp2r1"],["rdhr","rrp2r2"],["rdhr","rrp2r3"],["rdhr","rrp3r1"],["rdhr","rrp3r2"],["rdhr","rrp3r3"],["rdhr","arc1r3"],["rdhr","arc2r3"],     		  
 
 		  // Longitudinal
 		  ["rrp1c1","rrp1l1"],["rrp2l1","rrp1l1"],["rrp2l1","rrp3l1"],["mbfi3l3","rrp3l1"],
@@ -178,7 +186,7 @@
   		 ["mbfi2r1","bfi2r1"],["mbfi2r2","bfi2r2"],["mbfi3r1","bfi3r1"],["mbfi3r3","bfi3r3"],["mbfi3r4","bfi3r4"],["mbfi3r5","bfi3r5"],["mbfi3r6","bfi3r6"],
 		 
  		  // Structural rigidification beams
-		  {"beamSpring":1400000,"beamDampkk":150},
+		  {"beamSpring":1000000,"beamDampkk":150},
 		  ["rrp1l3","rrp3l1"],["rrp1l3","rrp3l3"],["rrp1l1","rrp3l1"],["rrp1l1","rrp3l3"],
 		  ["rrp1r3","rrp3r1"],["rrp1r3","rrp3r3"],["rrp1r1","rrp3r1"],["rrp1r1","rrp3r3"],
 

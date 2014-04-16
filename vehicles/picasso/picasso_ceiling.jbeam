@@ -5,7 +5,11 @@
 		"name":"Sunroof",
 	}
     "slotType" : "picasso_ceiling",
-	
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"slots": [
 	["type", "default", "description"],
 	 ["picasso_glassroof", "picasso_glassroof", "Glass Roof"],
@@ -23,7 +27,7 @@
          {"nodeMaterial":"|NM_METAL"},
          {"collision":true}
          {"selfCollision":true}
-         {"nodeWeight":0.65},
+         {"nodeWeight":0.75},
 
    		 ["arc1c1", 0, 3.60853, 1.67142],
    		 ["arc1c3", 0, 3.72426, 1.65157],
@@ -65,12 +69,11 @@
    		 ["arc6r3", -.65287, 2.25485, 1.62698],
 
    		 ["arc7l1", 0.59589, 2.10405, 1.67730],
-   		 ["arc7l2", 0.65861, 2.05494, 1.65440],
-   		 ["arc7l3", 0.67183, 2.01470, 1.58276],
    		 ["arc7r1", -.59589, 2.10405, 1.67730],
-   		 ["arc7r2", -.65861, 2.05494, 1.65440],
-   		 ["arc7r3", -.67183, 2.01470, 1.58276],
 		 
+   		 ["arc7l3", 0.69343, 2.00068, 1.59458],
+   		 ["arc7r3", -.69343, 2.00068, 1.59458],
+
    		 ["cei1l1", 0.32711, 3.54956, 1.50314],
    		 ["cei2l1", 0.55482, 3.50213, 1.50333],
    		 ["cei3l1", 0.56857, 3.30139, 1.51348],
@@ -132,17 +135,15 @@
    		 ["mrrp5r1", -.66745, 3.49155, 1.59821],
    		 ["mrrp5r2", -.66120, 3.35293, 1.61897],
 		 
-		 
-		 
-		 
-		 
-		 
+         {"nodeWeight":0.8},
+   		 ["arc7l2", 0.65861, 2.05494, 1.65440],
+   		 ["arc7r2", -.65861, 2.05494, 1.65440],
      ]
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":150000,"beamDamp":120},
-		  {"beamDeform":10000,"beamStrength":235500},
+		  {"beamSpring":300000,"beamDamp":125},
+		  {"beamDeform":15000,"beamStrength":435500},
 		  
 		  // Longitudinal
 		  ["arc1c1","arc1l1"],["arc1l1","arc2l1"],
@@ -162,7 +163,6 @@
 		  ["cei7r1","cei8r1"],["cei8r1","cei8l1"],["cei7l1","cei8l1"],
 		  
 		  // Traversal
-		  {"beamSpring":1500000,"beamDamp":120},
           ["arc1c1","mrrp1c2"],["arc1c3","mrrp1c2"],["arc1c1","mrrp1c1"],["arc1c3","mrrp1c3"],
           ["arc1l1","mrrp1l2"],["arc1l3","mrrp1l2"],["arc1l1","mrrp1l1"],["arc1l3","mrrp1l3"],
           ["arc2l1","mrrp2l2"],["arc2l3","mrrp2l2"],["arc2l1","mrrp2l1"],["arc2l3","mrrp2l3"],
@@ -180,7 +180,6 @@
 
 		  ["ceb2l2","ceb1l2"],["ceb2l1","ceb1l1"],["ceb2c1","ceb1c1"],["ceb2r1","ceb1r1"],["ceb2r2","ceb1r2"],
 
-		  {"beamSpring":150000,"beamDamp":120},
   		  // Diagonal
 		  ["arc1c1","mrrp1l1"],["arc1l1","mrrp2l1"],
 		  ["arc1c1","mrrp1r1"],["arc1r1","mrrp2r1"],
@@ -221,7 +220,6 @@
   		  ["ceb1l2","ceb2l1"],["ceb1l1","ceb2c1"],["ceb1c1","ceb2r1"],["ceb1r1","ceb2r2"],
 		  
 		  // Upper beam
-		  {"beamSpring":150000,"beamDamp":120},
 		  ["arc3l1","arc3l2"],["mrrp5l2","arc3l2"],["mrrp5l2","arc3l1"],
 		  ["arc3l1","mrrp5l1"],["arc3l1","mrrp5l2"],["arc3l1","mrrp5l3"],["arc3l1","mrrp2l2"],["arc3l1","arc2l1"],["arc3l1","arc2l3"],
 		  ["arc3l2","mrrp5l1"],["arc3l2","mrrp5l2"],["arc3l2","mrrp5l3"],["arc3l2","mrrp2l2"],["arc3l2","arc2l1"],["arc3l2","arc2l3"],
@@ -243,7 +241,6 @@
 
 		  
 		  // Support
-		  {"beamSpring":150000,"beamDamp":120},
 		  ["mrrp5l1","mrrp2l2"],["mrrp5l1","arc2l1"],["mrrp5l1","arc2l3"],["mrrp5l3","mrrp2l2"],["mrrp5l3","arc2l1"],["mrrp5l3","arc2l3"],
 		  ["arc7l2","arc6l1"],["arc7l2","arc6l2"],["arc7l2","arc6l3"],
 
@@ -251,7 +248,6 @@
 		  ["arc7r2","arc6r1"],["arc7r2","arc6r2"],["arc7r2","arc6r3"],
 		  
 		  // Ceiling
-		  {"beamSpring":150000,"beamDamp":120},
 		  ["cei1c1","cei1l1"],["cei2l1","cei1l1"],["cei2l1","cei3l1"],["cei4l1","cei3l1"],["cei4l1","cei5l1"],
 		  ["cei1c1","cei1r1"],["cei2r1","cei1r1"],["cei2r1","cei3r1"],["cei4r1","cei3r1"],["cei4r1","cei5r1"],
 		  ["cei1c1","arc1c1"],["cei1c1","mrrp1c1"],["cei1c1","mrrp1l1"],["cei1c1","mrrp1r1"],
@@ -282,7 +278,6 @@
 		  ["cew1c1","ceb1l1"],["cew1c1","ceb1r1"],
 		  ["cew1l1","ceb1c1"],["cew1r1","ceb1c1"],
 		  
-		  {"beamSpring":150000,"beamDamp":120},
 		  //Upper beam
 		  ["ceb2l2","arc6l1"],["ceb2l2","arc6l2"],["ceb2l2","arc6l3"],["ceb2l2","arc7l1"],["ceb2l2","arc7l2"],["ceb2l2","arc7l3"],
 		  ["ceb2l1","cei8l1"],["ceb2l1","arc5l3"],["ceb2l1","arc6l3"],["ceb2l1","arc7l1"],["ceb2l1","arc7l2"],["ceb2l1","arc7l3"],
@@ -296,22 +291,6 @@
 		  ["cei7r1","ceb2r2"],["cei7r1","ceb2r1"],["cei7r1","arc6r1"],
 		  
 		  //Mount
-		  {"beamSpring":150000,"beamDamp":120},
-		 ["frp2l2","ceb2l2"],["frp2l1","ceb2l2"],["frp2l3","ceb2l2"],["frp6l2","ceb2l2"],["frp6l1","ceb2l2"],["frp6l3","ceb2l2"],
-		 ["frp6l2","ceb2l1"],["frp6l1","ceb2l1"],["frp6l3","ceb2l1"],["frp2l2","ceb2l1"],["frp2l1","ceb2l1"],["frp2l3","ceb2l1"],["frp7c2","ceb2l1"],["frp7c1","ceb2l1"],["frp7c3","ceb2l1"],
-		 ["frp7c2","ceb2c1"],["frp7c1","ceb2c1"],["frp7c3","ceb2c1"],["frp6r2","ceb2c1"],["frp6r1","ceb2c1"],["frp6r3","ceb2c1"],["frp6l2","ceb2c1"],["frp6c1","ceb2c1"],["frp6l3","ceb2c1"],
-		 ["frp6r2","ceb2r1"],["frp6r1","ceb2r1"],["frp6r3","ceb2r1"],["frp2r2","ceb2r1"],["frp2r1","ceb2r1"],["frp2r3","ceb2r1"],["frp7c2","ceb2r1"],["frp7c1","ceb2r1"],["frp7c3","ceb2r1"],
-		 ["frp2r2","ceb2r2"],["frp2r1","ceb2r2"],["frp2r3","ceb2r2"],["frp6r2","ceb2r2"],["frp6r1","ceb2r2"],["frp6r3","ceb2r2"],
-		  
-		 ["arc7l1","frp1l1"],["arc7l1","frp1l2"],["arc7l1","frp1l3"],["arc7l1","frp2l1"],["arc7l1","frp2l2"],["arc7l1","frp2l3"],
-		 ["arc7l2","frp1l1"],["arc7l2","frp1l2"],["arc7l2","frp1l3"],["arc7l2","frp2l1"],["arc7l2","frp2l2"],["arc7l2","frp2l3"],
-		 ["arc7l3","frp1l1"],["arc7l3","frp1l2"],["arc7l3","frp1l3"],["arc7l3","frp2l1"],["arc7l3","frp2l2"],["arc7l3","frp2l3"],
-		 ["arc7r1","frp1r1"],["arc7r1","frp1r2"],["arc7r1","frp1r3"],["arc7r1","frp2r1"],["arc7r1","frp2r2"],["arc7r1","frp2r3"],
-		 ["arc7r2","frp1r1"],["arc7r2","frp1r2"],["arc7r2","frp1r3"],["arc7r2","frp2r1"],["arc7r2","frp2r2"],["arc7r2","frp2r3"],
-		 ["arc7r3","frp1r1"],["arc7r3","frp1r2"],["arc7r3","frp1r3"],["arc7r3","frp2r1"],["arc7r3","frp2r2"],["arc7r3","frp2r3"],
-		  
-		  
-		  {"beamSpring":1500000,"beamDamp":120},
    		 ["mrrp1l1","rrp1l1"],
    		 ["mrrp1l2","rrp1l2"],
    		 ["mrrp2l1","rrp2l1"],
@@ -327,19 +306,28 @@
    		 ["mrrp2r2","rrp2r2"],
    		 ["mrrp5r1","rrp5r1"],
    		 ["mrrp5r2","rrp5r2"],
+		 
+   		 ["arc7l1","frp2l2"],["arc7l2","frp2l1"],["arc7l3","frp2l3"],
+   		 ["arc7r1","frp2r2"],["arc7r2","frp2r1"],["arc7r3","frp2r3"],
+		 ["arc6l3","frp1l3"],["ceb2l2","frp1l2"],["ceb2l1","frp6l2"],
+		 ["ceb2cs1","frp7c2"],
+		 ["arc6r3","frp1r3"],["ceb2r2","frp1r2"],["ceb2r1","frp6r2"],
+		 ["cei7l1","frp6l3"],["cei8l1","frp6l3"],["cei8l1","frp7c3"],["cei8r1","frp7c3"],["cei8r1","frp6r3"],["cei7r1","frp6r3"],
+		 
 
 		  // Structural rigidification beams
-         {"beamSpring":1400000,"beamDamp":150},
    		 ["cei5l1","cei8l1"],["cew1l1","cei7l1"],["cew2l1","cei7l1"],["cew1l1","cei5l1"],
    		 ["cei5r1","cei8r1"],["cew1r1","cei7r1"],["cew2r1","cei7r1"],["cew1r1","cei5r1"],
 		 
 		 ["cei3l1","rrp4l3"],["cei2l1","rrp4l3"],["cei2l1","rrp3l1"],["cei1l1","rrp3l1"],
 		 ["cei3r1","rrp4r3"],["cei2r1","rrp4r3"],["cei2r1","rrp3r1"],["cei1r1","rrp3r1"],
-		 
-         {"beamSpring":1000000,"beamDamp":100},
-		 ["frp6r3","cei8r1"],["frp6r3","cei7r1"],
-		 ["frp7c3","cei8l1"],["frp7c3","cei8r1"],
-		 ["frp6l3","cei8l1"],["frp6l3","cei7l1"],
+	 
+		 ["arc1l3","rrp1l3"],["arc1c3","rrp1c3"],["arc1r3","rrp1r3"],
+		 ["arc1c3","rrp1l3"],["arc1c3","rrp1r3"],
+		 ["arc1l3","rrp1c3"],["arc1r3","rrp1c3"],
+
+		  // Antihinging
+         ["arc7l3","cpl4l2"],["arc7r3","cpl4r2"],
 		 
 		  
      ]

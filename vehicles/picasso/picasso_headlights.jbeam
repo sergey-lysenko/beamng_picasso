@@ -5,6 +5,11 @@
 		"name":"Headlights",
 	}
     "slotType" : "picasso_headlights",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["Headlights", ["Headlights"]],
@@ -39,7 +44,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":300000,"beamDamp":100},
+		  {"beamSpring":150000,"beamDamp":100},
 		  {"beamDeform":15000,"beamStrength":235500},
 		  
 		  ["hdl1l1","hdl1l2"],["hdl1l1","hdl1l5"],["hdl1l1","hdl2l1"],["hdl1l1","hdl2l2"],

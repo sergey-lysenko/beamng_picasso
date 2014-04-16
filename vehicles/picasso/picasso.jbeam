@@ -25,6 +25,23 @@
 		"offset":{"x":0.89, "y":0.6, "z":0.6},
 		"fov":70,
 	 },
+	 
+	 	 "cameraExternal":{
+		"distance":6.5,
+		"distanceMin":3,
+		"offset":{"x":0.77, "y":0.6, "z":0.5},
+		"fov":65,
+	 },
+	 "camerasInternal":[
+		["x", "y", "z", "fov", "id1:", "id2:", "id3:", "id4:", "id5:", "id6:"],
+		{"nodeWeight":2},
+	    {"selfCollision":false}
+	    {"collision":false}
+		{"beamSpring":100000,"beamDamp":500},
+		[0.40, 2.2, 1.35, 80, "fft2c0","fft2l2","fft4c0","fft4l2","fft6c0","fft6l2"],
+		[0.0, 3.2, 1.35, 80, "fft1c0","fft1l1","fft1r1","fft2c0","fft2l1","fft2r1"],
+	 ],
+	 
 }
 
 "picasso_base": {
@@ -36,8 +53,15 @@
 	"slots": [
 	["type", "default", "description"],
      // Base
-	 ["picasso_girder_front", "picasso_girder_front", "Front Girder"],
      ["picasso_floor_front", "picasso_floor_front", "Front Floor"],
+	 ["picasso_girder_front", "picasso_girder_front", "Front Girder"],
+   	 ["picasso_longerons", "picasso_longerons", "Longerons"],
+ 	 ["picasso_crushbar", "picasso_crushbar", "Crush Bar"],
+     ["picasso_subframe", "picasso_subframe", "Subframe"],
+     ["picasso_suspension_F", "picasso_suspension_F", "Front Suspension"],
+     ["picasso_engine", "picasso_engine", "Engine"],
+	 
+	 // Back
      ["picasso_floor_back", "picasso_floor_back", "Rear Floor"],
   	 ["picasso_rear_suspension_mount", "picasso_rear_suspension_mount", "Rear Suspension Mount"],
 	],
@@ -52,13 +76,19 @@
 	"slots": [
 	["type", "default", "description"],
 	 // Body
-	 ["picasso_front_pillars", "picasso_front_pillars", "Front Pillars"],
+ 	 ["picasso_fender_front_internal", "picasso_fender_front_internal", "Front Internal Fenders"],
 	 ["picasso_pillars", "picasso_pillars", "Center Pillars"],
+	 ["picasso_front_pillars", "picasso_front_pillars", "Front Pillars"],
+	 
+	 // Rear
+	 ["picasso_fender_back_internal", "picasso_fender_back_internal", "Rear Internal Fenders"],
+  	 ["picasso_bumper_rear_internal", "picasso_bumper_rear_internal", "Rear Internal Bumper"],
+	 ["picasso_rear_bumper", "picasso_rear_bumper", "Reer Bumper"],
+	 
+	 // Top
      ["picasso_rear_pillars", "picasso_rear_pillars", "Rear Pillars"],
      ["picasso_ceiling", "picasso_ceiling", "Ceiling"],
-  	 ["picasso_bumper_rear_internal", "picasso_bumper_rear_internal", "Rear Internal Bumper"],
-	 ["picasso_rear_bumper", "picasso_rear_bumper", "Rear Bumper"],
-	 ["picasso_fender_back_internal", "picasso_fender_back_internal", "Back Internal Fenders"],
+
 	],
 }
 

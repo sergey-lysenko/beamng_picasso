@@ -187,15 +187,24 @@
 		  //["bfi1l2","mrftr1"],["bfi1l2","mrftr3"],["bfi1l3","mrftr1"],["bfi1l3","mrftr3"],["bfi1l3","mrftr5"],["bfi1l4","mrftr3"],["bfi1l4","mrftr5"],["bfi1l4","rltr1"],
 
 		  // Mount to front floor
-		  ["mfft1l2","fft1l2"],["mfft1l2","fft2l2"],["mfft1l2","fft2l3"],["mfft1l2","ffb2l2"],["mfft1l2","ffb2l3"],
-		  ["mfft1l3","fft1l3"],["mfft1l3","fft2l2"],["mfft1l3","fft2l3"],["mfft1l3","ffb2l2"],["mfft1l3","ffb2l3"],
-		  ["mffb1l2","ffb1l2"],["mffb1l2","fft2l2"],["mffb1l2","fft2l3"],["mffb1l2","ffb2l2"],["mffb1l2","ffb2l3"],
-		  ["mffb1l3","ffb1l3"],["mffb1l3","fft2l2"],["mffb1l3","fft2l3"],["mffb1l3","ffb2l2"],["mffb1l3","ffb2l3"],
-		  ["mfft1r2","fft1r2"],["mfft1r2","fft2r2"],["mfft1r2","fft2r3"],["mfft1r2","ffb2r2"],["mfft1r2","ffb2r3"],
-		  ["mfft1r3","fft1r3"],["mfft1r3","fft2r2"],["mfft1r3","fft2r3"],["mfft1r3","ffb2r2"],["mfft1r3","ffb2r3"],
-		  ["mffb1r2","ffb1r2"],["mffb1r2","fft2r2"],["mffb1r2","fft2r3"],["mffb1r2","ffb2r2"],["mffb1r2","ffb2r3"],
-		  ["mffb1r3","ffb1r3"],["mffb1r3","fft2r2"],["mffb1r3","fft2r3"],["mffb1r3","ffb2r2"],["mffb1r3","ffb2r3"],
-		  
+		  ["mfft1l2","fft1l2"],
+		  ["mfft1l3","fft1l3"],
+		  ["mffb1l2","ffb1l2"],
+		  ["mffb1l3","ffb1l3"],
+		  ["mfft1r2","fft1r2"],
+		  ["mfft1r3","fft1r3"],
+		  ["mffb1r2","ffb1r2"],
+		  ["mffb1r3","ffb1r3"],
+		  /*
+		  ["mfft1l2","fft2l2"],["mfft1l2","fft2l3"],["mfft1l2","ffb2l2"],["mfft1l2","ffb2l3"],
+		  ["mfft1l3","fft2l2"],["mfft1l3","fft2l3"],["mfft1l3","ffb2l2"],["mfft1l3","ffb2l3"],
+		  ["mffb1l2","fft2l2"],["mffb1l2","fft2l3"],["mffb1l2","ffb2l2"],["mffb1l2","ffb2l3"],
+		  ["mffb1l3","fft2l2"],["mffb1l3","fft2l3"],["mffb1l3","ffb2l2"],["mffb1l3","ffb2l3"],
+		  ["mfft1r2","fft2r2"],["mfft1r2","fft2r3"],["mfft1r2","ffb2r2"],["mfft1r2","ffb2r3"],
+		  ["mfft1r3","fft2r2"],["mfft1r3","fft2r3"],["mfft1r3","ffb2r2"],["mfft1r3","ffb2r3"],
+		  ["mffb1r2","fft2r2"],["mffb1r2","fft2r3"],["mffb1r2","ffb2r2"],["mffb1r2","ffb2r3"],
+		  ["mffb1r3","fft2r2"],["mffb1r3","fft2r3"],["mffb1r3","ffb2r2"],["mffb1r3","ffb2r3"],
+		  */
 		  // Mount to rear floor
 		  ["mrftl2","rftl2"],
 		  ["mrftl4","rftl4"],

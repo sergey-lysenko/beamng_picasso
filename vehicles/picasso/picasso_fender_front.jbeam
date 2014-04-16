@@ -5,11 +5,11 @@
 		"name":"Picasso Front Internal Fender",
 	}
     "slotType" : "picasso_fender_front_internal",
-	"scalenodeWeight":0.95,
-	"scalebeamSpring":0.75,
-	"scalebeamDamp":0.73,
-	"scalebeamDeform":0.36,
-	"scalebeamStrength":0.65,
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["front_fender_internal", ["front_fender_internal"]],
@@ -22,7 +22,7 @@
          {"nodeMaterial":"|NM_METAL"},
          {"collision":true}
          {"selfCollision":true}
-         {"nodeWeight":1},
+         {"nodeWeight":0.5},
   		 ["ffi1l1", 0.91923, 1.41485, 0.35482],
          ["ffi1l2", 0.91602, 1.46362, 0.39913],
          ["ffi2l1", 0.90989, 1.44755, 0.74576],
@@ -64,7 +64,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":100000,"beamDamp":200},
+		  {"beamSpring":50000,"beamDamp":100},
 		  {"beamDeform":5000,"beamStrength":35500},
 		  
 		  // Link with front floor
@@ -125,6 +125,12 @@
    		  // Link with longeron
 		  ["ffi6l0","lnur1"],["ffi6l0","lnur2"],["ffi6l1","lnur1"],["ffi6l1","lnur2"],["ffi6l2","lnur1"],["ffi6l2","lnur2"],["ffi6l3","lnur1"],["ffi6l3","lnur2"],
 		  ["ffi6r0","lnul1"],["ffi6r0","lnul2"],["ffi6r1","lnul1"],["ffi6r1","lnul2"],["ffi6r2","lnul1"],["ffi6r2","lnul2"],["ffi6r3","lnul1"],["ffi6r3","lnul2"],
+		  
+		  
+  		  // Antihinging
+		  ["ffi6l3","sfl0l2"],["ffi6r3","sfl0r2"],
+
+
 
 
 		  
@@ -137,11 +143,11 @@
 		"name":"Picasso Front Left Fender",
 	}
     "slotType" : "picasso_fender_front_left",
-	"scalenodeWeight":0.95,
-	"scalebeamSpring":0.75,
-	"scalebeamDamp":0.73,
-	"scalebeamDeform":0.36,
-	"scalebeamStrength":0.65,
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["front_fender_left", ["front_fender_left"]],
@@ -177,15 +183,16 @@
 
          {"collision":false}
          {"selfCollision":false}
-		 ["feil1", 0.84957, 0.87867, 0.75019],
-		 ["feil2", 0.82729, 1.21240, 0.27929],
+		 {"nodeWeight":0.6}
+		 ["feil1", 0.74957, 0.87867, 0.75019],
+		 ["feil2", 0.72729, 1.21240, 0.27929],
 
 		 
      ]
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":15000,"beamDamp":200},
+		  {"beamSpring":25000,"beamDamp":200},
 		  {"beamDeform":5000,"beamStrength":5500},
 
 		  // Longitudinal
@@ -231,6 +238,8 @@
 		  ["feul7","ffi2l1"],["feul7","ffi2l2"],
 		  ["feul8","fft4l3"],["feul8","fft4l3"],["feul8","ffb4l3"],
 		  ["feul9","fft4l3"],["feul9","fft4l3"],["feul9","ffb4l3"],
+
+
 		  
 		  {"beamType":"|SUPPORT"},
 		  ["feil1","fell6"],["feil1","fell7"],["feil1","fell8"],["feil1","fell9"],
@@ -248,11 +257,11 @@
 		"name":"Picasso Front Right Fender",
 	}
     "slotType" : "picasso_fender_front_right",
-	"scalenodeWeight":0.95,
-	"scalebeamSpring":0.75,
-	"scalebeamDamp":0.73,
-	"scalebeamDeform":0.36,
-	"scalebeamStrength":0.65,
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["front_fender_right", ["front_fender_right"]],
@@ -288,15 +297,16 @@
 
          {"collision":false}
          {"selfCollision":false}
-		 ["feir1", -0.84957, 1.07867, 0.75019],
-		 ["feir2", -0.82729, 1.41240, 0.27929],
+		 {"nodeWeight":0.6}
+		 ["feir1", -0.74957, 1.07867, 0.75019],
+		 ["feir2", -0.72729, 1.41240, 0.27929],
 
 		 
      ]
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":15000,"beamDamp":200},
+		  {"beamSpring":25000,"beamDamp":200},
 		  {"beamDeform":5000,"beamStrength":5500},
 
 		  // Longitudinal

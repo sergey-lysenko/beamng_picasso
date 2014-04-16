@@ -5,11 +5,11 @@
 		"name":"Std Front Girder",
 	}
     "slotType" : "picasso_girder_front",
-	"scalenodeWeight":0.95,
-	"scalebeamSpring":0.75,
-	"scalebeamDamp":0.73,
-	"scalebeamDeform":0.36,
-	"scalebeamStrength":0.65,
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["beam", ["beam"]],
@@ -41,8 +41,8 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":100000,"beamDamp":200},
-		  {"beamDeform":5000,"beamStrength":35500},
+		  {"beamSpring":1000000,"beamDamp":100},
+		  {"beamDeform":15000,"beamStrength":35500},
 		  
          // front bar - longitudinal
 		 ["fgd2c0","fgd2r1"],["fgd2r2","fgd2r1"],["fgd2r2","fgd2r3"],["fgd2r3","fft6r2"],["fgd2c0","fgd2l1"],["fgd2l2","fgd2l1"],["fgd2l2","fgd2l3"],["fgd2l3","fft6l2"],
@@ -57,6 +57,7 @@
          ["fft7l2","fgd2l2"],["fgd3l2","fgd2l2"],["fgd3l2","fft6l2"],["fft7l2","fgd3l2"],
          ["fft7l2","fgd2l3"],["fgd3l2","fgd2l3"],
 		 
+		  {"beamSpring":200000,"beamDamp":100},
 		 // front bar - diagonal
 		 ["fft6r2","fgd3r1"],["fft6r1","fgd3c0"],["fft6c0","fgd3l1"],["fft6l1","fgd3l2"],["fft6l2","fgd3l1"],["fft6l1","fgd3c0"],["fft6c0","fgd3r1"],["fft6r1","fgd3r2"],
 		 ["fgd3r2","fgd2r1"],["fgd3r1","fgd2c0"],["fgd3c0","fgd2l1"],["fgd3l1","fgd2l2"],["fgd3l2","fgd2l1"],["fgd3l1","fgd2c0"],["fgd3c0","fgd2r1"],["fgd3r1","fgd2r2"],

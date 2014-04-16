@@ -5,11 +5,11 @@
 		"name":"Picasso Front Bumper",
 	}
     "slotType" : "picasso_bumper_front",
-	"scalenodeWeight":0.95,
-	"scalebeamSpring":0.75,
-	"scalebeamDamp":0.73,
-	"scalebeamDeform":0.36,
-	"scalebeamStrength":0.65,
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["front_bumper", ["front_bumper"]],
@@ -97,7 +97,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":15000,"beamDamp":200},
+		  {"beamSpring":15000,"beamDamp":100},
 		  {"beamDeform":5000,"beamStrength":5500},
 
 		  // Longitudinal
@@ -184,7 +184,7 @@
 		  ["msfl0c0","fbll5"],["msfl0c0","fbll6"],["msfl0c0","fbll7"],["msfl0c0","fblc1"],["msfl0c0","fblr5"],["msfl0c0","fblr6"],["msfl0c0","fblr7"],
 		  
           // Mount
-		  {"beamSpring":500000,"beamDamp":100},
+		  {"beamSpring":50000,"beamDamp":100},
           ["mcbul2","cbul2"],
           ["mcbul1","cbul1"],
           ["mcbuc0","cbuc0"],
@@ -208,11 +208,11 @@
 		"name":"Picasso Internal Rear Bumper",
 	}
     "slotType" : "picasso_bumper_rear_internal",
-	"scalenodeWeight":0.95,
-	"scalebeamSpring":0.75,
-	"scalebeamDamp":0.73,
-	"scalebeamDeform":0.36,
-	"scalebeamStrength":0.65,
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["rear_internal_bumper", ["rear_internal_bumper"]],
@@ -256,6 +256,11 @@
 		"name":"Rear Bumper",
 	}
     "slotType" : "picasso_rear_bumper",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
@@ -326,7 +331,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":200000,"beamDamp":50},
+		  {"beamSpring":100000,"beamDamp":50},
 		  {"beamDeform":5000,"beamStrength":6000},
 		  
 		  // Longitudinal
