@@ -98,8 +98,7 @@
 	 ["sfl0l2","lnlr1"],["sfl0r2","lnll1"],["sfl0l2","lnlr2"],["sfl0r2","lnll2"],
 	 
 	 		  // Front suspension mount points
-		  //{"beamSpring":1600000,"beamDamp":100},
-          //{"beamDeform":1000000,"beamStrength":"1600000"},
+     {"beamDeform":500000,"beamStrength":"FLT_MAX"},
 	 {"beamSpring":3500000,"beamDamp":200},
      ["lsfr1","sfl3l1"],["lsfr1","sfl3l2"],["lsfr1","sfl2l1"],["lsfr1","sfl2l2"],
 	 ["lsfl1","sfl3r1"],["lsfl1","sfl3r2"],["lsfl1","sfl2r1"],["lsfl1","sfl2r2"],

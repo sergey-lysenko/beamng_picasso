@@ -185,9 +185,6 @@
 		  
           // Mount
 		  {"beamSpring":50000,"beamDamp":100},
-  		  // To fenders
-		  ["fell1","fbur2"],["feul1","fbur3"],["feul2","fbir5"],
-		  ["felr1","fbul2"],["feur1","fbul3"],["feur2","fbil5"],
 
   		  // To crushbar
 		  ["mcbul2","cbul2"],
@@ -205,6 +202,12 @@
    		  ["msfl0r2","sfl0r2"],
  		  ["msfl0c0","sfl0c0"],
  		  ["msfl0l2","sfl0l2"],
+		  
+   		  // To fenders
+  		  {"beamStrength":500},
+		  ["fell1","fbur2"],["feul1","fbur3"],["feul2","fbir5"],
+		  ["felr1","fbul2"],["feur1","fbul3"],["feur2","fbil5"],
+
      ]
 }
 

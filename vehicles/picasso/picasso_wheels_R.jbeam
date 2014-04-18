@@ -49,9 +49,6 @@
             ["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"], 
 			{"enableTireSideSupportBeams":true},
 
-
-
-
 			//general settings
 			{"radius":0.330},
 			{"hubRadius":0.260},
@@ -78,9 +75,9 @@
 			{"frictionCoef":1.5},
 			
 			//
-			{"pressurePSI":30},
+			{"pressurePSI":40},
 			{"maxPressurePSI":1400},
-			{"reinforcementPressurePSI":30},
+			{"reinforcementPressurePSI":40},
 			{"pressureSpring":501000},
 			{"reinforcementPressureSpring":101000},
 			{"pressureDamp":16},

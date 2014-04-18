@@ -60,7 +60,7 @@
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 		  {"beamSpring":150000,"beamDamp":75},
-		  {"beamDeform":10000,"beamStrength":15000},
+		  {"beamDeform":5000,"beamStrength":5000},
 		  
 		  //first grade
 		  
@@ -148,6 +148,7 @@
 		  ["wnd1r2","wnd5l2"],["wnd5r2","wnd1l2"],
 		  
 		  // Mount
+		  {"beamStrength":155000},
 		  {"beamSpring":100000,"beamDamp":75},
 		  
 		  ["wnd3l2","frp3l2"],["wnd2l2","frp4l2"],["wnd1l2","fgd2l2"],["wnd1l1","fgd2l1"],["wnd1c1","fgd2c0"],["wnd1r1","fgd2r1"],["wnd1r2","fgd2r2"],["wnd2r2","frp4r2"],["wnd3r2","frp3r2"],

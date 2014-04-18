@@ -203,7 +203,7 @@
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 		  {"beamSpring":25000,"beamDamp":200},
-		  {"beamDeform":5000,"beamStrength":5500},
+		  {"beamDeform":7000,"beamStrength":7500},
 
 		  // Longitudinal
 		  ["feul1","feul2"],["feul3","feul2"],["feul3","feul4"],["feul5","feul4"],["feul5","feul6"],["feul7","feul6"],["feul7","feul8"],["feul9","feul8"],
@@ -226,8 +226,7 @@
 		  ["feul8","feil2"],["feul9","feil2"],
 
 		  
-		  // To other parts
-
+		  {"beamStrength":500},
 		  ["fell1","ffi6l2"],["fell1","ffi6l3"],
 		  ["fell2","ffi5l2"],["fell2","ffi5l3"],
 		  ["fell3","ffi4l2"],["fell3","ffb7l2"],
@@ -237,8 +236,6 @@
 		  ["fell7","ffb4l2"],["fell7","ffb4l3"],["fell7","fft4l3"],
 		  ["fell8","ffb4l2"],["fell8","ffb4l3"],["fell8","fft4l3"],
 		  ["fell9","ffb4l2"],["fell9","ffb4l3"],["fell9","fft4l3"],
-
-		  
 		  ["feul2","ffi6l0"],["feul2","ffi6l1"],["feul2","ffi6l2"],["feul2","ffi6l3"],
 		  
 		  ["feul3","ffi5l0"],["feul3","ffi5l1"],["feul3","ffi5l2"],["feul3","ffi5l3"],
@@ -249,14 +246,14 @@
 		  ["feul8","fft4l3"],["feul8","fft4l3"],["feul8","ffb4l3"],
 		  ["feul9","fft4l3"],["feul9","fft4l3"],["feul9","ffb4l3"],
 
-
-		  
 		  {"beamType":"|SUPPORT"},
+  		  {"beamStrength":7500},
 		  ["feil1","fell6"],["feil1","fell7"],["feil1","fell8"],["feil1","fell9"],
 		  ["feul8","feil1"],["feul9","feil1"],
-		  
 		  ["feil2","fell1"],["feil2","fell2"],["feil2","fell3"],["feil2","fell4"],["feil2","fell5"],
 		  ["feul1","feil2"],["feul2","feil2"],["feul3","feil2"],["feul4","feil2"],["feul5","feil2"],["feul6","feil2"],["feul7","feil2"],
+
+		  
      ]
 		 
 }
@@ -317,7 +314,7 @@
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 		  {"beamSpring":25000,"beamDamp":200},
-		  {"beamDeform":5000,"beamStrength":5500},
+		  {"beamDeform":7000,"beamStrength":7500},
 
 		  // Longitudinal
 		  ["feur1","feur2"],["feur3","feur2"],["feur3","feur4"],["feur5","feur4"],["feur5","feur6"],["feur7","feur6"],["feur7","feur8"],["feur9","feur8"],
@@ -340,6 +337,7 @@
 		  ["feur8","feir2"],["feur9","feir2"],
 
 		  // To other parts
+  		  {"beamStrength":500},
 		  ["felr1","ffi6r2"],["felr1","ffi6r3"],
 		  ["felr2","ffi5r2"],["felr2","ffi5r3"],
 		  ["felr3","ffi4r2"],["felr3","ffb7r2"],
@@ -349,10 +347,7 @@
 		  ["felr7","ffb4r2"],["felr7","ffb4r3"],["felr7","fft4r3"],
 		  ["felr8","ffb4r2"],["felr8","ffb4r3"],["felr8","fft4r3"],
 		  ["felr9","ffb4r2"],["felr9","ffb4r3"],["felr9","fft4r3"],
-
-		  
 		  ["feur2","ffi6r0"],["feur2","ffi6r1"],["feur2","ffi6r2"],["feur2","ffi6r3"],
-		  
 		  ["feur3","ffi5r0"],["feur3","ffi5r1"],["feur3","ffi5r2"],["feur3","ffi5r3"],
 		  ["feur4","ffi5r0"],["feur4","ffi5r1"],
 		  ["feur5","ffi4r1"],["feur6","fft7r2"],
@@ -362,9 +357,9 @@
 		  ["feur9","fft4r3"],["feur9","fft4r3"],["feur9","ffb4r3"],
 		  
 		  {"beamType":"|SUPPORT"},
+   		  {"beamStrength":7500},
 		  ["feir1","felr6"],["feir1","felr7"],["feir1","felr8"],["feir1","felr9"],
 		  ["feur8","feir1"],["feur9","feir1"],
-		  
 		  ["feir2","felr1"],["feir2","felr2"],["feir2","felr3"],["feir2","felr4"],["feir2","felr5"],
 		  ["feur1","feir2"],["feur2","feir2"],["feur3","feir2"],["feur4","feir2"],["feur5","feir2"],["feur6","feir2"],["feur7","feir2"],
      ]

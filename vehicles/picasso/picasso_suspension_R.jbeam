@@ -82,7 +82,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
           {"beamSpring":5000000,"beamDamp":100},
-          {"beamDeform":100000,"beamStrength":"1600000"},
+          {"beamDeform":75000,"beamStrength":"1600000"},
 
 		  // Transverse
 		  ["rsbc1","rsbc2"],["rsbc2","rsbc3"],["rsbc3","rsbc4"],["rsbc4","rsbc1"],
