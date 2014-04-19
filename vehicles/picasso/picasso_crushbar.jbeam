@@ -44,9 +44,9 @@
 
 		 {"selfCollision":false}
 		 {"collision":false}
-         {"nodeWeight":0.6},
-         ["cbucZ",0.00000,0.51605,0.77122],
-         ["cblcZ",0.00000,0.51605,0.46077],
+         {"nodeWeight":0.7},
+         ["cbucZ",0.0,0.5,0.77122],
+         ["cblcZ",0.0,0.5,0.46077],
 
 		 
      ]
@@ -57,7 +57,7 @@
 		  
 		  	 // Aluminum
      {"beamSpring":390000,"beamDamp":100},
-     {"beamDeform":2500,"beamStrength":"50000"},
+     {"beamDeform":5000,"beamStrength":"150000"},
 	 
 	 // Crush bar - longitudinal
 	 ["cbuc0","cbul1"],["cbul1","cbul2"],["cblc0","cbll1"],["cbll1","cbll2"],
@@ -80,22 +80,28 @@
 
 	 // Crush bar - structural 
 	 ["cbucZ","cblcZ"],
-	 ["cbucZ","cblc0"],["cbucZ","cbuc0"],["cbucZ","cbul1"],["cbucZ","cbll1"],["cbucZ","cbur1"],["cbucZ","cblr1"],
-	 ["cblcZ","cblc0"],["cblcZ","cbuc0"],["cblcZ","cbul1"],["cblcZ","cbll1"],["cblcZ","cbur1"],["cblcZ","cblr1"],
-	 
+
+	 ["cbucZ","cblc0"],["cbucZ","cbuc0"],
+	 ["cblcZ","cblc0"],["cblcZ","cbuc0"],
+
 	 ["cbucZ","mlnul1"],["cbucZ","mlnll1"],["cbucZ","mlnur1"],["cbucZ","mlnlr1"],
 	 ["cblcZ","mlnul1"],["cblcZ","mlnll1"],["cblcZ","mlnur1"],["cblcZ","mlnlr1"],
+
+ 	 ["cbucZ","cbul1"],["cbucZ","cbll1"],["cbucZ","cbur1"],["cbucZ","cblr1"],
+	 ["cblcZ","cbul1"],["cblcZ","cbll1"],["cblcZ","cbur1"],["cblcZ","cblr1"],
+
 	 
+	 /*
 	 ["cbucZ","mlnul2"],["cbucZ","mlnll2"],["cbucZ","mlnur2"],["cbucZ","mlnlr2"],
 	 ["cblcZ","mlnul2"],["cblcZ","mlnll2"],["cblcZ","mlnur2"],["cblcZ","mlnlr2"],
 
-	 /*
 	 ["cbucZ","mlnul3"],["cbucZ","mlnll3"],["cbucZ","mlnur3"],["cbucZ","mlnlr3"],
 	 ["cblcZ","mlnul3"],["cblcZ","mlnll3"],["cblcZ","mlnur3"],["cblcZ","mlnlr3"],
 	 
 	 ["cbucZ","mlnul4"],["cbucZ","mlnll4"],["cbucZ","mlnur4"],["cbucZ","mlnlr4"],
 	 ["cblcZ","mlnul4"],["cblcZ","mlnll4"],["cblcZ","mlnur4"],["cblcZ","mlnlr4"],
 	 */
+	 
 	 
 	 ["mlnul1","lnul1"],
 	 ["mlnul2","lnul2"],
@@ -105,7 +111,6 @@
      ["mlnur2","lnur2"],
      ["mlnlr1","lnlr1"],
      ["mlnlr2","lnlr2"],
-		  
      ]
 		 
 }
