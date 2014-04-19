@@ -140,7 +140,6 @@
 		 
 }
 
-
 "picasso_glassdoor": {
 	"information":{
 		"authors":"Sergey Lysenko",
@@ -166,14 +165,15 @@
          {"nodeMaterial":"|NM_GLASS"},
          {"collision":true}
          {"selfCollision":true}
-         {"nodeWeight":0.5},
 
+         {"nodeWeight":0.8},
    		 ["bdg1l2", 0.64669, 3.73670, 1.56021],
    		 ["bdg1l1", 0.37857, 3.79180, 1.57552],
    		 ["bdg1c1", 0.00000, 3.81988, 1.58412],
    		 ["bdg1r1", -.37857, 3.79180, 1.57552],
    		 ["bdg1r2", -.64669, 3.73670, 1.56021],
 
+         {"nodeWeight":0.5},
    		 ["bdg2l2", 0.68887, 3.99120, 1.41265],
    		 ["bdg2l1", 0.38689, 4.05097, 1.48102],
    		 ["bdg2c1", 0.00000, 4.08953, 1.48932],
@@ -191,7 +191,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":10000,"beamDamp":100},
+		  {"beamSpring":500000,"beamDamp":100},
 		  {"beamDeform":7500,"beamStrength":7500},
 		  
 		  //first grade
@@ -244,13 +244,19 @@
 		  ["bdg3l2","bdg3r2"],
 		  
 		  // Mount
-		  {"beamSpring":60000,"beamDamp":150},
+		  {"beamSpring":200000,"beamDamp":150},
+		  
 		  // Hinge
 		  ["bdg1l1","bdi4l2"],["bdg1l1","bdi4l1"],["bdg1l1","bdi4c0"],
 		  ["bdg1r1","bdi4r2"],["bdg1r1","bdi4r1"],["bdg1r1","bdi4c0"],
+		  ["bdg1l1","bdi3l2"],["bdg1l1","bdi3l1"],["bdg1l1","bdi3c0"],
+		  ["bdg1r1","bdi3r2"],["bdg1r1","bdi3r1"],["bdg1r1","bdi3c0"],
 		  ["bdg1l1","bd4l2"],["bdg1l1","bd4l1"],["bdg1l1","bd4c0"],
 		  ["bdg1r1","bd4r2"],["bdg1r1","bd4r1"],["bdg1r1","bd4c0"],
+		  ["bdg1l1","bd3l2"],["bdg1l1","bd3l1"],["bdg1l1","bd3c0"],
+		  ["bdg1r1","bd3r2"],["bdg1r1","bd3r1"],["bdg1r1","bd3c0"],
 
+		  // Lock
   		  {"beamSpring":20000,"beamDamp":100},
 		  ["bdg3c1","bd3c0"],
 		  
