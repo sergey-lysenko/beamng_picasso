@@ -5,6 +5,11 @@
 		"name":"Hood",
 	}
     "slotType" : "picasso_hood",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["bonnet", ["bonnet"]],
@@ -134,6 +139,8 @@
 	"slots": [
 	["type", "default", "description"],
 	 ["picasso_glassdoor", "picasso_glassdoor", "Glass Door"],
+	 // light base is temporarly intergated with door
+	 //["picasso_inner_taillights", "picasso_inner_taillights", "Inner Tail Lights"],
 	 ["picasso_back_door_bumper", "picasso_back_door_bumper", "Tailgate Bumper"],
 	],
 
@@ -201,12 +208,14 @@
 		 ["bdi4r1", -.32518, 3.70587, 1.38997],
   		 ["bdi4r2", -.56451, 3.73559, 1.38069],
 		 
+		 
      ]
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 		  {"beamSpring":100000,"beamDamp":100},
 		  {"beamDeform":6000,"beamStrength":135500},
+		  
 
 		  // Longitudinal
 		  ["bd1l2","bd1l1"],["bd1l1","bd1c0"],["bd1c0","bd1r1"],["bd1r1","bd1r2"],
@@ -397,6 +406,7 @@
 		  ["ritli","bd3l2"],["ritli","bd3l1"],["ritli","bd2l2"],["ritli","bd2l1"],
 		  ["ritri","bd3r2"],["ritri","bd3r1"],["ritri","bd2r2"],["ritri","bd2r1"],
 		  
+		  
      ]
 		 
 }
@@ -407,6 +417,11 @@
 		"name":"Tailgate Bumper",
 	}
     "slotType" : "picasso_back_door_bumper",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["back_door_bumper", ["back_door_bumper"]],
@@ -524,10 +539,12 @@
 		 ["bdb2c0","bdi2c0"],["bdb2c0","bdi2l1"],["bdb2c0","bdi2r1"],
 		 ["bdb2r1","bdi2r1"],["bdb2l1","bdi2l2"],["bdb2l1","bdi2c0"],
 		 ["bdb2r2","bdi2r2"],["bdb2r2","bdi2l1"],
+		 
 		  
      ]
 		 
 }
+
 
 "picasso_door_front_left": {
 	"information":{
@@ -596,6 +613,9 @@
          ["fld4r1", -.68312, 2.00188, 1.59107],
          ["fld4r2", -.65356, 2.55710, 1.65594],
 
+		 
+		 /*
+*/
 		 ]
 	"beams": [
 		  ["id1:", "id2:"],
@@ -617,6 +637,7 @@
           ["fld1r4","fld2r4"],["fld2r4","fld3r4"],
           ["fld1r5","fld2r5"],["fld2r5","fld3r5"],
 		  ["fld1r2","fld1r5"],["fld3r2","fld3r5"],
+
   		  
 		  // Traversal
           ["fld1l1","fld1l2"],["fld1l2","fld1l3"],["fld1l3","fld1l4"],["fld1l4","fld1l5"],["fld1l5","fld1l1"],
@@ -666,6 +687,8 @@
 		  ["fld4r1","fld4r2"],
 		  ["fld4r1","fld1r1"],["fld4r1","fld1r2"],["fld4r1","fld1r5"],["fld4r1","fld2r1"],["fld4r1","fld2r2"],["fld4r1","fld2r5"],
 		  ["fld4r2","fld3r1"],["fld4r2","fld3r2"],["fld4r2","fld3r5"],["fld4r2","fld2r1"],["fld4r2","fld2r2"],["fld4r2","fld2r5"],
+
+		  
 		  
  		  //Mount
 		  {"beamSpring":1000000,"beamDamp":100},
@@ -692,6 +715,7 @@
 		  ["fld3r3","fft2r1"],["fld3r3","fft2r2"],["fld3r3","fft2r3"],
 		  ["fld4r1","frp6r1"],["fld4r1","frp6r3"],["fld4r1","frp6r2"],
 		  ["fld4r2","cei5r1"],["fld4r2","cei7r1"],["fld4r2","cpl5r3"],
+ 		  
 
 	   ]
 }

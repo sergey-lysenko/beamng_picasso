@@ -59,14 +59,14 @@
 			{"wheelOffset":0.01},
 			{"hubWidth":0.215},
 			{"tireWidth":0.215},
-			{"numRays":16},
+			{"numRays":12},
 			
 			//hub options
 			{"hubBeamSpring":1121000, "hubBeamDamp":8}
 			{"beamSpring":1121000, "beamDamp":8},
 			{"hubBeamDeform":34000, "hubBeamStrength":164000},
 			{"beamDeform":240000,"beamStrength":380000},
-			{"hubNodeWeight":0.38},
+			{"hubNodeWeight":0.44},
 			{"hubNodeMaterial":"|NM_METAL"},
 			{"hubFrictionCoef":0.7},
 			
@@ -74,7 +74,7 @@
 			{"wheelTreadBeamSpring":221000,"wheelTreadBeamDamp":16,"wheelTreadBeamDeform":38000,"wheelTreadBeamStrength":55000},
 			{"wheelPeripheryBeamSpring":221000,"wheelPeripheryBeamDamp":16,"wheelPeripheryBeamDeform":38000,"wheelPeripheryBeamStrength":55000},
 			{"springExpansion":351000, "dampExpansion":8},
-			{"nodeWeight":0.16},
+			{"nodeWeight":0.22},
 			{"nodeMaterial":"|NM_RUBBER"},
 			{"frictionCoef":1.5},
 			

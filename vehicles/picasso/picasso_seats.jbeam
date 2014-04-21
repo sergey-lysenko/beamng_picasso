@@ -341,6 +341,30 @@
 		  ["rrs2c1","rrs1c1"],["rrs2c1","rrs1c2"],["rrs2c1","rrs1c3"],["rrs2c1","rrs1c4"],
 		  ["rrs2c2","rrs1c1"],["rrs2c2","rrs1c2"],["rrs2c2","rrs1c3"],["rrs2c2","rrs1c4"],["rrs2c2","rrs2c1"],
 		  
+		  
+		   // Mount
+		  {"beamSpring":1000000,"beamDamp":400},
+		  
+		  /*
+		  ["rrs1c1","fft1r1"],
+		  ["rrs1c2","fft1r1"],
+		  ["rrs1c3","fft1r1"],
+		  ["rrs1c4","fft1r1"],
+		  ["rrs1c1","fft1l1"],
+		  ["rrs1c2","fft1l1"],
+		  ["rrs1c3","fft1l1"],
+		  ["rrs1c4","fft1l1"],
+
+		  ["rrs1c1","rftl1"],
+		  ["rrs1c2","rftl1"],
+		  ["rrs1c3","rftl1"],
+		  ["rrs1c4","rftl1"],
+		  ["rrs1c1","rftr1"],
+		  ["rrs1c2","rftr1"],
+		  ["rrs1c3","rftr1"],
+		  ["rrs1c4","rftr1"],
+          */
+		  
 		  // Mount
 		  {"beamSpring":900000,"beamDamp":100},
 		  ["rrs1c1","fft1r1"],["rrs1c1","fft2r1"],["rrs1c1","fft1l1"],["rrs1c1","fft2l1"],["rrs1c1","rftl1"],["rrs1c1","rftr1"],

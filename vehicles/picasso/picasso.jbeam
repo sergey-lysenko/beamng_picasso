@@ -52,7 +52,7 @@
     "slotType" : "picasso_base",
 	"slots": [
 	["type", "default", "description"],
-     // Front
+     // Base
      ["picasso_floor_front", "picasso_floor_front", "Front Floor"],
 	 ["picasso_girder_front", "picasso_girder_front", "Front Girder"],
    	 ["picasso_longerons", "picasso_longerons", "Longerons"],
@@ -131,13 +131,13 @@
 	"slots": [
 	["type", "default", "description"],
      ["picasso_dashboard", "picasso_dashboard", "Dashboard"],
-     ["picasso_luggage_cover", "picasso_luggage_cover", "Luggage Cover"],
      ["picasso_steering_column", "picasso_steering_column", "Steering Columns"],
      ["picasso_front_left_seat", "picasso_front_left_seat", "Front Left Seat"],
      ["picasso_front_right_seat", "picasso_front_right_seat", "Front Right Seat"],
      ["picasso_rear_left_seat", "picasso_rear_left_seat", "Rear Left Seat"],
      ["picasso_rear_center_seat", "picasso_rear_center_seat", "Rear Center Seat"],
      ["picasso_rear_right_seat", "picasso_rear_right_seat", "Rear Right Seat"],
+	 ["picasso_luggage_cover", "picasso_luggage_cover", "Luggage cover"],
 	],
 }
 }
