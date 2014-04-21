@@ -279,11 +279,6 @@
 		"name":"Rear Side Glass",
 	}
     "slotType" : "picasso_rear_sideglass",
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["rear_sideglass", ["rear_sideglass"]],

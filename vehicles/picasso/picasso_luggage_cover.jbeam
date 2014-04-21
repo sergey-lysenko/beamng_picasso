@@ -1,0 +1,89 @@
+{
+"picasso_luggage_cover": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Luggage Cover",
+	}
+    "slotType" : "picasso_luggage_cover",
+		"slots": [
+	["type", "default", "description"],
+	],
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["luggage_cover", ["luggage_cover"]],
+	 ],
+ 	"nodes": [
+
+	["id", "posX", "posY", "posZ"],
+         {"group":"luggage_cover"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true}
+         {"selfCollision":true}
+
+         {"nodeWeight":0.15},
+ 		 ["mmbfi2l2", 0.67418, 3.60771, 0.99873],
+ 		 ["mmbfi2r2", -0.67418, 3.60771, 0.99873],
+   		 ["lgc1c0", 0.00000, 3.60771, 0.99873],
+
+         {"nodeWeight":0.1},
+ 		 ["mmbfi3l2", 0.67200, 3.67405, 1.21496],
+ 		 ["mmbfi3l3", 0.66041, 3.89017, 1.22149],
+ 		 ["mmbfi3l4", 0.67991, 4.15427, 1.23762],
+		 
+ 		 ["mmbfi3r2", -0.67200, 3.67405, 1.21496],
+ 		 ["mmbfi3r3", -0.66041, 3.89017, 1.22149],
+ 		 ["mmbfi3r4", -0.67991, 4.15427, 1.23762],
+
+ 		 ["lgc1c1", 0.00000, 3.67405, 1.21496],
+ 		 ["lgc1c2", 0.00000, 3.89017, 1.22149],
+ 		 ["lgc1c3", 0.00000, 4.15427, 1.23762],
+		 
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":25000,"beamDamp":35},
+		  {"beamDeform":15000,"beamStrength":135500},
+
+		  // Longitudinal
+          ["mmbfi2l2","lgc1c0"],["mmbfi3l2","lgc1c1"],["mmbfi3l3","lgc1c2"],["mmbfi3l4","lgc1c3"],
+          ["mmbfi2r2","lgc1c0"],["mmbfi3r2","lgc1c1"],["mmbfi3r3","lgc1c2"],["mmbfi3r4","lgc1c3"],
+
+  		  // Traversal
+          ["mmbfi2l2","mmbfi3l2"],["mmbfi3l2","mmbfi3l3"],["mmbfi3l3","mmbfi3l4"],
+          ["lgc1c0","lgc1c1"],["lgc1c1","lgc1c2"],["lgc1c2","lgc1c3"],
+          ["mmbfi2r2","mmbfi3r2"],["mmbfi3r2","mmbfi3r3"],["mmbfi3r3","mmbfi3r4"],
+		  
+		  // Diagonal
+          ["mmbfi2l2","lgc1c1"],["mmbfi3l2","lgc1c2"],["mmbfi3l3","lgc1c3"],
+          ["mmbfi2r2","lgc1c1"],["mmbfi3r2","lgc1c2"],["mmbfi3r3","lgc1c3"],
+          ["mmbfi3l2","lgc1c0"],["mmbfi3l3","lgc1c1"],["mmbfi3l4","lgc1c2"],
+          ["mmbfi3r2","lgc1c0"],["mmbfi3r3","lgc1c1"],["mmbfi3r4","lgc1c2"],
+		  
+          // Structural
+          ["mmbfi2l2","mmbfi3l3"],["mmbfi2l2","mmbfi3l4"],
+          ["lgc1c0","lgc1c2"],["lgc1c0","lgc1c3"],
+          ["mmbfi2r2","mmbfi3r3"],["mmbfi2r2","mmbfi3r4"],
+		  
+          ["mmbfi2l2","lgc1c2"],["mmbfi2l2","lgc1c3"],
+          ["lgc1c0","mmbfi3l3"],["lgc1c0","mmbfi3l4"],
+          ["lgc1c0","mmbfi3r3"],["lgc1c0","mmbfi3r4"],
+          ["mmbfi2r2","lgc1c2"],["mmbfi2r2","lgc1c3"],
+
+		  // Mount
+ 		 ["mmbfi2l2","bfi2l2"],
+ 		 ["mmbfi2r2","bfi2r2"],
+
+ 		 ["mmbfi3l2","bfi3l2"],
+ 		 ["mmbfi3l3","bfi3l3"],
+ 		 ["mmbfi3l4","bfi3l4"],
+		 
+ 		 ["mmbfi3r2","bfi3r2"],
+ 		 ["mmbfi3r3","bfi3r3"],
+ 		 ["mmbfi3r4","bfi3r4"],
+		  
+     ]
+}
+
+}

@@ -5,11 +5,6 @@
 		"name":"EP6DT THP150",
 	}
     "slotType" : "picasso_engine",
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 	"slots": [
 		["type", "default", "description"]
 		//["picasso_exhaust","picasso_exhaust", "Picasso Exhaust"],
@@ -49,7 +44,7 @@
 		 {"selfCollision":true},
 		 {"collision":true}
 		 {"group":"Engine"},
-         {"nodeWeight":4},
+         {"nodeWeight":3.4},
 		 ["enmlr1",-0.54453,0.74361,0.72368],
          ["enmlr2",-0.54453,0.84016,0.72368],
          ["enmlr3",-0.46224,0.84029,0.72383],
@@ -81,7 +76,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":1300000,"beamDamp":200},
+		  {"beamSpring":3000000,"beamDamp":200},
 		  {"beamDeform":2200000,"beamStrength":"FLT_MAX"},
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
          
@@ -120,26 +115,7 @@
 		  ["enmur1","enmlr3"],["enmur2","enmlr4"],["enmur3","enmlr1"],["enmur4","enmlr2"],
 		  ["engl1","engu3"],["engl2","engu4"],["engl3","engu1"],["engl4","engu2"],
 		  ["engu1","engl3"],["engu2","engl4"],["engu3","engl1"],["engu4","engl2"],
-		  
-		  // To longeron
-		  ["enmul1","lnur3"],["enmul1","lnur2"],["enmul1","lnur1"],["enmul1","ffb5l1"],
-          ["enmul2","lnur3"],["enmul2","lnur2"],["enmul2","lnur1"],["enmul2","ffb5l1"],
-          ["enmul3","lnur3"],["enmul3","lnur2"],["enmul3","lnur1"],["enmul3","ffb5l1"],
-          ["enmul4","lnur3"],["enmul4","lnur2"],["enmul4","lnur1"],["enmul4","ffb5l1"],
-		  ["enmll1","lnlr3"],["enmll1","lnlr2"],["enmll1","lnlr1"],["enmll1","lnlr4"],
-          ["enmll2","lnlr3"],["enmll2","lnlr2"],["enmll2","lnlr1"],["enmll2","lnlr4"],
-          ["enmll3","lnlr3"],["enmll3","lnlr2"],["enmll3","lnlr1"],["enmll3","lnlr4"],
-          ["enmll4","lnlr3"],["enmll4","lnlr2"],["enmll4","lnlr1"],["enmll4","lnlr4"],
 
-		  ["enmur1","lnul3"],["enmur1","lnul2"],["enmur1","lnul1"],["enmur1","ffb5r1"],
-          ["enmur2","lnul3"],["enmur2","lnul2"],["enmur2","lnul1"],["enmur2","ffb5r1"],
-          ["enmur3","lnul3"],["enmur3","lnul2"],["enmur3","lnul1"],["enmur3","ffb5r1"],
-          ["enmur4","lnul3"],["enmur4","lnul2"],["enmur4","lnul1"],["enmur4","ffb5r1"],
-		  ["enmlr1","lnll3"],["enmlr1","lnll2"],["enmlr1","lnll1"],["enmlr1","lnll4"],
-          ["enmlr2","lnll3"],["enmlr2","lnll2"],["enmlr2","lnll1"],["enmlr2","lnll4"],
-          ["enmlr3","lnll3"],["enmlr3","lnll2"],["enmlr3","lnll1"],["enmlr3","lnll4"],
-          ["enmlr4","lnll3"],["enmlr4","lnll2"],["enmlr4","lnll1"],["enmlr4","lnll4"],
-		  
 		  // Engine to left mount
 		  ["engl1","enmll1"],["engl1","enmll2"],["engl2","enmll1"],["engl2","enmll2"],
 		  ["engl1","enmul3"],["engl1","enmll3"],["engl1","enmll4"],["engl1","enmul4"],
@@ -148,11 +124,35 @@
 		  ["engu1","enmul3"],["engu1","enmll3"],["engu1","enmll4"],["engu1","enmul4"],
 		  ["engu2","enmul3"],["engu2","enmll3"],["engu2","enmll4"],["engu2","enmul4"],
 
+  		  // Right mount to left mount
+		  ["enmur3","enmll3"],["enmur4","enmll3"],["enmlr3","enmll3"],["enmlr4","enmll3"],
+		  ["enmur3","enmul3"],["enmur4","enmul3"],["enmlr3","enmul3"],["enmlr4","enmul3"],
+		  ["enmur3","enmll4"],["enmur4","enmll4"],["enmlr3","enmll4"],["enmlr4","enmll4"],
+		  ["enmur3","enmul4"],["enmur4","enmul4"],["enmlr3","enmul4"],["enmlr4","enmul4"],
+		  
   		  // Engine to right mount
-          ["engl3","enmur3"],["engl3","enmur4"],["engl3","enmlr3"],["engl3","enmlr4"],
-          ["engl4","enmur3"],["engl4","enmur4"],["engl4","enmlr3"],["engl4","enmlr4"],
-          ["engu3","enmur3"],["engu3","enmur4"],["engu3","enmlr3"],["engu3","enmlr4"],
-          ["engu4","enmur3"],["engu4","enmur4"],["engu4","enmlr3"],["engu4","enmlr4"],
+          ["engl3","enmur3"],["engl3","enmur4"],["engl3","enmlr3"],
+          ["engl4","enmur3"],["engl4","enmur4"],["engl4","enmlr4"],
+          ["engu3","enmlr3"],["engu3","enmlr4"],
+          ["engu4","enmlr3"],["engu4","enmlr4"],
+
+		  
+		  // To longeron
+		  {"beamSpring":500000,"beamDamp":200},
+		  ["enmul1","lnur3"],["enmul1","lnur2"],["enmul1","lnur1"],["enmul1","ffb5l1"],
+          ["enmul2","lnur3"],["enmul2","lnur2"],["enmul2","lnur1"],["enmul2","ffb5l1"],
+          ["enmul3","lnur3"],["enmul3","lnur2"],["enmul3","lnur1"],["enmul3","ffb5l1"],
+          ["enmul4","lnur3"],["enmul4","lnur2"],["enmul4","lnur1"],["enmul4","ffb5l1"],
+		  ["enmll1","lnlr3"],["enmll1","lnlr2"],["enmll1","lnlr1"],["enmll1","lnlr4"],
+          ["enmll2","lnlr3"],["enmll2","lnlr2"],["enmll2","lnlr1"],["enmll2","lnlr4"],
+
+		  ["enmur1","lnul3"],["enmur1","lnul2"],["enmur1","lnul1"],["enmur1","ffb5r1"],
+          ["enmur2","lnul3"],["enmur2","lnul2"],["enmur2","lnul1"],["enmur2","ffb5r1"],
+          ["enmur3","lnul3"],["enmur3","lnul2"],["enmur3","lnul1"],["enmur3","ffb5r1"],
+          ["enmur4","lnul3"],["enmur4","lnul2"],["enmur4","lnul1"],["enmur4","ffb5r1"],
+		  ["enmlr1","lnll3"],["enmlr1","lnll2"],["enmlr1","lnll1"],["enmlr1","lnll4"],
+          ["enmlr2","lnll3"],["enmlr2","lnll2"],["enmlr2","lnll1"],["enmlr2","lnll4"],
+		  
 
   		  // Engine low mount
 		  ["engu1","sfl0c0"],["engu1","sfl0l2"],["engl1","sfl0c0"],["engl1","sfl0l2"],["enmur4","sfl0c0"],["enmlr4","sfl0c0"],
@@ -160,8 +160,6 @@
 		  ["engu2","sfl2c0"],["engu2","sfl2l1"],["engu2","sfl2l2"],["engu2","sfl3c0"],["engu2","sfl3l1"],["engu2","sfl3l2"],
 		  ["enmul3","sfl2c0"],["enmul3","sfl2l1"],["enmul3","sfl2l2"],["enmul3","sfl3c0"],["enmul3","sfl3l1"],["enmul3","sfl3l2"],
 		  ["enmul4","sfl2c0"],["enmul4","sfl2l1"],["enmul4","sfl2l2"],["enmul4","sfl3c0"],["enmul4","sfl3l1"],["enmul4","sfl3l2"],
-		  
-		  
 	],
 	"triangles": [
 			["id1:","id2:","id3:"],

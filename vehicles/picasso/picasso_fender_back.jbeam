@@ -74,7 +74,7 @@
  		 ["bfi1l6", 0.92531, 3.80564, 0.84006],
 
   		 ["bfi2l1", 0.85329, 3.57581, 1.16388],
- 		 ["bfi2l2", 0.66964, 3.65871, 1.14454],
+ 		 ["bfi2l2", 0.67418, 3.60771, 0.99873],
  		 ["bfi2l3", 0.67600, 3.97166, 1.09847],
  		 ["bfi2l4", 0.68280, 4.24557, 1.09951],
  		 ["bfi2l5", 0.81982, 4.13179, 1.10022],
@@ -95,7 +95,7 @@
  		 ["bfi1r6", -0.92531, 3.80564, 0.84006],
    		 
 		 ["bfi2r1", -0.85329, 3.57581, 1.16388],
- 		 ["bfi2r2", -0.66964, 3.65871, 1.14454],
+ 		 ["bfi2r2", -0.67418, 3.60771, 0.99873],
  		 ["bfi2r3", -0.67600, 3.97166, 1.09847],
  		 ["bfi2r4", -0.68280, 4.24557, 1.09951],
  		 ["bfi2r5", -0.81982, 4.13179, 1.10022],
@@ -184,7 +184,6 @@
 		  ["mrftr2","mrfbr4"],["mrftr4","mrfbr6"],["mrftr4","mrfbr2"],["mrftr6","mrfbr2"],
 		  
 		  ["bfi1l1","mfft1l3"],["bfi1r1","mfft1r3"],
-		  //["bfi1l2","mrftr1"],["bfi1l2","mrftr3"],["bfi1l3","mrftr1"],["bfi1l3","mrftr3"],["bfi1l3","mrftr5"],["bfi1l4","mrftr3"],["bfi1l4","mrftr5"],["bfi1l4","rltr1"],
 
 		  // Mount to front floor
 		  ["mfft1l2","fft1l2"],
@@ -195,16 +194,7 @@
 		  ["mfft1r3","fft1r3"],
 		  ["mffb1r2","ffb1r2"],
 		  ["mffb1r3","ffb1r3"],
-		  /*
-		  ["mfft1l2","fft2l2"],["mfft1l2","fft2l3"],["mfft1l2","ffb2l2"],["mfft1l2","ffb2l3"],
-		  ["mfft1l3","fft2l2"],["mfft1l3","fft2l3"],["mfft1l3","ffb2l2"],["mfft1l3","ffb2l3"],
-		  ["mffb1l2","fft2l2"],["mffb1l2","fft2l3"],["mffb1l2","ffb2l2"],["mffb1l2","ffb2l3"],
-		  ["mffb1l3","fft2l2"],["mffb1l3","fft2l3"],["mffb1l3","ffb2l2"],["mffb1l3","ffb2l3"],
-		  ["mfft1r2","fft2r2"],["mfft1r2","fft2r3"],["mfft1r2","ffb2r2"],["mfft1r2","ffb2r3"],
-		  ["mfft1r3","fft2r2"],["mfft1r3","fft2r3"],["mfft1r3","ffb2r2"],["mfft1r3","ffb2r3"],
-		  ["mffb1r2","fft2r2"],["mffb1r2","fft2r3"],["mffb1r2","ffb2r2"],["mffb1r2","ffb2r3"],
-		  ["mffb1r3","fft2r2"],["mffb1r3","fft2r3"],["mffb1r3","ffb2r2"],["mffb1r3","ffb2r3"],
-		  */
+		  
 		  // Mount to rear floor
 		  ["mrftl2","rftl2"],
 		  ["mrftl4","rftl4"],
@@ -220,12 +210,22 @@
 		  ["mrfbr4","rftr4"],
 		  ["mrfbr6","rftr6"],
 		  
-		  ["rftr1","bfi1l2"],["rftr1","bfi1l3"],
-		  ["rftr3","bfi1l2"],["rftr3","bfi1l3"],["rftr3","bfi1l4"],
-		  ["rftr5","bfi1l3"],["rftr5","bfi1l4"],
-		  ["rftl1","bfi1r2"],["rftl1","bfi1r3"],
-		  ["rftl3","bfi1r2"],["rftl3","bfi1r3"],["rftl3","bfi1r4"],
-		  ["rftl5","bfi1r3"],["rftl5","bfi1r4"],
+		  // Rigidification
+		  
+  		  {"beamSpring":600000,"beamDamp":200},
+		  ["rftc1","bfi1l2"],["rftc1","bfi1l3"],
+		  ["rftc2","bfi1l2"],["rftc2","bfi1l3"],["rftc2","bfi1l4"],
+		  ["rftc3","bfi1l3"],["rftc3","bfi1l4"],
+		  ["rftc1","bfi1r2"],["rftc1","bfi1r3"],
+		  ["rftc2","bfi1r2"],["rftc2","bfi1r3"],["rftc2","bfi1r4"],
+		  ["rftc3","bfi1r3"],["rftc3","bfi1r4"],
+
+		  ["rftr1","bfi2l2"],["rftr1","bfi2l3"],
+		  ["rftr3","bfi2l2"],["rftr3","bfi2l3"],["rftr3","bfi2l4"],
+		  ["rftr5","bfi2l3"],["rftr5","bfi2l4"],
+		  ["rftl1","bfi2r2"],["rftl1","bfi2r3"],
+		  ["rftl3","bfi2r2"],["rftl3","bfi2r3"],["rftl3","bfi2r4"],
+		  ["rftl5","bfi2r3"],["rftl5","bfi2r4"],
 		  
 		  
 		  
@@ -284,7 +284,6 @@
 
 		  //Support
           ["bfn1l1","rftr2"],["bfn1l1","rfbr2"],
-
 		  ]
 		 
 }
