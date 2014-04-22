@@ -71,12 +71,14 @@
          ["dsh5r1",-.39188,0.94467,1.19086],
          ["dsh5r2",-.76077,0.99281,1.19942],
 
+         ["dshZl1",0.12360,2.18550,0.30400],
+         ["dshZr1",-.12360,2.18550,0.30400],
 		 
      ]
 	"beams": [
 		  ["id1:", "id2:"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":30000,"beamDamp":80},
+		  {"beamSpring":79999,"beamDamp":80},
 		  {"beamDeform":5000,"beamStrength":35500},
 		  
 		  //Longitudinal
@@ -138,21 +140,30 @@
           ["dsh0r1","dsh1c0"],["dsh0r1","dsh2c0"],["dsh0r1","dsh3c0"],["dsh0r1","dsh4c0"],
           ["dsh1l1","dsh0c0"],["dsh2l1","dsh0c0"],["dsh3l1","dsh0c0"],["dsh4l1","dsh0c0"],
           ["dsh1r1","dsh0c0"],["dsh2r1","dsh0c0"],["dsh3r1","dsh0c0"],["dsh4r1","dsh0c0"],
-
-
-
 		  
+		  ["dshZr1","dshZl1"],
+		  ["dsh0l2","dshZl1"],["dsh0l1","dshZl1"],["dsh0c0","dshZl1"],["dsh0r1","dshZl1"],["dsh0r2","dshZl1"],
+		  ["dsh0l2","dshZr1"],["dsh0l1","dshZr1"],["dsh0c0","dshZr1"],["dsh0r1","dshZr1"],["dsh0r2","dshZr1"],
+		  ["dsh1l2","dshZl1"],["dsh1l1","dshZl1"],["dsh1c0","dshZl1"],["dsh1r1","dshZl1"],["dsh1r2","dshZl1"],
+		  ["dsh1l2","dshZr1"],["dsh1l1","dshZr1"],["dsh1c0","dshZr1"],["dsh1r1","dshZr1"],["dsh1r2","dshZr1"],
+		  ["dsh2l2","dshZl1"],["dsh2l1","dshZl1"],["dsh2c0","dshZl1"],["dsh2r1","dshZl1"],["dsh2r2","dshZl1"],
+		  ["dsh2l2","dshZr1"],["dsh2l1","dshZr1"],["dsh2c0","dshZr1"],["dsh2r1","dshZr1"],["dsh2r2","dshZr1"],
+
+          ["dsh4l3","dsh1l3"],["dsh4l2","dsh1l3"],["dsh4l3","dsh0l1"],["dsh4l2","dsh0l1"],
+          ["dsh4r3","dsh1r3"],["dsh4r2","dsh1r3"],["dsh4r3","dsh0r1"],["dsh4r2","dsh0r1"],
+
   		  //Mount
 		  ["dsh0l1","fft5l1"],["dsh0c0","fft5c0"],["dsh0r1","fft5r1"],
           ["dsh5l2","fgd3l2"],["dsh5l1","fgd3l1"],["dsh5c0","fgd3c0"],["dsh5r1","fgd3r1"],["dsh5r2","fgd3r2"],
-		  
 		  ["dsh1l3","fft6l2"],["dsh1l3","fft5l2"],["dsh1l3","fft4l2"],
 		  ["dsh3l3","fft5l2"],["dsh3l3","fft6l2"],["dsh3l3","fft7l2"],
 		  ["dsh4l3","fft6l2"],["dsh4l3","fft7l2"],["dsh4l3","fgd3l2"],
-
 		  ["dsh1r3","fft6r2"],["dsh1r3","fft5r2"],["dsh1r3","fft4r2"],
 		  ["dsh3r3","fft5r2"],["dsh3r3","fft6r2"],["dsh3r3","fft7r2"],
 		  ["dsh4r3","fft6r2"],["dsh4r3","fft7r2"],["dsh4r3","fgd3r2"],
+		  
+		  ["dshZl1","ffb3c0"],["dshZl1","ffb4c0"],["dshZl1","ffb3l1"],["dshZl1","ffb4l1"],
+		  ["dshZr1","ffb3c0"],["dshZr1","ffb4c0"],["dshZr1","ffb3l1"],["dshZr1","ffb4l1"],
 		  
      ]
 		 
@@ -164,11 +175,6 @@
 		"name":"Picasso Dashboard Boxes",
 	}
     "slotType" : "dashboard_compartment_cover",
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["dashboard_compartment_cover", ["dashboard_compartment_cover"]],

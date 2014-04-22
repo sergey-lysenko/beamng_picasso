@@ -40,7 +40,7 @@
 		"friction":24,
 		"brakingCoefRPS":0.15
 		"burnEfficiency":0.45
-		"throttleSensitivity":1.2
+		"throttleSensitivity":2.2
 	},
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
@@ -211,15 +211,16 @@
 	"engine":{
 		"transmissionType":"automatic",
 		"lowShiftDownRPM":1000,
-		"lowShiftUpRPM":2400,
-		"highShiftDownRPM":2200,
-		"highShiftUpRPM":4800,
+		"lowShiftUpRPM":2000,
+		"highShiftDownRPM":2000,
+		"highShiftUpRPM":4000,
 		// -1, 0 (neutral), 1, etc
 		"gears":[-1.917, 0, 3.417, 1.783, 1.121, 0.795, 0.647, 0.534]
 		"clutchDuration":0.3
+		"clutchTorque":340
 		"viscousCoupling":6
 		"lockingTorqueLimit":500
-		"enableLocking":true
+		"enableLocking":false
 	},
     "slotType" : "picasso_transmission",
 	"flexbodies": [

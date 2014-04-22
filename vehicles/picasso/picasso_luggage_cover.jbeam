@@ -72,6 +72,7 @@
           ["mmbfi2r2","lgc1c2"],["mmbfi2r2","lgc1c3"],
 
 		  // Mount
+		 {"beamStrength":1777},
  		 ["mmbfi2l2","bfi2l2"],
  		 ["mmbfi2r2","bfi2r2"],
 

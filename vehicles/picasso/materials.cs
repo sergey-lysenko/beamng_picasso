@@ -206,3 +206,13 @@ singleton Material(picasso_White_cloth_001)
    doubleSided = "1";
    translucentBlendOp = "None";
 };
+
+singleton Material(picasso_White_plastic)
+{
+   mapTo = "White_plastic";
+   diffuseColor[0] = "0.813669 0.814041 0.726535 1";
+   specular[0] = "0.581463 0.581463 0.581463 1";
+   specularPower[0] = "50";
+   doubleSided = "1";
+   translucentBlendOp = "None";
+};

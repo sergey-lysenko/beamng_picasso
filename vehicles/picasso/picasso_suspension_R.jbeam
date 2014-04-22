@@ -82,7 +82,7 @@
 	"beams": [
 		  ["id1:", "id2:"],
           {"beamSpring":5000000,"beamDamp":100},
-          {"beamDeform":75000,"beamStrength":"1600000"},
+          {"beamDeform":195000,"beamStrength":"1600000"},
 
 		  // Transverse
 		  ["rsbc1","rsbc2"],["rsbc2","rsbc3"],["rsbc3","rsbc4"],["rsbc4","rsbc1"],
@@ -330,11 +330,6 @@
 		"name":"Rear Air Suspension",
 	}
     "slotType" : "picasso_suspension_R_aircushion",
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 	"flexbodies": [
          ["mesh", "[group]:"],
 		 ["rear_suspension_cushion", ["rear_suspension_cushion"]],
@@ -367,7 +362,7 @@
 		  ["id1:", "id2:"],
 		  
          {"beamPrecompression":1.1, "beamType":"|BOUNDED", "beamLongBound":0.65, "beamShortBound":0.65}, 
-         {"beamSpring":6000,"beamDamp":20},
+         {"beamSpring":6500,"beamDamp":200},
 		 {"beamLimitSpring":1000000,"beamLimitDamp":100}
 		  // Transverse
 		  ["acul1","acul2"],["acul2","acul3"],["acul3","acul1"],["acll1","acll2"],["acll2","acll3"],["acll3","acll1"],
