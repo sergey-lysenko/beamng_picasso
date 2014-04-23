@@ -9,6 +9,7 @@
 		["type", "default", "description"],
 		["picasso_suspension_R_aircushion", "picasso_suspension_R_aircushion", "Rear Suspension Air Cushion"],
 		["picasso_shocks_R", "picasso_shocks_R", "Rear Shock Absorbers"],
+		["picasso_brake_R", "picasso_brake_R", "Rear Brakes"],
 		["picasso_wheels_R", "picasso_wheels_R", "Rear Wheels"],
 	],
 	"scalenodeWeight":1,
@@ -388,5 +389,31 @@
 		  
 	],
 }
+
+"picasso_brake_R": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Rear Brakes",
+	}
+    "slotType" : "picasso_brake_R",
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+		 //brake discs
+		 //["picasso_disc_RR", ["wheel_RR","wheelhub_RR"], ["picasso"]],
+		 //["picasso_disc_RL", ["wheel_RL","wheelhub_RL"], ["picasso"]],
+	],
+	"hubWheels": [
+            ["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+			//brakes
+			{"enableABS":true}
+			//{"ABSthreshold":3},
+			{"brakeTorque":1500},
+			{"parkingTorque":450},
+	],
+	"engine": {
+		//"ABSrate":12
+	},
+}
+
 
 }

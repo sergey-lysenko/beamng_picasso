@@ -64,7 +64,7 @@
 			//hub options
 			{"hubBeamSpring":1121000, "hubBeamDamp":8}
 			{"beamSpring":1121000, "beamDamp":8},
-			{"hubBeamDeform":34000, "hubBeamStrength":164000},
+			{"hubBeamDeform":15000, "hubBeamStrength":164000},
 			{"beamDeform":240000,"beamStrength":380000},
 			{"hubNodeWeight":0.44},
 			{"hubNodeMaterial":"|NM_METAL"},
@@ -97,8 +97,8 @@
             ["FL", "front_left_wheel", "fwmr", "fwir", 9999,  "strr",-1]
 			{"selfCollision":true}
 			{"axleBeams":[]}
-			{"enableABS":false}
 			{"propulsed":1}
+			
 	],
 	"triangles": [
 			["id1:","id2:","id3:"],

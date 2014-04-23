@@ -54,10 +54,12 @@
 	"slots": [
 	["type", "default", "description"],
      // Base
+  	 ["picasso_fender_front_internal", "picasso_fender_front_internal", "Front Internal Fenders"],
      ["picasso_floor_front", "picasso_floor_front", "Front Floor"],
 	 ["picasso_girder_front", "picasso_girder_front", "Front Girder"],
    	 ["picasso_longerons", "picasso_longerons", "Longerons"],
  	 ["picasso_crushbar", "picasso_crushbar", "Crush Bar"],
+ 	 ["picasso_radiator", "picasso_radiator", "Radiator"],
      ["picasso_subframe", "picasso_subframe", "Subframe"],
      ["picasso_suspension_F", "picasso_suspension_F", "Front Suspension"],
      ["picasso_engine", "picasso_engine", "Engine"],
@@ -77,7 +79,6 @@
 	"slots": [
 	["type", "default", "description"],
 	 // Body
- 	 ["picasso_fender_front_internal", "picasso_fender_front_internal", "Front Internal Fenders"],
 	 ["picasso_pillars", "picasso_pillars", "Center Pillars"],
 	 ["picasso_front_pillars", "picasso_front_pillars", "Front Pillars"],
 	 
@@ -131,7 +132,7 @@
     "slotType" : "picasso_interior",
 	"slots": [
 	["type", "default", "description"],
-     ["picasso_dashboard", "picasso_dashboard", "Dashboard"],
+	 ["picasso_dashboard", "picasso_dashboard", "Dashboard"],
      ["picasso_steering_column", "picasso_steering_column", "Steering Columns"],
      ["picasso_front_left_seat", "picasso_front_left_seat", "Front Left Seat"],
      ["picasso_front_right_seat", "picasso_front_right_seat", "Front Right Seat"],
@@ -139,6 +140,7 @@
      ["picasso_rear_center_seat", "picasso_rear_center_seat", "Rear Center Seat"],
      ["picasso_rear_right_seat", "picasso_rear_right_seat", "Rear Right Seat"],
 	 ["picasso_luggage_cover", "picasso_luggage_cover", "Luggage cover"],
+	 ["picasso_trunk_load", "picasso_trunk_load_32kg", "Trunk load"],
 	],
 }
 }

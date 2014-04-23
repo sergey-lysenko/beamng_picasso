@@ -7,10 +7,11 @@
     "slotType" : "picasso_suspension_F",
 	"slots": [
 		["type", "default", "description"],
-		["picasso_wheels_F", "picasso_wheels_F", "Front Wheels"],
 		["picasso_struts", "picasso_struts", "Front Struts"],
 		["picasso_steering", "picasso_steering", "Front Steering"],
 		["picasso_differential", "picasso_differential", "Front Differential"],
+		["picasso_brakes_F", "picasso_brakes_F", "Front Brakes"],
+		["picasso_wheels_F", "picasso_wheels_F", "Front Wheels"],
 	],
 	"scalenodeWeight":1,
 	"scalebeamSpring":1,
@@ -321,4 +322,30 @@
 		},
     "slotType" : "picasso_differential",
 }
+
+"picasso_brakes_F": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Front Brakes",
+	}
+    "slotType" : "picasso_brakes_F",
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+		 //brake discs
+	],
+	"hubWheels": [
+            ["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+			//brakes
+			{"enableABS":true}
+			//{"ABSthreshold":3},
+			{"brakeTorque":2000},
+			{"parkingTorque":450},
+	],
+	"engine": {
+		//"ABSrate":12
+	},
+}
+
+
+
 }

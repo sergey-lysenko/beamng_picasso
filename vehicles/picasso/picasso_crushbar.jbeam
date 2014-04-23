@@ -20,7 +20,7 @@
 		 {"nodeMaterial":"|NM_PLASTIC"},
 		 {"selfCollision":true}
 		 {"collision":true}
-         {"nodeWeight":0.6},
+         {"nodeWeight":0.61},
          {"group":"crushbar"},
          ["cbul2",-0.57864,0.23702,0.67122],
          ["cbul1",-0.33624,0.21605,0.67122],
@@ -44,7 +44,7 @@
 
 		 {"selfCollision":false}
 		 {"collision":false}
-         {"nodeWeight":0.7},
+         {"nodeWeight":0.71},
          ["cbucZ",0.0,0.5,0.77122],
          ["cblcZ",0.0,0.5,0.46077],
 
