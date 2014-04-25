@@ -13,6 +13,7 @@
      ["picasso_doors", "picasso_doors", "Doors"],
      ["picasso_exterior", "picasso_exterior", "Exterior"],
      ["picasso_interior", "picasso_interior", "Interior"],
+     ["picasso_support", "picasso_support", "Additional support beam to simulate self-collision"],
 	],
 	"dragCoef":0.5,
 	"refNodes":[
@@ -26,7 +27,7 @@
 		"fov":70,
 	 },
 	 
-	 	 "cameraExternal":{
+	 	"cameraExternal":{
 		"distance":6.5,
 		"distanceMin":3,
 		"offset":{"x":0.77, "y":0.6, "z":0.5},
@@ -34,13 +35,21 @@
 	 },
 	 "camerasInternal":[
 		["x", "y", "z", "fov", "id1:", "id2:", "id3:", "id4:", "id5:", "id6:"],
-		{"nodeWeight":2},
+		{"nodeWeight":0.1},
 	    {"selfCollision":false}
 	    {"collision":false}
-		{"beamSpring":10000,"beamDamp":500},
+		{"beamSpring":10000,"beamDamp":5},
+		// Driver's view
 		[0.40, 2.2, 1.35, 80, "fft2c0","fft2l2","fft4c0","fft4l2","fft6c0","fft6l2"],
+		// Front passenger's view
 		[-.40, 2.2, 1.35, 80, "fft2c0","fft2r2","fft4c0","fft4r2","fft6c0","fft6r2"],
+		// Rear passenger's view
 		[0.0, 3.2, 1.35, 80, "fft1c0","fft1l1","fft1r1","fft2c0","fft2l1","fft2r1"],
+		// Dashcam - internal view
+		[0.0, 1.65, 1.35, 110, "wnd3c1","wnd2c1","wnd3l1","wnd2l2","wnd3r1","wnd2r2",],
+		// Dashcam - external view
+		[0.0, 2.1, 1.9, 110, "wnd5c1","wnd4c1","wnd5l1","wnd4l2","wnd5r1","wnd4r2",],
+
 	 ],
 	 
 }
@@ -54,12 +63,12 @@
 	"slots": [
 	["type", "default", "description"],
      // Base
+ 	 ["picasso_crushbar", "picasso_crushbar", "Crush Bar"],
+ 	 ["picasso_radiator", "picasso_radiator", "Radiator"],
   	 ["picasso_fender_front_internal", "picasso_fender_front_internal", "Front Internal Fenders"],
      ["picasso_floor_front", "picasso_floor_front", "Front Floor"],
 	 ["picasso_girder_front", "picasso_girder_front", "Front Girder"],
    	 ["picasso_longerons", "picasso_longerons", "Longerons"],
- 	 ["picasso_crushbar", "picasso_crushbar", "Crush Bar"],
- 	 ["picasso_radiator", "picasso_radiator", "Radiator"],
      ["picasso_subframe", "picasso_subframe", "Subframe"],
      ["picasso_suspension_F", "picasso_suspension_F", "Front Suspension"],
      ["picasso_engine", "picasso_engine", "Engine"],
@@ -143,4 +152,45 @@
 	 ["picasso_trunk_load", "picasso_trunk_load_32kg", "Trunk load"],
 	],
 }
+
+
+"picasso_support": {
+    "information":{
+        "authors":"Sergey Lysenko",
+        "name":"Additional support beam to simulate self-collision",
+    }
+    "slotType" : "picasso_support",
+	"slots": [
+	["type", "default", "description"],
+	],
+	
+	"beams": [
+		  ["id1:", "id2:"],
+
+		  {"beamSpring":250000,"beamDamp":100,"beamStrength":750000},
+          
+		  // Crushbar to radiator
+		  {"beamPrecompression":0.6,"beamType":"|SUPPORT", "beamLongBound":3}, 
+
+  		  ["cbll1","rdi2l1"],["cbul1","rdi2l1"],
+		  ["cblc0","rdi2l1"],["cbuc0","rdi2l1"],
+		  ["cblr1","rdi2l1"],["cbur1","rdi2l1"],
+
+		  ["cbll1","rdi2c0"],["cbul1","rdi2c0"],
+		  ["cblc0","rdi2c0"],["cbuc0","rdi2c0"],
+		  ["cblr1","rdi2c0"],["cbur1","rdi2c0"],
+
+  		  ["cbll1","rdi2r1"],["cbul1","rdi2r1"],
+		  ["cblc0","rdi2r1"],["cbuc0","rdi2r1"],
+		  ["cblr1","rdi2r1"],["cbur1","rdi2r1"],
+
+
+		  
+		  ]
+
+}
+
+
+
+
 }

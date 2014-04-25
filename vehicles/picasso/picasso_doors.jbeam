@@ -5,11 +5,6 @@
 		"name":"Hood",
 	}
     "slotType" : "picasso_hood",
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["bonnet", ["bonnet"]],
@@ -112,7 +107,7 @@
 		  
 		  //Support
 		  {"beamSpring":250000,"beamDamp":100},
-          {"beamPrecompression":1, "beamType":"|SUPPORT", "beamLongBound":10,}, 
+          {"beamPrecompression":1, "beamType":"|SUPPORT", "beamLongBound":10}, 
 
 		  ["hoo1l2","lnur1"],["hoo1l2","lnur2"],
 		  ["hoo1l1","lnur1"],["hoo1l1","lnur2"],

@@ -363,7 +363,7 @@
 		  ["id1:", "id2:"],
 		  
          {"beamPrecompression":1.1, "beamType":"|BOUNDED", "beamLongBound":0.65, "beamShortBound":0.65}, 
-         {"beamSpring":6500,"beamDamp":200},
+         {"beamSpring":6500,"beamDamp":300},
 		 {"beamLimitSpring":1000000,"beamLimitDamp":100}
 		  // Transverse
 		  ["acul1","acul2"],["acul2","acul3"],["acul3","acul1"],["acll1","acll2"],["acll2","acll3"],["acll3","acll1"],
