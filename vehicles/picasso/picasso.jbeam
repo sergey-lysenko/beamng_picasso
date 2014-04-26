@@ -8,12 +8,12 @@
     "slotType" : "main",
 	"slots": [
 	["type", "default", "description"],
-     ["picasso_base", "picasso_base", "Base"],
-     ["picasso_body", "picasso_body", "Body"],
-     ["picasso_doors", "picasso_doors", "Doors"],
-     ["picasso_exterior", "picasso_exterior", "Exterior"],
-     ["picasso_interior", "picasso_interior", "Interior"],
-     ["picasso_support", "picasso_support", "Additional support beam to simulate self-collision"],
+        ["picasso_base", "picasso_base", "Base"],
+        ["picasso_body", "picasso_body", "Body"],
+        ["picasso_doors", "picasso_doors", "Doors"],
+        ["picasso_exterior", "picasso_exterior", "Exterior"],
+        ["picasso_interior", "picasso_interior", "Interior"],
+        ["picasso_support", "picasso_support", "Additional support beam to simulate self-collision"],
 	],
 	"dragCoef":0.5,
 	"refNodes":[
@@ -49,11 +49,8 @@
 		[0.0, 1.65, 1.35, 110, "wnd3c1","wnd2c1","wnd3l1","wnd2l2","wnd3r1","wnd2r2",],
 		// Dashcam - external view
 		[0.0, 2.1, 1.9, 110, "wnd5c1","wnd4c1","wnd5l1","wnd4l2","wnd5r1","wnd4r2",],
-
 	 ],
-	 
 }
-
 "picasso_base": {
     "information":{
         "authors":"Sergey Lysenko",
@@ -62,23 +59,21 @@
     "slotType" : "picasso_base",
 	"slots": [
 	["type", "default", "description"],
-     // Base
- 	 ["picasso_crushbar", "picasso_crushbar", "Crush Bar"],
- 	 ["picasso_radiator", "picasso_radiator", "Radiator"],
-  	 ["picasso_fender_front_internal", "picasso_fender_front_internal", "Front Internal Fenders"],
-     ["picasso_floor_front", "picasso_floor_front", "Front Floor"],
-	 ["picasso_girder_front", "picasso_girder_front", "Front Girder"],
-   	 ["picasso_longerons", "picasso_longerons", "Longerons"],
-     ["picasso_subframe", "picasso_subframe", "Subframe"],
-     ["picasso_suspension_F", "picasso_suspension_F", "Front Suspension"],
-     ["picasso_engine", "picasso_engine", "Engine"],
-	 
-	 // Back
-     ["picasso_floor_back", "picasso_floor_back", "Rear Floor"],
-  	 ["picasso_rear_suspension_mount", "picasso_rear_suspension_mount", "Rear Suspension Mount"],
+        // --- Base ---
+ 	    ["picasso_crushbar", "picasso_crushbar", "Crush Bar"],
+ 	    ["picasso_radiator", "picasso_radiator", "Radiator"],
+  	    ["picasso_fender_front_internal", "picasso_fender_front_internal", "Front Internal Fenders"],
+        ["picasso_floor_front", "picasso_floor_front", "Front Floor"],
+	    ["picasso_girder_front", "picasso_girder_front", "Front Girder"],
+   	    ["picasso_longerons", "picasso_longerons", "Longerons"],
+        ["picasso_subframe", "picasso_subframe", "Subframe"],
+        ["picasso_suspension_F", "picasso_suspension_F", "Front Suspension"],
+        ["picasso_engine", "picasso_engine", "Engine"],
+	    // --- Back ---
+        ["picasso_floor_back", "picasso_floor_back", "Rear Floor"],
+  	    ["picasso_rear_suspension_mount", "picasso_rear_suspension_mount", "Rear Suspension Mount"],
 	],
 }
-
 "picasso_body": {
     "information":{
         "authors":"Sergey Lysenko",
@@ -87,21 +82,17 @@
     "slotType" : "picasso_body",
 	"slots": [
 	["type", "default", "description"],
-	 // Body
-	 ["picasso_pillars", "picasso_pillars", "Center Pillars"],
-	 ["picasso_front_pillars", "picasso_front_pillars", "Front Pillars"],
-	 
-	 // Rear
-	 ["picasso_fender_back_internal", "picasso_fender_back_internal", "Rear Internal Fenders"],
-  	 ["picasso_bumper_rear_internal", "picasso_bumper_rear_internal", "Rear Internal Bumper"],
-	 
-	 // Top
-     ["picasso_rear_pillars", "picasso_rear_pillars", "Rear Pillars"],
-     ["picasso_ceiling", "picasso_ceiling", "Ceiling"],
-
+	    // Body
+	    ["picasso_pillars", "picasso_pillars", "Center Pillars"],
+	    ["picasso_front_pillars", "picasso_front_pillars", "Front Pillars"],
+	    // Rear
+	    ["picasso_fender_back_internal", "picasso_fender_back_internal", "Rear Internal Fenders"],
+  	    ["picasso_bumper_rear_internal", "picasso_bumper_rear_internal", "Rear Internal Bumper"],
+	    // Top
+        ["picasso_rear_pillars", "picasso_rear_pillars", "Rear Pillars"],
+        ["picasso_ceiling", "picasso_ceiling", "Ceiling"],
 	],
 }
-
 "picasso_doors": {
     "information":{
         "authors":"Sergey Lysenko",
@@ -110,13 +101,12 @@
     "slotType" : "picasso_doors",
 	"slots": [
 	["type", "default", "description"],
-	 ["picasso_door_back", "picasso_door_back", "Back Door"],
-	 ["picasso_door_front_left", "picasso_door_front_left", "Front Left Door"],
-	 ["picasso_door_rear_left", "picasso_door_rear_left", "Rear Left Door"],
-	 ["picasso_hood", "picasso_hood", "Hood"],
+	    ["picasso_door_back", "picasso_door_back", "Back Door"],
+	    ["picasso_door_front_left", "picasso_door_front_left", "Front Doors"],
+	    ["picasso_door_rear_left", "picasso_door_rear_left", "Rear Doors"],
+	    ["picasso_hood", "picasso_hood", "Hood"],
 	],
 }
-
 "picasso_exterior": {
     "information":{
         "authors":"Sergey Lysenko",
@@ -125,14 +115,13 @@
     "slotType" : "picasso_exterior",
 	"slots": [
 	["type", "default", "description"],
-	 ["picasso_headlights", "picasso_headlights", "Headlights"],
- 	 ["picasso_fender_front_left", "picasso_fender_front_left", "Front Left Fender"],
-	 ["picasso_fender_front_right", "picasso_fender_front_right", "Front Right Fender"],
-     ["picasso_bumper_front", "picasso_bumper_front", "Front Bumper"],
-	 ["picasso_rear_bumper", "picasso_rear_bumper", "Rear Bumper"],
+	    ["picasso_headlights", "picasso_headlights", "Headlights"],
+ 	    ["picasso_fender_front_left", "picasso_fender_front_left", "Front Left Fender"],
+	    ["picasso_fender_front_right", "picasso_fender_front_right", "Front Right Fender"],
+        ["picasso_bumper_front", "picasso_bumper_front", "Front Bumper"],
+	    ["picasso_rear_bumper", "picasso_rear_bumper", "Rear Bumper"],
 	],
 }
-
 "picasso_interior": {
     "information":{
         "authors":"Sergey Lysenko",
@@ -141,19 +130,17 @@
     "slotType" : "picasso_interior",
 	"slots": [
 	["type", "default", "description"],
-	 ["picasso_dashboard", "picasso_dashboard", "Dashboard"],
-     ["picasso_steering_column", "picasso_steering_column", "Steering Columns"],
-     ["picasso_front_left_seat", "picasso_front_left_seat", "Front Left Seat"],
-     ["picasso_front_right_seat", "picasso_front_right_seat", "Front Right Seat"],
-     ["picasso_rear_left_seat", "picasso_rear_left_seat", "Rear Left Seat"],
-     ["picasso_rear_center_seat", "picasso_rear_center_seat", "Rear Center Seat"],
-     ["picasso_rear_right_seat", "picasso_rear_right_seat", "Rear Right Seat"],
-	 ["picasso_luggage_cover", "picasso_luggage_cover", "Luggage cover"],
-	 ["picasso_trunk_load", "picasso_trunk_load_32kg", "Trunk load"],
+	    ["picasso_dashboard", "picasso_dashboard", "Dashboard"],
+        ["picasso_steering_column", "picasso_steering_column", "Steering Columns"],
+        ["picasso_front_left_seat", "picasso_front_left_seat", "Front Left Seat"],
+        ["picasso_front_right_seat", "picasso_front_right_seat", "Front Right Seat"],
+        ["picasso_rear_left_seat", "picasso_rear_left_seat", "Rear Left Seat"],
+        ["picasso_rear_center_seat", "picasso_rear_center_seat", "Rear Center Seat"],
+        ["picasso_rear_right_seat", "picasso_rear_right_seat", "Rear Right Seat"],
+	    ["picasso_luggage_cover", "picasso_luggage_cover", "Luggage cover"],
+	    ["picasso_trunk_load", "picasso_trunk_load_32kg", "Trunk load"],
 	],
 }
-
-
 "picasso_support": {
     "information":{
         "authors":"Sergey Lysenko",
@@ -161,36 +148,22 @@
     }
     "slotType" : "picasso_support",
 	"slots": [
-	["type", "default", "description"],
+	    ["type", "default", "description"],
 	],
-	
 	"beams": [
-		  ["id1:", "id2:"],
-
-		  {"beamSpring":250000,"beamDamp":100,"beamStrength":750000},
-          
-		  // Crushbar to radiator
-		  {"beamPrecompression":0.6,"beamType":"|SUPPORT", "beamLongBound":3}, 
-
-  		  ["cbll1","rdi2l1"],["cbul1","rdi2l1"],
-		  ["cblc0","rdi2l1"],["cbuc0","rdi2l1"],
-		  ["cblr1","rdi2l1"],["cbur1","rdi2l1"],
-
-		  ["cbll1","rdi2c0"],["cbul1","rdi2c0"],
-		  ["cblc0","rdi2c0"],["cbuc0","rdi2c0"],
-		  ["cblr1","rdi2c0"],["cbur1","rdi2c0"],
-
-  		  ["cbll1","rdi2r1"],["cbul1","rdi2r1"],
-		  ["cblc0","rdi2r1"],["cbuc0","rdi2r1"],
-		  ["cblr1","rdi2r1"],["cbur1","rdi2r1"],
-
-
-		  
-		  ]
-
+		["id1:", "id2:"],
+		{"beamSpring":250000,"beamDamp":100,"beamStrength":750000},
+		// Crushbar to radiator
+		{"beamPrecompression":0.6,"beamType":"|SUPPORT", "beamLongBound":3}, 
+  		["cbll1","rdi2l1"],["cbul1","rdi2l1"],
+		["cblc0","rdi2l1"],["cbuc0","rdi2l1"],
+		["cblr1","rdi2l1"],["cbur1","rdi2l1"],
+		["cbll1","rdi2c0"],["cbul1","rdi2c0"],
+		["cblc0","rdi2c0"],["cbuc0","rdi2c0"],
+		["cblr1","rdi2c0"],["cbur1","rdi2c0"],
+  		["cbll1","rdi2r1"],["cbul1","rdi2r1"],
+		["cblc0","rdi2r1"],["cbuc0","rdi2r1"],
+		["cblr1","rdi2r1"],["cbur1","rdi2r1"],
+	]
 }
-
-
-
-
 }
