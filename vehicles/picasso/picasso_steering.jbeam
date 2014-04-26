@@ -89,9 +89,9 @@
 	"hydros": [
 			["id1:","id2:"],
 			{"beamSpring":12750000,"beamDamp":2000,"beamDeform":1420000,"beamStrength":1790000},
+			//{"beamPrecompression":1.03},
 			["strl","tibl1",{"factor":-0.19,"steeringWheelLock":480}],
 		    ["strr","tibr1",{"factor":0.19,"steeringWheelLock":480}],
-			{"beamPrecompression":1},
 	]
 }
 
