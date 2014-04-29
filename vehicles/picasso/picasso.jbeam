@@ -102,7 +102,8 @@
 	"slots": [
 	["type", "default", "description"],
 	    ["picasso_door_back", "picasso_door_back", "Back Door"],
-	    ["picasso_door_front_left", "picasso_door_front_left", "Front Doors"],
+	    ["picasso_door_front_left", "picasso_door_front_left", "Front Left Door"],
+	    ["picasso_door_front_right", "picasso_door_front_right", "Front Right Door"],
 	    ["picasso_door_rear_left", "picasso_door_rear_left", "Rear Doors"],
 	    ["picasso_hood", "picasso_hood", "Hood"],
 	],
@@ -116,7 +117,7 @@
 	"slots": [
 	["type", "default", "description"],
 	    ["picasso_headlights", "picasso_headlights", "Headlights"],
- 	    ["picasso_fender_front_left", "picasso_fender_front_left", "Front Left Fender"],
+		["picasso_fender_front_left", "picasso_fender_front_left", "Front Left Fender"],
 	    ["picasso_fender_front_right", "picasso_fender_front_right", "Front Right Fender"],
         ["picasso_bumper_front", "picasso_bumper_front", "Front Bumper"],
 	    ["picasso_rear_bumper", "picasso_rear_bumper", "Rear Bumper"],

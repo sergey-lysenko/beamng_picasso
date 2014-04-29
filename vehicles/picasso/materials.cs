@@ -22,11 +22,17 @@ singleton Material(picasso_Black_plastic)
 singleton Material(picasso_Green_Glass)
 {
    mapTo = "Green_Glass";
-   diffuseColor[0] = "0.192093 0.2 0.192207 0.9";
-   specular[0] = "0.5 0.5 0.5 1";
-   specularPower[0] = "50";
-   doubleSided = "1";
+   diffuseColor[0] = "0.8 0.996078 0.784314 0.2";
+   specular[0] = "0.996078 0.996078 0.996078 1";
+   specularPower[0] = "128";
+   doubleSided = "0";
    translucent = "1";
+   pixelSpecular[0] = "1";
+   castShadows = "0";
+   alphaTest = "1";
+   alphaRef = "0";
+   cubemap = "BlueSkyCubemap";
+   materialTag0 = "Miscellaneous";
 };
 
 singleton Material(picasso_Body)
@@ -215,4 +221,14 @@ singleton Material(picasso_White_plastic)
    specularPower[0] = "50";
    doubleSided = "1";
    translucentBlendOp = "None";
+};
+
+singleton Material(picasso_Black_Glass)
+{
+   mapTo = "Black_Glass";
+   diffuseColor[0] = "0.192093 0.2 0.192207 0.9";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "50";
+   doubleSided = "1";
+   translucent = "1";
 };

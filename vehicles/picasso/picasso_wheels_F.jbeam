@@ -64,7 +64,7 @@
 			//hub options
 			{"hubBeamSpring":1121000, "hubBeamDamp":8}
 			{"beamSpring":1121000, "beamDamp":8},
-			{"hubBeamDeform":15000, "hubBeamStrength":164000},
+			{"hubBeamDeform":16000, "hubBeamStrength":164000},
 			{"beamDeform":240000,"beamStrength":380000},
 			{"hubNodeWeight":0.44},
 			{"hubNodeMaterial":"|NM_METAL"},

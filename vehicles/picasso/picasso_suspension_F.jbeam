@@ -77,10 +77,10 @@
 		["saul4","saul5"],["saul5","saul6"],["saul6","saul4"],["sall4","sall5"],["sall5","sall6"],["sall6","sall4"],
 		["saur4","saur5"],["saur5","saur6"],["saur6","saur4"],["salr4","salr5"],["salr5","salr6"],["salr6","salr4"],
 
-		  {"beamSpring":8000000,"beamDamp":100},
-		  // Bushings - external - traversal
-          ["saul1","sall1"],["saul2","sall2"],["saul3","sall3"],["saul4","sall4"],["saul5","sall5"],["saul6","sall6"],
-          ["saur1","salr1"],["saur2","salr2"],["saur3","salr3"],["saur4","salr4"],["saur5","salr5"],["saur6","salr6"],
+		{"beamSpring":8000000,"beamDamp":100},
+		// Bushings - external - traversal
+        ["saul1","sall1"],["saul2","sall2"],["saul3","sall3"],["saul4","sall4"],["saul5","sall5"],["saul6","sall6"],
+        ["saur1","salr1"],["saur2","salr2"],["saur3","salr3"],["saur4","salr4"],["saur5","salr5"],["saur6","salr6"],
 
 		// Bushings - external - diagonal
 		{"beamSpring":1800000,"beamDamp":100},
@@ -306,13 +306,10 @@
 		{"nodeMaterial":"|NM_METAL"},
 		{"selfCollision":false}
 		{"collision":false}
-
- 		{"nodeWeight":1},
-		["swb1c1", 0.0, 1.05, 0.85],
-		["swb1c2", 0.0, 1.35, 0.85],
-
  		{"nodeWeight":1},
 		{"group":""},
+		["swb1c1", 0.0, 1.05, 0.85],
+		["swb1c2", 0.0, 1.35, 0.85],
 		["swb1l3", 0.7, 1.0, 0.6],
 		["swb1l2", 0.7, 1.0, 0.3],
 		["swb1l1", 0.5, 1.2, 0.4],
@@ -320,7 +317,6 @@
 		["swb1r1", -.5, 1.2, 0.4],
 		["swb1r2", -.7, 1.0, 0.3],
 		["swb1r3", -.7, 1.0, 0.6],
-		 
 		["mstml1", -.77130, 0.97998, 0.71102],
 		["mstml2", -.70898, 0.91681, 0.70739],
 		["mstml3", -.64698, 0.97880, 0.69326],
@@ -333,28 +329,22 @@
 	"beams": [
 		["id1:", "id2:"],
 		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":1600000,"beamDamp":100},
+		{"beamSpring":1500000,"beamDamp":100},
 		{"beamDeform":165000,"beamStrength":2000000},
-	  
 		["swb1l1","swb1c0"],["swb1l1","swb1c1"],["swb1l1","swb1c2"],
 		["swb1c0","swb1c1"],["swb1c0","swb1c2"],["swb1c1","swb1c2"],
 		["swb1r1","swb1c0"],["swb1r1","swb1c1"],["swb1r1","swb1c2"],
 		["swb1c0","swb1c1"],["swb1c0","swb1c2"],
-
 		["swb1l1","swb1l2"],["swb1l3","swb1l2"],
 		["swb1r1","swb1r2"],["swb1r3","swb1r2"],
-
 		["swb1r3","mstml4"],["swb1r3","mstml3"],["swb1r3","mstml2"],["swb1r3","mstml1"],
 		["swb1l3","mstmr4"],["swb1l3","mstmr3"],["swb1l3","mstmr2"],["swb1l3","mstmr1"],
-		  
 		["swb1l2","swb1l1"],["swb1l2","swb1c0"],["swb1l2","swb1c1"],["swb1l2","swb1c2"],
 		["swb1r2","swb1r1"],["swb1r2","swb1c0"],["swb1r2","swb1c1"],["swb1r2","swb1c2"],
-		  
-		// Subframe mount
+		// --- Subframe mount ---
   		["swb1c0","sfl3l2"],["swb1c1","sfl3l2"],["swb1c2","sfl3l2"],
  		["swb1c0","sfl3r2"],["swb1c1","sfl3r2"],["swb1c2","sfl3r2"],
-
-		// Strut mount bracket
+		// --- Strut mount bracket ---
  		["mstml1","stml1"],
 		["mstml2","stml2"],
 		["mstml3","stml3"],
@@ -382,13 +372,10 @@
 		{"nodeMaterial":"|NM_METAL"},
 		{"selfCollision":false}
 		{"collision":false}
-
- 		{"nodeWeight":1},
-		["swb1c1", 0.0, 1.05, 0.55],
-		["swb1c2", 0.0, 1.35, 0.55],
-
  		{"nodeWeight":1},
 		{"group":""},
+		["swb1c1", 0.0, 1.05, 0.55],
+		["swb1c2", 0.0, 1.35, 0.55],
 		["swb1l3", 0.7, 1.0, 0.6],
 		["swb1l2", 0.7, 1.0, 0.3],
 		["swb1l1", 0.5, 1.2, 0.4],
@@ -396,7 +383,6 @@
 		["swb1r1", -.5, 1.2, 0.4],
 		["swb1r2", -.7, 1.0, 0.3],
 		["swb1r3", -.7, 1.0, 0.6],
-		 
 		["mstml1", -.77130, 0.97998, 0.71102],
 		["mstml2", -.70898, 0.91681, 0.70739],
 		["mstml3", -.64698, 0.97880, 0.69326],
@@ -409,31 +395,24 @@
 	"beams": [
 		["id1:", "id2:"],
 		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":1600000,"beamDamp":100},
+		{"beamSpring":1500000,"beamDamp":100},
 		{"beamDeform":165000,"beamStrength":2000000},
-
 		["swb1l1","swb1c0"],["swb1l1","swb1c1"],["swb1l1","swb1c2"],
 		["swb1c0","swb1c1"],["swb1c0","swb1c2"],["swb1c1","swb1c2"],
 		["swb1r1","swb1c0"],["swb1r1","swb1c1"],["swb1r1","swb1c2"],
 		["swb1c0","swb1c1"],["swb1c0","swb1c2"],
-
 		["swb1l1","swb1l2"],
 		["swb1r1","swb1r2"],
-		  
 		["swb1l3","swb1l2"],
 		["swb1r3","swb1r2"],
-
 		["swb1r3","mstml4"],["swb1r3","mstml3"],["swb1r3","mstml2"],["swb1r3","mstml1"],
 		["swb1l3","mstmr4"],["swb1l3","mstmr3"],["swb1l3","mstmr2"],["swb1l3","mstmr1"],
-		  
 		["swb1l2","swb1l1"],["swb1l2","swb1c0"],["swb1l2","swb1c1"],["swb1l2","swb1c2"],
 		["swb1r2","swb1r1"],["swb1r2","swb1c0"],["swb1r2","swb1c1"],["swb1r2","swb1c2"],
-		  
-		// Subframe mount
+		// --- Subframe mount ---
   		["swb1c0","sfl3l2"],["swb1c1","sfl3l2"],["swb1c2","sfl3l2"],
   		["swb1c0","sfl3r2"],["swb1c1","sfl3r2"],["swb1c2","sfl3r2"],
-
-		// Strut mount bracket
+		// --- Strut mount bracket ---
  		["mstml1","stml1"],
 		["mstml2","stml2"],
 		["mstml3","stml3"],

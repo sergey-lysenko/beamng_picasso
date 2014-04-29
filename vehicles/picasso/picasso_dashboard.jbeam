@@ -237,7 +237,7 @@
 		  {"beamPrecompression":1.3}, 
 		  
   		  //Lock
-		  {"beamSpring":5000,"beamDamp":50},
+		  {"beamSpring":50000,"beamDamp":50},
 		  {"beamStrength":250},
   		  ["mdsh3l1","dsh3l1"],["mdsh3l2","dsh3l2"],
 		  ["mdsh3r1","dsh3r1"],["mdsh3r2","dsh3r2"],

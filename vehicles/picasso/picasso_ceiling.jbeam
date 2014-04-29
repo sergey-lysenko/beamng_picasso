@@ -318,13 +318,14 @@
 		  // Structural rigidification beams
    		 ["cei5l1","cei8l1"],["cew1l1","cei7l1"],["cew2l1","cei7l1"],["cew1l1","cei5l1"],
    		 ["cei5r1","cei8r1"],["cew1r1","cei7r1"],["cew2r1","cei7r1"],["cew1r1","cei5r1"],
-		 
 		 ["cei3l1","rrp4l3"],["cei2l1","rrp4l3"],["cei2l1","rrp3l1"],["cei1l1","rrp3l1"],
 		 ["cei3r1","rrp4r3"],["cei2r1","rrp4r3"],["cei2r1","rrp3r1"],["cei1r1","rrp3r1"],
-	 
 		 ["arc1l3","rrp1l3"],["arc1c3","rrp1c3"],["arc1r3","rrp1r3"],
 		 ["arc1c3","rrp1l3"],["arc1c3","rrp1r3"],
 		 ["arc1l3","rrp1c3"],["arc1r3","rrp1c3"],
+		 
+		 ["cei8l1","cpl4l3"],
+		 ["cei8r1","cpl4r3"],
 
 		  // Antihinging
          ["arc7l3","cpl4l2"],["arc7r3","cpl4r2"],
