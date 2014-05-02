@@ -12,13 +12,13 @@
 	"scalebeamStrength":1,
 	"slots": [
 	["type", "default", "description"],
-     ["picasso_windscreen", "picasso_windscreen", "Windscreen"],
-     ["picasso_front_sideglass", "picasso_front_sideglass", "Side Glass"],
+        ["picasso_windscreen", "picasso_windscreen", "Windscreen"],
+        ["picasso_front_sideglass", "picasso_front_sideglass", "Side Glass"],
 	],
 	
 	"flexbodies": [
-	 	 ["mesh", "[group]:", "nonFlexMaterials"],
-	 	 ["front_pillar", ["front_pillar"]],
+	 	["mesh", "[group]:", "nonFlexMaterials"],
+	 	["front_pillar", ["front_pillar"]],
 	 ],
  	"nodes": [
 
@@ -208,11 +208,6 @@
 		  ["frp5l1","ffi3l0"],["frp5l2","fft6l2"],["frp5l3","ffi3l1"],
    		  ["frp5r1","ffi3r1"],["frp5r2","ffi3r0"],["frp5r3","fft6r2"],
 		  ["frp5r1","ffi3r0"],["frp5r2","fft6r2"],["frp5r3","ffi3r1"],
-
-
-		  
-
-
 		  
 		  // Upper beam
 		  ["frp6l1","frp7c1"],["frp6l1","frp7c2"],["frp6l1","frp7c3"],
@@ -267,24 +262,24 @@
 	  
 */
 
-
-         ["mfgd2l3","fgd2l3"],
-         ["mfgd2r3","fgd2r3"],
-         ["mfgd3l2","fgd3l2"],
-         ["mfgd3r2","fgd3r2"],
-         ["mfft7r2","fft7r2"],
-         ["mfft7l2","fft7l2"],
-		 
-         ["mffi3l0","ffi3l0"],
-         ["mffi3r0","ffi3r0"],
-         ["mffi3l1","ffi3l1"],
-         ["mffi3r1","ffi3r1"],
-
-         ["mfft6l2","fft6l2"],
-         ["mfft6r2","fft6r2"],
-		 
-		 ["frp3l1","fft6l1"],["frp5l1","fft6l1"],
-		 ["frp3r1","fft6r1"],["frp5r1","fft6r1"],
+        ["mfgd2l3","mfgd3l2"],
+        ["mfgd2r3","mfgd3r2"],
+        ["mfgd2l3","mffi3l0"],["mfgd3l2","mffi3l0"],
+        ["mfgd2r3","mffi3l0"],["mfgd3r2","mffi3l0"],
+        ["mfgd2l3","fgd2l3"],
+        ["mfgd2r3","fgd2r3"],
+        ["mfgd3l2","fgd3l2"],
+        ["mfgd3r2","fgd3r2"],
+        ["mfft7r2","fft7r2"],
+        ["mfft7l2","fft7l2"],
+        ["mffi3l0","ffi3l0"],
+        ["mffi3r0","ffi3r0"],
+        ["mffi3l1","ffi3l1"],
+        ["mffi3r1","ffi3r1"],
+        ["mfft6l2","fft6l2"],
+        ["mfft6r2","fft6r2"],
+		["frp3l1","fft6l1"],["frp5l1","fft6l1"],
+        ["frp3r1","fft6r1"],["frp5r1","fft6r1"],
 
 		  
      ]

@@ -232,3 +232,18 @@ singleton Material(picasso_Black_Glass)
    doubleSided = "1";
    translucent = "1";
 };
+
+singleton Material(picasso_Clear_Glass)
+{
+   mapTo = "Clear_Glass";
+   diffuseColor[0] = "0.992157 0.992157 0.992157 0.2";
+   specular[0] = "0.996078 0.996078 0.996078 1";
+   specularPower[0] = "11";
+   doubleSided = "1";
+   translucent = "1";
+   pixelSpecular[0] = "1";
+   castShadows = "0";
+   materialTag0 = "beamng";
+   materialTag2 = "Industrial";
+   materialTag1 = "beamng";
+};

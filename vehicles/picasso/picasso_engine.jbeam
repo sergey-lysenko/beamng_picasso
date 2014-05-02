@@ -34,7 +34,7 @@
 	"engine":{
 		"idleRPM":1000,
 		"shiftDownRPM":1000,
-		"shiftUpRPM":4000,
+		"shiftUpRPM":5700,
 		"maxRPM":7000,
 		"inertia":0.16,
 		"friction":24,
@@ -173,11 +173,6 @@
 		"name":"Standard Exhaust",
 	}
     "slotType" : "picasso_exhaust",
-	 "scalenodeWeight":1,
-	 "scalebeamSpring":1,
-	 "scalebeamDamp":1,
-	 "scalebeamDeform":1,
-	 "scalebeamStrength":1,
 	"flexbodies": [
 		 ["mesh", "[group]:", "nonFlexMaterials"],
 		 ["picasso_exhaust", ["picasso_exhaust"]],
@@ -217,7 +212,7 @@
 		// -1, 0 (neutral), 1, etc
 		"gears":[-1.917, 0, 3.417, 1.783, 1.121, 0.795, 0.647, 0.534]
 		"clutchDuration":0.3
-		"clutchTorque":340
+		"clutchTorque":940
 		"viscousCoupling":6
 		"lockingTorqueLimit":500
 		"enableLocking":false

@@ -59,7 +59,7 @@
 			{"wheelOffset":0.01},
 			{"hubWidth":0.215},
 			{"tireWidth":0.215},
-			{"numRays":12},
+			{"numRays":18},
 			
 			//hub options
 			{"hubBeamSpring":1121000, "hubBeamDamp":8}
@@ -76,12 +76,12 @@
 			{"springExpansion":351000, "dampExpansion":8},
 			{"nodeWeight":0.22},
 			{"nodeMaterial":"|NM_RUBBER"},
-			{"frictionCoef":1.5},
+			{"frictionCoef":1.4},
 			
 			//
-			{"pressurePSI":60},
+			{"pressurePSI":80},
 			{"maxPressurePSI":1400},
-			{"reinforcementPressurePSI":60},
+			{"reinforcementPressurePSI":80},
 			{"pressureSpring":501000},
 			{"reinforcementPressureSpring":101000},
 			{"pressureDamp":16},

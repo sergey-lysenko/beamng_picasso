@@ -126,16 +126,9 @@
 		"name":"Back Door With Opening Glass",
 	}
     "slotType" : "picasso_door_back",
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 	"slots": [
 	["type", "default", "description"],
 	 ["picasso_glassdoor", "picasso_glassdoor", "Glass Door"],
-	 // light base is temporarly intergated with door
-	 //["picasso_inner_taillights", "picasso_inner_taillights", "Inner Tail Lights"],
 	 ["picasso_back_door_bumper", "picasso_back_door_bumper", "Tailgate Bumper"],
 	],
 
@@ -156,7 +149,7 @@
 		 ["bd3l2", 0.71335, 4.24513, 1.23503],
 		 ["bd3r2", -.71335, 4.24513, 1.23503],
 
-		 {"nodeWeight":0.4}
+		 {"nodeWeight":0.42}
 		 ["bd1r2", -.60441, 4.37759, 0.56924],
 		 ["bd1r1", -.28207, 4.40186, 0.57264],
 		 ["bd1c0", 0.00000, 4.40953, 0.57604],
@@ -202,8 +195,6 @@
 		 ["bdi4c0", 0.00000, 3.70311, 1.39273],
 		 ["bdi4r1", -.32518, 3.70587, 1.38997],
   		 ["bdi4r2", -.56451, 3.73559, 1.38069],
-		 
-		 
      ]
 	"beams": [
 		  ["id1:", "id2:"],

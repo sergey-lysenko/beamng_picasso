@@ -20,7 +20,7 @@
 		 {"nodeMaterial":"|NM_PLASTIC"},
 		 {"selfCollision":true}
 		 {"collision":true}
-         {"nodeWeight":0.61},
+         {"nodeWeight":0.62},
          {"group":"crushbar"},
          ["cbul2",-0.57864,0.23702,0.67122],
          ["cbul1",-0.33624,0.21605,0.67122],
@@ -33,6 +33,7 @@
          ["cblr1",0.33624,0.21609,0.56077],
          ["cblr2",0.57864,0.23706,0.56077],
 		 
+         {"nodeWeight":0.7},
          ["mlnul1",-0.446,0.427,0.671],
          ["mlnul2",-0.559,0.427,0.671],
          ["mlnll1",-0.446,0.427,0.561],
@@ -44,7 +45,7 @@
 
 		 {"selfCollision":false}
 		 {"collision":false}
-         {"nodeWeight":0.71},
+         {"nodeWeight":0.72},
          ["cbucZ",0.0,0.5,0.77122],
          ["cblcZ",0.0,0.5,0.46077],
 

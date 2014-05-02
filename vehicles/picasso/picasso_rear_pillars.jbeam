@@ -5,11 +5,6 @@
 		"name":"Rear Pillars",
 	}
     "slotType" : "picasso_rear_pillars",
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 	"slots": [
 	["type", "default", "description"],
 	  ["picasso_rear_sideglass", "picasso_rear_sideglass", "Rear Side Glass"],

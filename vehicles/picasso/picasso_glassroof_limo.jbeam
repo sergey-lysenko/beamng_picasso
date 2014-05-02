@@ -1,0 +1,155 @@
+{
+"picasso_glassroof_limo": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Limo Glass Roof",
+	}
+    "slotType" : "picasso_glassroof_limo",
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["limo_roof_glass", ["limo_roof_glass"]],
+	 ],
+ 	"nodes": [
+
+	["id", "posX", "posY", "posZ"],
+         {"group":"limo_roof_glass"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_GLASS"},
+         {"collision":true}
+         {"selfCollision":true}
+         {"nodeWeight":0.4},
+
+   		 ["glr1l2", 0.58635, 2.37242, 1.71387],
+   		 ["glr1l1", 0.31988, 2.37246, 1.78236],
+   		 ["glr1c1", 0.00000, 2.37407, 1.81717],
+   		 ["glr1r1", -.31988, 2.37246, 1.78236],
+   		 ["glr1r2", -.58635, 2.37242, 1.71387],
+		 
+   		 ["glr2l2", 0.58086, 2.67180, 1.72534],
+   		 ["glr2l1", 0.31624, 2.67242, 1.84073],
+   		 ["glr2c1", 0.00000, 2.67489, 1.87772],
+   		 ["glr2r1", -.31624, 2.67242, 1.84073],
+   		 ["glr2r2", -.58086, 2.67180, 1.72534],
+
+   		 ["glr3l2", 0.58517, 3.18629, 1.70770],
+   		 ["glr3l1", 0.30989, 3.19469, 1.81868],
+   		 ["glr3c1", 0.00000, 3.19957, 1.85509],
+   		 ["glr3r1", -.30989, 3.19469, 1.81868],
+   		 ["glr3r2", -.58517, 3.18629, 1.70770],
+
+   		 ["glr4l2", 0.58517, 3.68629, 1.70770],
+   		 ["glr4l1", 0.30989, 3.69469, 1.81868],
+   		 ["glr4c1", 0.00000, 3.69957, 1.85509],
+   		 ["glr4r1", -.30989, 3.69469, 1.81868],
+   		 ["glr4r2", -.58517, 3.68629, 1.70770],
+
+   		 ["glr5l2", 0.58517, 4.18629, 1.70770],
+   		 ["glr5l1", 0.30989, 4.19469, 1.81868],
+   		 ["glr5c1", 0.00000, 4.19957, 1.85509],
+   		 ["glr5r1", -.30989, 4.19469, 1.81868],
+   		 ["glr5r2", -.58517, 4.18629, 1.70770],
+		 
+   		 ["glr6l2", 0.59682, 4.60288, 1.65226],
+   		 ["glr6l1", 0.30460, 4.60460, 1.69604],
+   		 ["glr6c1", 0.00000, 4.60853, 1.73142],
+   		 ["glr6r1", -.30460, 4.60460, 1.69604],
+   		 ["glr6aw", -.59682, 4.60288, 1.65226],
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":5000,"beamDamp":75},
+		  {"beamDeform":5000,"beamStrength":2000},
+		  
+		  
+		  //first grade
+		  
+		  // Longitudinal
+		  ["glr1l2","glr2l2"],["glr3l2","glr2l2"],["glr3l2","glr4l2"],["glr5l2","glr4l2"],["glr5l2","glr6l2"],
+		  ["glr1l1","glr2l1"],["glr3l1","glr2l1"],["glr3l1","glr4l1"],["glr5l1","glr4l1"],["glr5l1","glr6l1"],
+		  ["glr1c1","glr2c1"],
+		  
+		  /*
+		  ["glr1r1","glr2r1"],["glr3r1","glr2r1"],["glr3r1","glr4r1"],["glr5r1","glr4r1"],["glr5r1","glr6r1"],
+		  ["glr3c1","glr4c1"],["glr3c1","glr2c1"],
+		  ["glr5c0","glr4c0"],["glr5c0","glr6c0"],
+		  
+		  ["glr1r2","glr2r2"],["glr3r2","glr2r2"],["glr3r2","glr4r2"],["glr5r2","glr4r2"],["glr5r2","glr6r2"],
+
+		  
+		  // Traversal
+  		  ["glr1r2","glr1r1"],["glr1r1","glr1c1"],["glr1c1","glr1l1"],["glr1l1","glr1l2"],
+  		  ["glr2r2","glr2r1"],["glr2r1","glr2c1"],["glr2c1","glr2l1"],["glr2l1","glr2l2"],
+  		  ["glr3r2","glr3r1"],["glr3r1","glr3c1"],["glr3c1","glr3l1"],["glr3l1","glr3l2"],
+  		  ["glr4r2","glr4r1"],["glr4r1","glr4c1"],["glr4c1","glr4l1"],["glr4l1","glr4l2"],
+		  
+		  // Diagonal
+  		  ["glr1r2","glr2r1"],["glr1r1","glr2c1"],["glr1c1","glr2l1"],["glr1l1","glr2l2"],
+  		  ["glr2r2","glr3r1"],["glr2r1","glr3c1"],["glr2c1","glr3l1"],["glr2l1","glr3l2"],
+  		  ["glr3r2","glr4r1"],["glr3r1","glr4c1"],["glr3c1","glr4l1"],["glr3l1","glr4l2"],
+  		  ["glr2r2","glr1r1"],["glr2r1","glr1c1"],["glr2c1","glr1l1"],["glr2l1","glr1l2"],
+  		  ["glr3r2","glr2r1"],["glr3r1","glr2c1"],["glr3c1","glr2l1"],["glr3l1","glr2l2"],
+  		  ["glr4r2","glr3r1"],["glr4r1","glr3c1"],["glr4c1","glr3l1"],["glr4l1","glr3l2"],
+
+		  //second grade
+		  // Longitudinal
+		  ["glr1l2","glr3l2"],["glr4l2","glr2l2"],
+		  ["glr1l1","glr3l1"],["glr4l1","glr2l1"],
+		  ["glr1c1","glr3c1"],["glr4c1","glr2c1"],
+		  ["glr1r1","glr3r1"],["glr4r1","glr2r1"],
+		  ["glr1r2","glr3r2"],["glr4r2","glr2r2"],
+
+		  // Traversal
+  		  ["glr1r2","glr1c1"],["glr1r1","glr1l1"],["glr1c1","glr1l2"],
+  		  ["glr2r2","glr2c1"],["glr2r1","glr2l1"],["glr2c1","glr2l2"],
+  		  ["glr3r2","glr3c1"],["glr3r1","glr3l1"],["glr3c1","glr3l2"],
+  		  ["glr4r2","glr4c1"],["glr4r1","glr4l1"],["glr4c1","glr4l2"],
+
+		  // Diagonal
+  		  ["glr1r2","glr3c1"],["glr1r1","glr3l1"],["glr1c1","glr3l2"],
+  		  ["glr2r2","glr4c1"],["glr2r1","glr4l1"],["glr2c1","glr4l2"],
+  		  ["glr3r2","glr1c1"],["glr3r1","glr1l1"],["glr3c1","glr1l2"],
+  		  ["glr4r2","glr2c1"],["glr4r1","glr2l1"],["glr4c1","glr2l2"],
+		  
+		  //third grade
+		  // Longitudinal
+		  ["glr1l2","glr4l2"],
+		  ["glr1l1","glr4l1"],
+		  ["glr1c1","glr4c1"],
+		  ["glr1r1","glr4r1"],
+		  ["glr1r2","glr4r2"],
+		  
+		  // Traversal
+  		  ["glr1r2","glr1l1"],["glr1r1","glr1l2"],
+  		  ["glr2r2","glr2l1"],["glr2r1","glr2l2"],
+  		  ["glr3r2","glr3l1"],["glr3r1","glr3l2"],
+  		  ["glr4r2","glr4l1"],["glr4r1","glr4l2"],
+
+		  // Diagonal
+  		  ["glr1r2","glr4l1"],["glr1r1","glr4l2"],
+  		  ["glr4r2","glr1l1"],["glr4r1","glr1l2"],
+
+		  //forth grade
+		  // Traversal
+  		  ["glr1r2","glr1l2"],
+  		  ["glr2r2","glr2l2"],
+  		  ["glr3r2","glr3l2"],
+  		  ["glr4r2","glr4l2"],
+		  
+		  // Mount
+		  {"beamSpring":100000,"beamDamp":75},
+  		  {"beamStrength":150000},
+
+		  //
+		  //["glr1l2","arc6l1"],["glr4l1","arc1l1"],
+		  //["glr1r2","arc6r1"],["glr4r2","arc2r1"],
+		  //["glr4l2","arc2l1"],["glr1l1","ceb1l1"],["glr1c1","ceb1c1"],["glr1r1","ceb1r1"],["glr1r2","arc6r1"],
+		  //["glr2l2","arc5l1"],["glr4l1","arc1l1"],["glr4c1","arc1c1"],["glr4r1","arc1r1"],["glr2r2","arc5r1"],
+		  //["glr3l2","cei4l1"],["glr3l2","cei3l1"],
+		  //["glr3r2","cei4r1"],["glr3r2","cei3r1"],
+		  //
+		  
+		  */
+    ]
+}
+}

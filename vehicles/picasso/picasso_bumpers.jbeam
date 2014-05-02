@@ -16,10 +16,22 @@
 		{"selfCollision":true}
 		{"collision":true}
         {"group":"front_bumper"},
-		{"nodeWeight":0.17}
+		{"nodeWeight":0.16}
+        ["mcbul2",-0.57864,0.23702,0.67122],
+        ["mcbul1",-0.33624,0.21605,0.67122],
+        ["mcbuc0",0.00000,0.21605,0.67122],
+        ["mcbur1",0.33624,0.21605,0.67122],
+        ["mcbur2",0.57864,0.23702,0.67122],
+        ["mcbll2",-0.57864,0.23706,0.56077],
+        ["mcbll1",-0.33624,0.21609,0.56077],
+        ["mcblc0",0.00000,0.21605,0.56077],
+        ["mcblr1",0.33624,0.21609,0.56077],
+        ["mcblr2",0.57864,0.23706,0.56077],
+
+
+		{"nodeWeight":0.12}
  		["msfl0l2", 0.62700, 0.48238, 0.24863],
   		["msfl0r2", -0.62700, 0.48238, 0.24863],
-		{"nodeWeight":0.16}
 		["fbul2", -0.96304, 0.68132, 0.67271],
 		["fbll2", -0.94507, 0.60443, 0.56155],
 		["fbul3", -0.88714, 0.37643, 0.68260],
@@ -70,23 +82,14 @@
 		["fbir3", 0.52903, 0.13366, 0.79634],
 		["fbir4", 0.70958, 0.21403, 0.80690],
 		["fbir5", 0.87529, 0.42873, 0.82597],
- 		["msfl0c0", 0.00000, 0.48252, 0.24863],
-        ["mcbul2",-0.57864,0.23702,0.67122],
-        ["mcbul1",-0.33624,0.21605,0.67122],
-        ["mcbuc0",0.00000,0.21605,0.67122],
-        ["mcbur1",0.33624,0.21605,0.67122],
-        ["mcbur2",0.57864,0.23702,0.67122],
-        ["mcbll2",-0.57864,0.23706,0.56077],
-        ["mcbll1",-0.33624,0.21609,0.56077],
-        ["mcblc0",0.00000,0.21605,0.56077],
-        ["mcblr1",0.33624,0.21609,0.56077],
-        ["mcblr2",0.57864,0.23706,0.56077],
+ 		{"nodeWeight":0.14}
+		["msfl0c0", 0.00000, 0.48252, 0.24863],
      ]
 	"beams": [
 		["id1:", "id2:"],
 		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":15000,"beamDamp":50},
-		{"beamDeform":5000,"beamStrength":5500},
+		{"beamSpring":15000,"beamDamp":30},
+		{"beamDeform":6000,"beamStrength":1500},
 		// Longitudinal
 		["fbuc1","fbul7"],["fbul7","fbul6"],["fbul6","fbul5"],["fbul5","fbul4"],["fbul4","fbul3"],["fbul3","fbul2"],
 		["fbuc1","fbur7"],["fbur7","fbur6"],["fbur6","fbur5"],["fbur5","fbur4"],["fbur4","fbur3"],["fbur3","fbur2"],
@@ -98,6 +101,7 @@
   	    ["msfl0l2","msfl0c0"],["msfl0c0","msfl0r2"],
 		["fbir5","fbir4"],["fbir4","fbir3"],["fbir3","fbir2"],["fbir2","fbir1"],["fbir1","fbic1"],["fbic1","fbil1"],["fbil1","fbil2"],["fbil2","fbil3"],["fbil3","fbil4"],
 	   	// Vertical
+		{"beamSpring":15000,"beamDamp":30},
         ["mcbul2","mcbll2"],["mcbul1","mcbll1"],["mcbuc0","mcblc0"],["mcbur1","mcblr1"],["mcbur2","mcblr2"],
 		["fbil5","fbul2"],["fbil5","fbul3"],["fbil5","fbul4"],["fbil5","fbwl2"],["fbil5","fbwl3"],["fbil5","fbwl4"],
 		["fbil4","fbul3"],["fbil4","fbul4"],["fbil4","fbul5"],["fbil4","fbwl3"],["fbil4","fbwl4"],["fbil4","fbwl5"],
@@ -111,9 +115,11 @@
 		["fbir4","fbur3"],["fbir4","fbur4"],["fbir4","fbur5"],["fbir4","fbwr3"],["fbir4","fbwr4"],["fbir4","fbwr5"],
 		["fbir5","fbur2"],["fbir5","fbur3"],["fbir5","fbur4"],["fbir5","fbwr2"],["fbir5","fbwr3"],["fbir5","fbwr4"],
 	   	// Vertical diagonal
+		{"beamSpring":100000,"beamDamp":30},
 		["mcbul2","mcbll1"],["mcbul1","mcblc0"],["mcblc0","mcbur1"],["mcblr1","mcbur2"],
         ["mcbll2","mcbul1"],["mcbll1","mcbuc0"],["mcbuc0","mcblr1"],["mcbur1","mcblr2"],
 		// Traversal
+		{"beamSpring":50000,"beamDamp":30},
 		["fbuc1","fblc1"],
 		["fblc1","fbwc1"],
 		["fbul7","fbll7"],["fbul6","fbll6"],["fbul5","fbll5"],["fbul4","fbll4"],["fbul3","fbll3"],["fbul2","fbll2"],
@@ -121,6 +127,7 @@
 		["fbwl7","fbll7"],["fbwl6","fbll6"],["fbwl5","fbll5"],["fbwl4","fbll4"],["fbwl3","fbll3"],["fbwl2","fbll2"],
 		["fbwr7","fblr7"],["fbwr6","fblr6"],["fbwr5","fblr5"],["fbwr4","fblr4"],["fbwr3","fblr3"],["fbwr2","fblr2"],
 		// Diagonal
+		{"beamSpring":13000,"beamDamp":30},
 		["fbuc1","fbll7"],["fbul7","fbll6"],["fbul6","fbll5"],["fbul5","fbll4"],["fbul4","fbll3"],["fbul3","fbll2"],["fbul2","fbll3"],
 		["fbuc1","fblr7"],["fbur7","fblr6"],["fbur6","fblr5"],["fbur5","fblr4"],["fbur4","fblr3"],["fbur3","fblr2"],["fbur2","fblr3"],
 		["fblc1","fbul7"],["fbll7","fbul6"],["fbll6","fbul5"],["fbll5","fbul4"],["fbll4","fbul3"],["fbll3","fbul2"],["fbll2","fbul3"],
@@ -158,8 +165,13 @@
 		["msfl0r2","fbll2"],["msfl0r2","fbll3"],["msfl0r2","fbll4"],["msfl0r2","fbll5"],["msfl0r2","fbll6"],
 		["msfl0l2","fblr2"],["msfl0l2","fblr3"],["msfl0l2","fblr4"],["msfl0l2","fblr5"],["msfl0l2","fblr6"],
 		["msfl0c0","fbll5"],["msfl0c0","fbll6"],["msfl0c0","fbll7"],["msfl0c0","fblc1"],["msfl0c0","fblr5"],["msfl0c0","fblr6"],["msfl0c0","fblr7"],
+		// Reinforcements
+		["msfl0l2","mcblr2"],["msfl0l2","mcblr1"],["msfl0l2","mcblc0"],
+		["msfl0c0","mcbll1"],["msfl0c0","mcblr1"],["msfl0c0","mcblc0"],
+		["msfl0r2","mcbll2"],["msfl0r2","mcbll1"],["msfl0r2","mcblc0"],
         // Mount
-		{"beamSpring":5000,"beamDamp":50},
+  		{"beamStrength":10000},
+		{"beamSpring":140000,"beamDamp":50},
         // To crushbar
 		["mcbul2","cbul2"],["mcbul1","cbul1"],["mcbuc0","cbuc0"],["mcbur1","cbur1"],["mcbur2","cbur2"],
         ["mcbll2","cbll2"],["mcbll1","cbll1"],["mcblc0","cblc0"],["mcblr1","cblr1"],["mcblr2","cblr2"],
@@ -190,11 +202,6 @@
 		"name":"Picasso Internal Rear Bumper",
 	}
     "slotType" : "picasso_bumper_rear_internal",
-	"scalenodeWeight":1,
-	"scalebeamSpring":1,
-	"scalebeamDamp":1,
-	"scalebeamDeform":1,
-	"scalebeamStrength":1,
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
 	 	 ["rear_internal_bumper", ["rear_internal_bumper"]],
@@ -231,6 +238,51 @@
      ]
 		 
 }
+
+"picasso_bumper_rear_internal_limo": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Limo Internal Rear Bumper",
+	}
+    "slotType" : "picasso_bumper_rear_internal_limo",
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["limo_rear_internal_bumper", ["limo_rear_internal_bumper"]],
+	 ],
+ 	"nodes": [
+
+	["id", "posX", "posY", "posZ"],
+         {"group":"limo_rear_internal_bumper"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true}
+         {"selfCollision":true}
+         {"nodeWeight":1.5},
+		 ["rltc1",0,5.376,0.565],
+         ["rltl1",-0.3,5.376,0.565],
+         ["rltl2",-0.601,5.367,0.565],
+         ["rltl3",-0.849,5.338,0.539],
+         ["rltr1",0.3,5.376,0.565],
+         ["rltr2",0.601,5.367,0.565],
+         ["rltr3",0.849,5.338,0.539],
+         ["rlbc1",0,5.384,0.405],
+         ["rlbl1",-0.303,5.384,0.405],
+         ["rlbl2",-0.595,5.367,0.405],
+         ["rlbl3",-0.733,5.359,0.42],
+         ["rlbr1",0.303,5.384,0.405],
+         ["rlbr2",0.595,5.367,0.405],
+         ["rlbr3",0.733,5.359,0.42],
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":100000,"beamDamp":200},
+		  {"beamDeform":5000,"beamStrength":35500},
+     ]
+		 
+}
+
+
 
 "picasso_rear_bumper": {
 	"information":{

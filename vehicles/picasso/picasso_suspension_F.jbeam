@@ -145,14 +145,14 @@
 		{"selfCollision":true}
 		{"collision":true}
 
- 		{"nodeWeight":3.7},
+ 		{"nodeWeight":3.8},
 		{"group":"front_strut_right"},
 		["strr", 0.74597, 1.07906, 0.33714],
 		 
         {"group":"front_strut_left"},
 		["strl", -0.74597, 1.07906, 0.33714],
 		 
-		{"nodeWeight":3.4},
+		{"nodeWeight":3.5},
         {"group":""},
 		["stmr0", 0.70914, 0.97939, 0.70214],
 		["stml0", -0.70914, 0.97939, 0.70214],
@@ -162,14 +162,14 @@
         {"group":"front_strut_left"},
 		["stcr", 0.69005, 0.95573, 0.41654],
 
-		{"nodeWeight":3.3},
+		{"nodeWeight":3.4},
 		{"group":"front_strut_right"},
-		["stur1", 0.67739, 0.99126, 0.89326],
+		["stur1", 0.67739, 0.99126, 0.84326],
 		 
         {"group":"front_strut_left"},
-		["stul1", -0.67739, 0.99126, 0.89326],
+		["stul1", -0.67739, 0.99126, 0.84326],
 		 
-		{"nodeWeight":3.15},
+		{"nodeWeight":3.25},
 		{"group":"front_strut_right"},
 		["stwl1", -0.80797, 0.90351, 0.42506],
 		["stwl2", -0.81137, 0.87434, 0.30416],
@@ -194,12 +194,11 @@
 		["stmr3", 0.64698, 0.97880, 0.69326],
 		["stmr4", 0.70930, 1.04196, 0.69689],
 		
-		
 	],
 	"beams": [
 		["id1:", "id2:"],
         {"beamPrecompression":1.35, "beamType":"|BOUNDED", "beamLongBound":0.5, "beamShortBound":0.5}, 
-		{"beamSpring":12000,"beamDamp":1500},
+		{"beamSpring":14000,"beamDamp":1500},
         {"beamLimitSpring":450000,"beamLimitDamp":100}
 		{"beamDeform":165000,"beamStrength":2000000},
 
@@ -237,18 +236,21 @@
 		  
   		// Lower arm joint
 		{"beamSpring":2800000},
+		{"beamStrength":40000},
 		["sacl0","stwl2"],["sacl0","stwl3"],["sacl0","stcl"],["sacl0","stml0"],
 		["sacr0","stwr2"],["sacr0","stwr3"],["sacr0","stcr"],["sacr0","stmr0"],
 
 		// Steering link
 		{"beamSpring":5000000},
+		{"beamStrength":40000},
 		["strr","stmr1"],["strr","stmr2"],["strr","stmr3"],["strr","stmr4"],
 		["strl","stml1"],["strl","stml2"],["strl","stml3"],["strl","stml4"],
 		["strl","stwl2"],["strl","stwl3"],["strl","stwl4"],["strl","stcl"],
 		["strr","stwr2"],["strr","stwr3"],["strr","stwr4"],["strr","stcr"],
 		  
-		{"beamSpring":1250000},
 		// Strut to body mount
+		{"beamSpring":1250000},
+		{"beamStrength":40000},
 		["stur1","fft7l1"],["stur1","fft7l2"],["stur1","fft6l1"],["stur1","fft6l2"],["stur1","ffb5l1"],["stur1","ffb5l2"],
 		["stul1","fft7r1"],["stul1","fft7r2"],["stul1","fft6r1"],["stul1","fft6r2"],["stul1","ffb5r1"],["stul1","ffb5r2"],
 
@@ -259,13 +261,13 @@
 
   		// Strut to longeron
 		{"beamSpring":1000000},
-		{"beamStrength":2000000},
+		{"beamStrength":40000},
 		["stur1","lnur3"],["stur1","lnur2"],["stur1","lnur1"],
 		["stul1","lnul3"],["stul1","lnul2"],["stul1","lnul1"],
 
 		// Wheel connection
 		{"beamSpring":5000000},
-		{"beamStrength":2000000},
+		{"beamStrength":40000},
 		["fwil","stwl1"],["fwil","stwl2"],["fwil","stwl3"],["fwil","stwl4"],
 		["fwml","stwl1"],["fwml","stwl2"],["fwml","stwl3"],["fwml","stwl4"],
 		["fwir","stwr1"],["fwir","stwr2"],["fwir","stwr3"],["fwir","stwr4"],
@@ -410,6 +412,7 @@
 		["swb1l2","swb1l1"],["swb1l2","swb1c0"],["swb1l2","swb1c1"],["swb1l2","swb1c2"],
 		["swb1r2","swb1r1"],["swb1r2","swb1c0"],["swb1r2","swb1c1"],["swb1r2","swb1c2"],
 		// --- Subframe mount ---
+		{"beamStrength":20000},
   		["swb1c0","sfl3l2"],["swb1c1","sfl3l2"],["swb1c2","sfl3l2"],
   		["swb1c0","sfl3r2"],["swb1c1","sfl3r2"],["swb1c2","sfl3r2"],
 		// --- Strut mount bracket ---
