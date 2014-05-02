@@ -1,0 +1,176 @@
+{
+"picasso_steering": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Steering",
+	}
+    "slotType" : "picasso_steering",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["front_tie_bar", ["front_tie_bar"]],
+	 ],
+ 	"nodes": [
+		 ["id", "posX", "posY", "posZ"],
+		 {"frictionCoef":0.7},
+		 {"nodeMaterial":"|NM_METAL"},
+		 {"selfCollision":true}
+		 {"collision":true}
+		 {"nodeWeight":3}
+         {"group":"front_tie_bar"},
+		 ["tibc1", 0, 1.06251, 0.36817],
+		 ["tibc2", 0, 1.09727, 0.32479],
+		 ["tibc3", 0, 1.05715, 0.31232],
+
+		 ["tibl2", -0.39539, 1.09727, 0.32479],
+		 ["tibl3", -0.39539, 1.05715, 0.31232],
+		 ["tibr2", 0.39539, 1.09727, 0.32479],
+		 ["tibr3", 0.39539, 1.05715, 0.31232],
+
+		 {"nodeWeight":4}
+		 ["tibl1", -0.39539, 1.06251, 0.36817],
+		 ["tibr1", 0.39539, 1.06251, 0.36817],
+
+         {"group":""},
+
+ 		 ["mstrl", -0.74597, 1.07906, 0.33714],
+		 ["mstrr", 0.74597, 1.07906, 0.33714],
+		 
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":3750000,"beamDamp":100},
+		  {"beamDeform":165000,"beamStrength":2000000},
+
+		  // Steering box - longitudinal
+		  ["tibc1","tibl1"],["tibc2","tibl2"],["tibc3","tibl3"],
+		  ["tibc1","tibr1"],["tibc2","tibr2"],["tibc3","tibr3"],
+
+		  // Steering box - longitudinal diagonal
+		  {"beamSpring":3750000,"beamDamp":100},
+		  ["tibc1","tibl2"],["tibc2","tibl3"],["tibc3","tibl1"],
+		  ["tibc1","tibl3"],["tibc2","tibl1"],["tibc3","tibl2"],
+		  ["tibc1","tibr2"],["tibc2","tibr3"],["tibc3","tibr1"],
+		  ["tibc1","tibr3"],["tibc2","tibr1"],["tibc3","tibr2"],
+		  
+  		  // Steering box - traversal
+		  {"beamSpring":12750000,"beamDamp":100},
+		  ["tibc1","tibc2"],["tibc2","tibc3"],["tibc3","tibc1"],
+		  ["tibl1","tibl2"],["tibl2","tibl3"],["tibl3","tibl1"],
+		  ["tibr1","tibr2"],["tibr2","tibr3"],["tibr3","tibr1"],
+		  
+		  
+		  // Mount to Subframe
+		  {"beamSpring":1300000,"beamDamp":75},
+		  ["tibl1","sfl2r1"],["tibl1","sfl2r2"],["tibl1","sfl3r2"],["tibl1","sfl3r1"],
+		  ["tibl2","sfl2r1"],["tibl2","sfl2r2"],["tibl2","sfl3r2"],["tibl2","sfl3r1"],
+		  ["tibl3","sfl2r1"],["tibl3","sfl2r2"],["tibl3","sfl3r2"],["tibl3","sfl3r1"],
+
+  		  ["tibc1","sfl2c0"],["tibc1","sfl3l1"],["tibc1","sfl3c0"],["tibc1","sfl3r1"],
+  		  ["tibc2","sfl2c0"],["tibc2","sfl3l1"],["tibc2","sfl3c0"],["tibc2","sfl3r1"],
+  		  ["tibc3","sfl2c0"],["tibc3","sfl3l1"],["tibc3","sfl3c0"],["tibc3","sfl3r1"],
+
+		  ["tibr1","sfl2l1"],["tibr1","sfl2l2"],["tibr1","sfl3l2"],["tibr1","sfl3l1"],
+		  ["tibr2","sfl2l1"],["tibr2","sfl2l2"],["tibr2","sfl3l2"],["tibr2","sfl3l1"],
+		  ["tibr3","sfl2l1"],["tibr3","sfl2l2"],["tibr3","sfl3l2"],["tibr3","sfl3l1"],
+
+		  
+		  //Mount to wheels
+		  {"beamSpring":4000000,"beamDamp":300},
+		  ["mstrl","strl"],["mstrr","strr"],
+
+     ]
+		 
+	"hydros": [
+			["id1:","id2:"],
+			{"beamSpring":12750000,"beamDamp":2000,"beamDeform":1420000,"beamStrength":1790000},
+			//{"beamPrecompression":1.03},
+			["strl","tibl1",{"factor":-0.19,"steeringWheelLock":480}],
+		    ["strr","tibr1",{"factor":0.19,"steeringWheelLock":480}],
+	]
+}
+
+"picasso_steering_column": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Steering column",
+	}
+    "slotType" : "picasso_steering_column",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
+	"slots": [
+	["type", "default", "description"],
+     ["picasso_steering_wheel", "picasso_steering_wheel", "Steering Wheel"],
+	],
+
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["steering_col", ["steering_col"]],
+	 ],
+ 	"nodes": [
+		 ["id", "posX", "posY", "posZ"],
+		 {"frictionCoef":0.7},
+		 {"nodeMaterial":"|NM_METAL"},
+		 {"selfCollision":true}
+		 {"collision":true}
+		 {"nodeWeight":0.5}
+         {"group":"steering_col"},
+
+		 ["stc1l1", 0.40301, 1.40577, 0.79154],
+		 
+		 ["stc2l1", 0.40336, 1.60385, 1.01659],
+		 ["stc2l2", 0.50052, 1.64357, 0.96009],
+		 ["stc2l3", 0.40336, 1.70125, 0.87869],
+		 ["stc2l4", 0.30615, 1.64357, 0.96009],
+		 
+		 ["stc3l1", 0.40334, 1.76729, 1.04480],
+		 
+         {"group":""},
+ 		 ["stc2l0", 0.40336, 1.64357, 0.96009],
+
+		 
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":320000,"beamDamp":100},
+		  {"beamDeform":165000,"beamStrength":2000000},
+		  
+		  ["stc1l1","stc2l1"],["stc1l1","stc2l2"],["stc1l1","stc2l3"],["stc1l1","stc2l4"],
+		  ["stc2l0","stc2l1"],["stc2l0","stc2l2"],["stc2l0","stc2l3"],["stc2l0","stc2l4"],
+		  ["stc2l1","stc2l2"],["stc2l2","stc2l3"],["stc2l3","stc2l4"],["stc2l4","stc2l1"],
+		  ["stc3l1","stc2l1"],["stc3l1","stc2l2"],["stc3l1","stc2l3"],["stc3l1","stc2l4"],
+
+  		  ["stc2l0","stc1l1"],["stc2l0","stc3l1"],
+
+		  // Mount
+		  ["stc1l1","fft6l2"],["stc1l1","fft6l1"],["stc1l1","fft6c0"],["stc1l1","fft5l2"],["stc1l1","fft5l1"],["stc1l1","fft5c0"],
+		  ["stc2l2","fft6l2"],["stc2l2","fft6l1"],["stc2l2","fft6c0"],["stc2l2","fft5l2"],["stc2l2","fft5l1"],["stc2l2","fft5c0"],
+		  ["stc2l4","fft6l2"],["stc2l4","fft6l1"],["stc2l4","fft6c0"],["stc2l4","fft5l2"],["stc2l4","fft5l1"],["stc2l4","fft5c0"],
+		  ["stc3l1","fft6l2"],["stc3l1","fft6l1"],["stc3l1","fft6c0"],["stc3l1","fft5l2"],["stc3l1","fft5l1"],["stc3l1","fft5c0"],
+		  
+     ]
+}
+
+"picasso_steering_wheel": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Standard Steering Wheel",
+	}
+    "slotType" : "picasso_steering_wheel",	 
+	"props": [
+		["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
+		//steering wheel
+		["steering"  , "steering_wheel"      , "stc2l0","stc2l2","fft2l3",  {"x":66, "y":0, "z":0}, {"x":0, "y":0, "z":1}    , {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+	 ],
+}
+
+}

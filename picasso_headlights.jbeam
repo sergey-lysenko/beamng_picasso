@@ -1,0 +1,71 @@
+{
+"picasso_headlights": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Headlights",
+	}
+    "slotType" : "picasso_headlights",
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["Headlights", ["Headlights"]],
+	 ],
+ 	"nodes": [
+
+	["id", "posX", "posY", "posZ"],
+         {"group":"Headlights"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true}
+         {"selfCollision":true}
+         {"nodeWeight":0.4},
+
+   		 ["hdl1l1", 0.83625, 0.68362, 1.04978],
+   		 ["hdl1l2", 0.87288, 0.42883, 0.82605],
+   		 ["hdl1l3", 0.72259, 0.20275, 0.80927],
+   		 ["hdl1l4", 0.53414, 0.11793, 0.80281],
+   		 ["hdl1l5", 0.59910, 0.38693, 1.00421],
+   		 ["hdl2l1", 0.57391, 0.44905, 0.85896],
+   		 ["hdl2l2", 0.77029, 0.62974, 0.94080],
+
+   		 ["hdl1r1", -.83625, 0.68362, 1.04978],
+   		 ["hdl1r2", -.87288, 0.42883, 0.82605],
+   		 ["hdl1r3", -.72259, 0.20275, 0.80927],
+   		 ["hdl1r4", -.53414, 0.11793, 0.80281],
+   		 ["hdl1r5", -.59910, 0.38693, 1.00421],
+   		 ["hdl2r1", -.57391, 0.44905, 0.85896],
+   		 ["hdl2r2", -.77029, 0.62974, 0.94080],
+ 		 
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":150000,"beamDamp":100},
+		  {"beamDeform":15000,"beamStrength":235500},
+		  
+		  ["hdl1l1","hdl1l2"],["hdl1l1","hdl1l5"],["hdl1l1","hdl2l1"],["hdl1l1","hdl2l2"],
+		  ["hdl1l2","hdl1l1"],["hdl1l2","hdl1l5"],["hdl1l2","hdl2l1"],["hdl1l2","hdl2l2"],
+		  ["hdl1l3","hdl1l1"],["hdl1l3","hdl1l2"],["hdl1l3","hdl1l5"],["hdl1l3","hdl2l1"],["hdl1l3","hdl2l2"],
+		  ["hdl1l4","hdl1l2"],["hdl1l4","hdl1l3"],["hdl1l4","hdl1l5"],["hdl1l4","hdl2l1"],["hdl1l4","hdl2l2"],
+		  ["hdl1l5","hdl2l1"],["hdl1l5","hdl2l2"],
+
+		  ["hdl1r1","hdl1r2"],["hdl1r1","hdl1r5"],["hdl1r1","hdl2r1"],["hdl1r1","hdl2r2"],
+		  ["hdl1r2","hdl1r1"],["hdl1r2","hdl1r5"],["hdl1r2","hdl2r1"],["hdl1r2","hdl2r2"],
+		  ["hdl1r3","hdl1r1"],["hdl1r3","hdl1r2"],["hdl1r3","hdl1r5"],["hdl1r3","hdl2r1"],["hdl1r3","hdl2r2"],
+		  ["hdl1r4","hdl1r2"],["hdl1r4","hdl1r3"],["hdl1r4","hdl1r5"],["hdl1r4","hdl2r1"],["hdl1r4","hdl2r2"],
+		  ["hdl1r5","hdl2r1"],["hdl1r5","hdl2r2"],
+		  
+		  // Mounts
+		  ["hdl1l1","ffi5l0"],["hdl1l1","ffi5l1"],["hdl1l1","ffi6l0"],["hdl1l1","ffi6l1"],
+		  ["hdl1l3","lnlr1"],["hdl1l3","lnlr2"],["hdl1l3","lnur1"],["hdl1l3","lnur2"],
+		  ["hdl1l4","lnlr1"],["hdl1l4","lnlr2"],["hdl1l4","lnur1"],["hdl1l4","lnur2"],
+
+		  ["hdl1r1","ffi5r0"],["hdl1r1","ffi5r1"],["hdl1r1","ffi6r0"],["hdl1r1","ffi6r1"],
+		  ["hdl1r3","lnll1"],["hdl1r3","lnll2"],["hdl1r3","lnul1"],["hdl1r3","lnul2"],
+		  ["hdl1r4","lnll1"],["hdl1r4","lnll2"],["hdl1r4","lnul1"],["hdl1r4","lnul2"],
+		  
+		  
+		  
+     ]
+}
+
+}

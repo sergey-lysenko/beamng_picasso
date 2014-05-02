@@ -1,0 +1,242 @@
+{
+"picasso_pillars_limo": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Limo Pillars",
+	}
+	"slotType" : "picasso_pillars_limo",
+	"flexbodies": [
+	 	["mesh", "[group]:", "nonFlexMaterials"],
+	 	["limo_central_pillar", ["limo_central_pillar"]],
+	 ],
+ 	"nodes": [
+
+	["id", "posX", "posY", "posZ"],
+        {"group":"limo_central_pillar"},
+        {"frictionCoef":0.7},
+        {"nodeMaterial":"|NM_METAL"},
+        {"collision":true}
+        {"selfCollision":true}
+
+        {"nodeWeight":0.9},
+		["lpl2l5", 0.85071, 3.58483, 0.76008],
+   		["lpl3l5", 0.85071, 3.58483, 1.09352],
+		["lpl2r5", -.85071, 3.58483, 0.76008],
+   		["lpl3r5", -.85071, 3.58483, 1.09352],
+
+        {"nodeWeight":0.6},
+   		["lpl2l1", 0.95521, 3.45610, 0.75690],
+   		["lpl2l2", 0.87315, 3.39113, 0.74718],
+   		["lpl2r1", -.95521, 3.45610, 0.75690],
+   		["lpl2r2", -.87315, 3.39113, 0.74718],
+
+        {"nodeWeight":0.5},
+   		["lpl1l1", 0.91009, 3.15360, 0.37511],
+   		["lpl1l2", 0.85735, 3.15379, 0.37698],
+   		["lpl1l3", 0.80580, 3.22182, 0.39111],
+   		["lpl1l4", 0.80567, 3.62927, 0.39111],
+   		["lpl1l5", 0.85654, 3.68184, 0.38107],
+   		["lpl1l6", 0.91008, 3.67815, 0.37965],
+   		["lpl1r1", -.91009, 3.15360, 0.37511],
+   		["lpl1r2", -.85735, 3.15379, 0.37698],
+   		["lpl1r3", -.80580, 2.22182, 0.39111],
+   		["lpl1r4", -.80567, 3.62927, 0.39111],
+   		["lpl1r5", -.85654, 3.68184, 0.38107],
+   		["lpl1r6", -.91008, 3.67815, 0.37965],
+		 
+		["lpl2l3", 0.70346, 3.38666, 0.75436],
+   		["lpl2l4", 0.70164, 3.54353, 0.75461],
+		["lpl2l6", 0.95716, 3.52883, 0.75706],
+		["lpl2r3", -.70346, 3.38666, 0.75436],
+   		["lpl2r4", -.70164, 3.54353, 0.75461],
+		["lpl2r6", -.95716, 3.52883, 0.75706],
+
+   		["lpl3l1", 0.89731, 3.46560, 1.08422],
+   		["lpl3l2", 0.84056, 3.44003, 1.08877],
+		["lpl3l3", 0.70016, 3.42553, 1.07963],
+   		["lpl3l4", 0.67228, 3.59044, 1.06177],
+		["lpl3l6", 0.89778, 3.56383, 1.08901],
+   		["lpl3r1", -.89731, 3.46560, 1.08422],
+   		["lpl3r2", -.84056, 3.44003, 1.08877],
+		["lpl3r3", -.70016, 3.42553, 1.07963],
+   		["lpl3r4", -.67228, 3.59044, 1.06177],
+		["lpl3r6", -.89778, 3.56383, 1.08901],
+
+   		["lpl4l1", 0.80899, 3.52749, 1.39840],
+   		["lpl4l2", 0.74481, 3.50389, 1.39601],
+		["lpl4l3", 0.59643, 3.49260, 1.38258],
+   		["lpl4l4", 0.58032, 3.62675, 1.38347],
+   		["lpl4l5", 0.74998, 3.61781, 1.39195],
+		["lpl4l6", 0.80896, 3.59915, 1.39870],
+   		["lpl4r1", -.80899, 3.52749, 1.39840],
+   		["lpl4r2", -.74481, 3.50389, 1.39601],
+		["lpl4r3", -.59643, 3.49260, 1.38258],
+   		["lpl4r4", -.58032, 3.62675, 1.38347],
+   		["lpl4r5", -.74998, 3.61781, 1.39195],
+		["lpl4r6", -.80896, 3.59915, 1.39870],
+   		["lpl5l1", 0.72722, 3.57154, 1.61087],
+   		["lpl5l2", 0.64266, 3.44647, 1.64474],
+		["lpl5l3", 0.59386, 3.52228, 1.63054],
+   		["lpl5l4", 0.58752, 3.67829, 1.63100],
+		["lpl5l5", 0.63752, 3.75132, 1.64546],
+		["lpl5l6", 0.72577, 3.62124, 1.61064],
+   		["lpl5r1", -.72722, 3.57154, 1.61087],
+   		["lpl5r2", -.64266, 3.44647, 1.64474],
+		["lpl5r3", -.59386, 3.52228, 1.63054],
+   		["lpl5r4", -.58752, 3.67829, 1.63100],
+		["lpl5r5", -.63752, 3.75132, 1.64546],
+		["lpl5r6", -.72577, 3.62124, 1.61064],
+		 
+     ]
+	"beams": [
+		["id1:", "id2:"],
+		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		{"beamSpring":200000,"beamDamp":75},
+		{"beamDeform":50000,"beamStrength":135500},
+		  
+		// Longitudinal
+		["lpl1l1","lpl2l1"],["lpl2l1","lpl3l1"],["lpl3l1","lpl4l1"],["lpl4l1","lpl5l1"],
+		["lpl1l2","lpl2l2"],["lpl2l2","lpl3l2"],["lpl3l2","lpl4l2"],["lpl4l2","lpl5l2"],
+		["lpl1l3","lpl2l3"],["lpl2l3","lpl3l3"],["lpl3l3","lpl4l3"],["lpl4l3","lpl5l3"],
+		["lpl1l4","lpl2l4"],["lpl2l4","lpl3l4"],["lpl3l4","lpl4l4"],["lpl4l4","lpl5l4"],
+		["lpl1l5","lpl2l5"],["lpl2l5","lpl3l5"],["lpl3l5","lpl4l5"],["lpl4l5","lpl5l5"],
+		["lpl1l6","lpl2l6"],["lpl2l6","lpl3l6"],["lpl3l6","lpl4l6"],["lpl4l6","lpl5l6"],
+
+		["lpl1r1","lpl2r1"],["lpl2r1","lpl3r1"],["lpl3r1","lpl4r1"],["lpl4r1","lpl5r1"],
+		["lpl1r2","lpl2r2"],["lpl2r2","lpl3r2"],["lpl3r2","lpl4r2"],["lpl4r2","lpl5r2"],
+		["lpl1r3","lpl2r3"],["lpl2r3","lpl3r3"],["lpl3r3","lpl4r3"],["lpl4r3","lpl5r3"],
+		["lpl1r4","lpl2r4"],["lpl2r4","lpl3r4"],["lpl3r4","lpl4r4"],["lpl4r4","lpl5r4"],
+		["lpl1r5","lpl2r5"],["lpl2r5","lpl3r5"],["lpl3r5","lpl4r5"],["lpl4r5","lpl5r5"],
+		["lpl1r6","lpl2r6"],["lpl2r6","lpl3r6"],["lpl3r6","lpl4r6"],["lpl4r6","lpl5r6"],
+		  
+		{"beamSpring":230000,"beamDamp":75},
+		// Traversal
+		["lpl1l1","lpl1l2"],["lpl1l2","lpl1l3"],["lpl1l3","lpl1l4"],["lpl1l5","lpl1l6"],["lpl1l6","lpl1l1"],["lpl1l2","lpl1l5"],
+		["lpl2l1","lpl2l2"],["lpl2l2","lpl2l3"],["lpl2l3","lpl2l4"],["lpl2l5","lpl2l6"],["lpl2l6","lpl2l1"],["lpl2l2","lpl2l5"],
+		["lpl3l1","lpl3l2"],["lpl3l2","lpl3l3"],["lpl3l3","lpl3l4"],["lpl3l5","lpl3l6"],["lpl3l6","lpl3l1"],["lpl3l2","lpl3l5"],
+		["lpl4l1","lpl4l2"],["lpl4l2","lpl4l3"],["lpl4l3","lpl4l4"],["lpl4l5","lpl4l6"],["lpl4l6","lpl4l1"],["lpl4l2","lpl4l5"],
+		["lpl5l1","lpl5l2"],["lpl5l2","lpl5l3"],["lpl5l3","lpl5l4"],["lpl5l5","lpl5l6"],["lpl5l6","lpl5l1"],["lpl5l2","lpl5l5"],
+		["lpl5l4","lpl5l6"],["lpl5l3","lpl5l1"],
+
+		["lpl1r1","lpl1r2"],["lpl1r2","lpl1r3"],["lpl1r3","lpl1r4"],["lpl1r5","lpl1r6"],["lpl1r6","lpl1r1"],["lpl1r2","lpl1r5"],
+		["lpl2r1","lpl2r2"],["lpl2r2","lpl2r3"],["lpl2r3","lpl2r4"],["lpl2r5","lpl2r6"],["lpl2r6","lpl2r1"],["lpl2r2","lpl2r5"],
+		["lpl3r1","lpl3r2"],["lpl3r2","lpl3r3"],["lpl3r3","lpl3r4"],["lpl3r5","lpl3r6"],["lpl3r6","lpl3r1"],["lpl3r2","lpl3r5"],
+		["lpl4r1","lpl4r2"],["lpl4r2","lpl4r3"],["lpl4r3","lpl4r4"],["lpl4r5","lpl4r6"],["lpl4r6","lpl4r1"],["lpl4r2","lpl4r5"],
+		["lpl5r1","lpl5r2"],["lpl5r2","lpl5r3"],["lpl5r3","lpl5r4"],["lpl5r5","lpl5r6"],["lpl5r6","lpl5r1"],["lpl5r2","lpl5r5"],
+		["lpl5r4","lpl5r6"],["lpl5r3","lpl5r1"],
+
+		{"beamSpring":170000,"beamDamp":75},
+		// Horisontal diagonal
+		["lpl1l1","lpl1l5"],["lpl1l2","lpl1l6"],["lpl1l3","lpl1l5"],["lpl1l4","lpl1l2"],
+		["lpl2l1","lpl2l5"],["lpl2l2","lpl2l6"],["lpl2l3","lpl2l5"],["lpl2l4","lpl2l2"],
+		["lpl3l1","lpl3l5"],["lpl3l2","lpl3l6"],["lpl3l3","lpl3l5"],["lpl3l4","lpl3l2"],
+		["lpl4l1","lpl4l5"],["lpl4l2","lpl4l6"],["lpl4l3","lpl4l5"],["lpl4l4","lpl4l2"],
+		["lpl5l1","lpl5l5"],["lpl5l2","lpl5l6"],["lpl5l3","lpl5l5"],["lpl5l4","lpl5l2"],
+
+		["lpl1r1","lpl1r5"],["lpl1r2","lpl1r6"],["lpl1r3","lpl1r5"],["lpl1r4","lpl1r2"],
+		["lpl2r1","lpl2r5"],["lpl2r2","lpl2r6"],["lpl2r3","lpl2r5"],["lpl2r4","lpl2r2"],
+		["lpl3r1","lpl3r5"],["lpl3r2","lpl3r6"],["lpl3r3","lpl3r5"],["lpl3r4","lpl3r2"],
+		["lpl4r1","lpl4r5"],["lpl4r2","lpl4r6"],["lpl4r3","lpl4r5"],["lpl4r4","lpl4r2"],
+		["lpl5r1","lpl5r5"],["lpl5r2","lpl5r6"],["lpl5r3","lpl5r5"],["lpl5r4","lpl5r2"],
+
+		{"beamSpring":170000,"beamDamp":75},
+  		// Vertical diagonal
+        ["lpl1l1","lpl2l6"],["lpl1l2","lpl2l5"],["lpl1l3","lpl2l4"],["lpl1l4","lpl2l3"],["lpl1l5","lpl2l2"],["lpl1l6","lpl2l1"],
+        ["lpl2l1","lpl3l6"],["lpl2l2","lpl3l5"],["lpl2l3","lpl3l4"],["lpl2l4","lpl3l3"],["lpl2l5","lpl3l2"],["lpl2l6","lpl3l1"],
+        ["lpl3l1","lpl4l6"],["lpl3l2","lpl4l5"],["lpl3l3","lpl4l4"],["lpl3l4","lpl4l3"],["lpl3l5","lpl4l2"],["lpl3l6","lpl4l1"],
+        ["lpl4l1","lpl5l6"],["lpl4l2","lpl5l5"],["lpl4l3","lpl5l4"],["lpl4l4","lpl5l3"],["lpl4l5","lpl5l2"],["lpl4l6","lpl5l1"],
+        ["lpl1r1","lpl2r6"],["lpl1r2","lpl2r5"],["lpl1r3","lpl2r4"],["lpl1r4","lpl2r3"],["lpl1r5","lpl2r2"],["lpl1r6","lpl2r1"],
+        ["lpl2r1","lpl3r6"],["lpl2r2","lpl3r5"],["lpl2r3","lpl3r4"],["lpl2r4","lpl3r3"],["lpl2r5","lpl3r2"],["lpl2r6","lpl3r1"],
+        ["lpl3r1","lpl4r6"],["lpl3r2","lpl4r5"],["lpl3r3","lpl4r4"],["lpl3r4","lpl4r3"],["lpl3r5","lpl4r2"],["lpl3r6","lpl4r1"],
+        ["lpl4r1","lpl5r6"],["lpl4r2","lpl5r5"],["lpl4r3","lpl5r4"],["lpl4r4","lpl5r3"],["lpl4r5","lpl5r2"],["lpl4r6","lpl5r1"],
+
+        ["lpl1l1","lpl2l2"],["lpl1l2","lpl2l3"],["lpl1l3","lpl2l2"],["lpl1l2","lpl2l1"],
+        ["lpl2l1","lpl2l2"],["lpl2l2","lpl2l3"],["lpl2l3","lpl2l2"],["lpl2l2","lpl2l1"],
+        ["lpl3l1","lpl2l2"],["lpl3l2","lpl2l3"],["lpl3l3","lpl2l2"],["lpl3l2","lpl2l1"],
+        ["lpl4l1","lpl2l2"],["lpl4l2","lpl2l3"],["lpl4l3","lpl2l2"],["lpl4l2","lpl2l1"],
+        ["lpl1l6","lpl2l5"],["lpl1l5","lpl2l4"],["lpl1l4","lpl2l5"],["lpl1l5","lpl2l6"],
+        ["lpl2l6","lpl2l5"],["lpl2l5","lpl2l4"],["lpl2l4","lpl2l5"],["lpl2l5","lpl2l6"],
+        ["lpl3l6","lpl2l5"],["lpl3l5","lpl2l4"],["lpl3l4","lpl2l5"],["lpl3l5","lpl2l6"],
+        ["lpl4l6","lpl2l5"],["lpl4l5","lpl2l4"],["lpl4l4","lpl2l5"],["lpl4l5","lpl2l6"],
+
+        ["lpl1r1","lpl2r2"],["lpl1r2","lpl2r3"],["lpl1r3","lpl2r2"],["lpl1r2","lpl2r1"],
+        ["lpl2r1","lpl2r2"],["lpl2r2","lpl2r3"],["lpl2r3","lpl2r2"],["lpl2r2","lpl2r1"],
+        ["lpl3r1","lpl2r2"],["lpl3r2","lpl2r3"],["lpl3r3","lpl2r2"],["lpl3r2","lpl2r1"],
+        ["lpl4r1","lpl2r2"],["lpl4r2","lpl2r3"],["lpl4r3","lpl2r2"],["lpl4r2","lpl2r1"],
+        ["lpl1r6","lpl2r5"],["lpl1r5","lpl2r4"],["lpl1r4","lpl2r5"],["lpl1r5","lpl2r6"],
+        ["lpl2r6","lpl2r5"],["lpl2r5","lpl2r4"],["lpl2r4","lpl2r5"],["lpl2r5","lpl2r6"],
+        ["lpl3r6","lpl2r5"],["lpl3r5","lpl2r4"],["lpl3r4","lpl2r5"],["lpl3r5","lpl2r6"],
+        ["lpl4r6","lpl2r5"],["lpl4r5","lpl2r4"],["lpl4r4","lpl2r5"],["lpl4r5","lpl2r6"],
+
+		{"beamSpring":170000,"beamDamp":75},
+  		// Internal diagonal
+		["lpl1l1","lpl2l5"],["lpl1l2","lpl2l6"],["lpl1l3","lpl2l5"],["lpl1l4","lpl2l2"],
+		["lpl1r1","lpl2r5"],["lpl1r2","lpl2r6"],["lpl1r3","lpl2r5"],["lpl1r4","lpl2r2"],
+
+		["lpl2l1","lpl3l5"],["lpl2l2","lpl3l6"],["lpl2l3","lpl3l5"],["lpl2l4","lpl3l2"],
+		["lpl3l1","lpl4l5"],["lpl3l2","lpl4l6"],["lpl3l3","lpl4l5"],["lpl3l4","lpl4l2"],
+		["lpl4l1","lpl5l5"],["lpl4l2","lpl5l6"],["lpl4l3","lpl5l5"],["lpl4l4","lpl5l2"],
+		["lpl2r1","lpl3r5"],["lpl2r2","lpl3r6"],["lpl2r3","lpl3r5"],["lpl2r4","lpl3r2"],
+		["lpl3r1","lpl4r5"],["lpl3r2","lpl4r6"],["lpl3r3","lpl4r5"],["lpl3r4","lpl4r2"],
+		["lpl4r1","lpl5r5"],["lpl4r2","lpl5r6"],["lpl4r3","lpl5r5"],["lpl4r4","lpl5r2"],
+		  
+		
+		// Bottom mount
+		{"beamSpring":170000,"beamDamp":75},
+        ["lpl1l1","ffb1l2"],["lpl1l1","ffb1l3"],["lpl1l1","ffb8l2"],["lpl1l1","ffb8l3"],
+        ["lpl1l2","ffb1l2"],["lpl1l2","ffb1l3"],["lpl1l2","ffb8l2"],["lpl1l2","ffb8l3"],
+        ["lpl1l3","ffb1l2"],["lpl1l3","ffb1l3"],["lpl1l3","ffb8l2"],["lpl1l3","ffb8l3"],
+        ["lpl1l4","ffb1l2"],["lpl1l4","ffb1l3"],["lpl1l4","ffb8l2"],["lpl1l4","ffb8l3"],
+        ["lpl1l5","ffb1l2"],["lpl1l5","ffb1l3"],["lpl1l5","ffb8l2"],["lpl1l5","ffb8l3"],
+        ["lpl1l6","ffb1l2"],["lpl1l6","ffb1l3"],["lpl1l6","ffb8l2"],["lpl1l6","ffb8l3"],
+
+        ["lpl1l1","fft1l2"],["lpl1l1","fft1l3"],["lpl1l1","fft8l2"],["lpl1l1","fft8l3"],
+        ["lpl1l2","fft1l2"],["lpl1l2","fft1l3"],["lpl1l2","fft8l2"],["lpl1l2","fft8l3"],
+        ["lpl1l3","fft1l2"],["lpl1l3","fft1l3"],["lpl1l3","fft8l2"],["lpl1l3","fft8l3"],
+        ["lpl1l4","fft1l2"],["lpl1l4","fft1l3"],["lpl1l4","fft8l2"],["lpl1l4","fft8l3"],
+        ["lpl1l5","fft1l2"],["lpl1l5","fft1l3"],["lpl1l5","fft8l2"],["lpl1l5","fft8l3"],
+        ["lpl1l6","fft1l2"],["lpl1l6","fft1l3"],["lpl1l6","fft8l2"],["lpl1l6","fft8l3"],
+
+        ["lpl1r1","ffb1r2"],["lpl1r1","ffb1r3"],["lpl1r1","ffb8r2"],["lpl1r1","ffb8l3"],
+        ["lpl1r2","ffb1r2"],["lpl1r2","ffb1r3"],["lpl1r2","ffb8r2"],["lpl1r2","ffb8l3"],
+        ["lpl1r3","ffb1r2"],["lpl1r3","ffb1r3"],["lpl1r3","ffb8r2"],["lpl1r3","ffb8l3"],
+        ["lpl1r4","ffb1r2"],["lpl1r4","ffb1r3"],["lpl1r4","ffb8r2"],["lpl1r4","ffb8l3"],
+        ["lpl1r5","ffb1r2"],["lpl1r5","ffb1r3"],["lpl1r5","ffb8r2"],["lpl1r5","ffb8l3"],
+        ["lpl1r6","ffb1r2"],["lpl1r6","ffb1r3"],["lpl1r6","ffb8r2"],["lpl1r6","ffb8l3"],
+
+        ["lpl1r1","fft1r2"],["lpl1r1","fft1r3"],["lpl1r1","fft8r2"],["lpl1r1","fft8r3"],
+        ["lpl1r2","fft1r2"],["lpl1r2","fft1r3"],["lpl1r2","fft8r2"],["lpl1r2","fft8r3"],
+        ["lpl1r3","fft1r2"],["lpl1r3","fft1r3"],["lpl1r3","fft8r2"],["lpl1r3","fft8r3"],
+        ["lpl1r4","fft1r2"],["lpl1r4","fft1r3"],["lpl1r4","fft8r2"],["lpl1r4","fft8r3"],
+        ["lpl1r5","fft1r2"],["lpl1r5","fft1r3"],["lpl1r5","fft8r2"],["lpl1r5","fft8r3"],
+        ["lpl1r6","fft1r2"],["lpl1r6","fft1r3"],["lpl1r6","fft8r2"],["lpl1r6","fft8r3"],
+		  
+		// Top mount
+		{"beamSpring":170000,"beamDamp":75},
+		["lpl4l4","cei4l1"],["lpl4l5","cei4l1"],["lpl5l4","cei4l1"],["lpl5l5","cei4l1"],
+		["lpl4l3","cei3l1"],["lpl4l4","cei3l1"],["lpl5l3","cei3l1"],["lpl5l4","cei3l1"],
+		["lpl4l2","cei9l1"],["lpl4l3","cei9l1"],["lpl5l2","cei9l1"],["lpl5l3","cei9l1"],
+		["lpl5l1","arc9l2"],["lpl5l6","arc9l2"],["lpl5l1","arc3l2"],["lpl5l6","arc4l2"],
+
+		["lpl4r4","cei4r1"],["lpl4r5","cei4r1"],["lpl5r4","cei4r1"],["lpl5r5","cei4r1"],
+		["lpl4r3","cei3r1"],["lpl4r4","cei3r1"],["lpl5r3","cei3r1"],["lpl5r4","cei3r1"],
+		["lpl4r2","cei9r1"],["lpl4r3","cei9r1"],["lpl5r2","cei9r1"],["lpl5r3","cei9r1"],
+		["lpl5r1","arc9r2"],["lpl5r6","arc9r2"],["lpl5r1","arc3r2"],["lpl5r6","arc4r2"],
+		  
+		  
+        // Structural rigidification beams
+  		{"beamSpring":500000,"beamDamp":75},
+		["lpl2l1","fft2l1"],["lpl2l1","fft2l2"],["lpl2l1","fft2l3"],
+		["lpl2l3","fft2l1"],["lpl2l3","fft1l1"],["lpl2l3","fft8l1"],
+		["lpl2l4","fft1l1"],["lpl2l4","fft8l1"],["lpl2l4","fft9l1"],
+		["lpl2l6","fft9l1"],["lpl2l6","fft9l2"],["lpl2l6","fft9l3"],
+		["lpl2r1","fft2r1"],["lpl2r1","fft2r2"],["lpl2r1","fft4r3"],
+		["lpl2r3","fft2r1"],["lpl2r3","fft1r1"],["lpl2r3","fft8r1"],
+		["lpl2r4","fft1r1"],["lpl2r4","fft8r1"],["lpl2r4","fft9r1"],
+		["lpl2r6","fft9r1"],["lpl2r6","fft9r2"],["lpl2r6","fft9r3"],
+		["lpl3l2","fft1l3"],["lpl3l5","fft8l3"],
+		["lpl3r2","fft1r3"],["lpl3r5","fft8r3"],
+		
+     ]
+}
+}

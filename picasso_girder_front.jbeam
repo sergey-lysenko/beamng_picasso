@@ -1,0 +1,78 @@
+{
+"picasso_girder_front": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Std Front Girder",
+	}
+    "slotType" : "picasso_girder_front",
+	"scalenodeWeight":1,
+	"scalebeamSpring":1,
+	"scalebeamDamp":1,
+	"scalebeamDeform":1,
+	"scalebeamStrength":1,
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["beam", ["beam"]],
+	 ],
+ 	"nodes": [
+
+	["id", "posX", "posY", "posZ"],
+         {"group":"beam"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true}
+         {"selfCollision":true}
+         {"nodeWeight":1.5},
+         ["fgd2l3",0.82725,0.97659,1.12439],
+         ["fgd2l2",0.78349,0.88491,1.14164],
+         ["fgd2l1",0.40508,0.85390,1.14328],
+         ["fgd2c0",0,0.83056,1.14386],
+         ["fgd2r1",-0.40508,0.85390,1.14328],
+         ["fgd2r2",-0.78349,0.88491,1.14164],
+         ["fgd2r3",-0.82725,0.97659,1.12439],
+
+         ["fgd3l2",0.76077,0.99281,1.19942],
+         ["fgd3l1",0.39188,0.94467,1.19086],
+         ["fgd3c0",0,0.92974,1.19016],
+         ["fgd3r1",-0.39188,0.94467,1.19086],
+         ["fgd3r2",-0.76077,0.99281,1.19942],
+
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":1000000,"beamDamp":100},
+		  {"beamDeform":15000,"beamStrength":35500},
+		  
+         // front bar - longitudinal
+		 ["fgd2c0","fgd2r1"],["fgd2r2","fgd2r1"],["fgd2r2","fgd2r3"],["fgd2r3","fft6r2"],["fgd2c0","fgd2l1"],["fgd2l2","fgd2l1"],["fgd2l2","fgd2l3"],["fgd2l3","fft6l2"],
+		 ["fgd3c0","fgd3r1"],["fgd3r2","fgd3r1"],["fgd3r2","fft6r2"],["fgd3c0","fgd3l1"],["fgd3l2","fgd3l1"],["fgd3l2","fft6l2"],
+
+         // front bar - transversal
+         ["fft7r2","fgd2r3"],["fgd3r2","fgd2r3"],
+         ["fft7r2","fgd2r2"],["fgd3r2","fgd2r2"],["fgd3r2","fft6r2"],["fft7r2","fgd3r2"],
+         ["fft7r1","fgd2r1"],["fgd3r1","fgd2r1"],["fgd3r1","fft6r1"],["fft7r1","fgd3r1"],
+         ["fft7c0","fgd2c0"],["fgd3c0","fgd2c0"],["fgd3c0","fft6c0"],["fft7c0","fgd3c0"],
+         ["fft7l1","fgd2l1"],["fgd3l1","fgd2l1"],["fgd3l1","fft6l1"],["fft7l1","fgd3l1"],
+         ["fft7l2","fgd2l2"],["fgd3l2","fgd2l2"],["fgd3l2","fft6l2"],["fft7l2","fgd3l2"],
+         ["fft7l2","fgd2l3"],["fgd3l2","fgd2l3"],
+		 
+		  {"beamSpring":200000,"beamDamp":100},
+		 // front bar - diagonal
+		 ["fft6r2","fgd3r1"],["fft6r1","fgd3c0"],["fft6c0","fgd3l1"],["fft6l1","fgd3l2"],["fft6l2","fgd3l1"],["fft6l1","fgd3c0"],["fft6c0","fgd3r1"],["fft6r1","fgd3r2"],
+		 ["fgd3r2","fgd2r1"],["fgd3r1","fgd2c0"],["fgd3c0","fgd2l1"],["fgd3l1","fgd2l2"],["fgd3l2","fgd2l1"],["fgd3l1","fgd2c0"],["fgd3c0","fgd2r1"],["fgd3r1","fgd2r2"],
+		 ["fft7r2","fgd2r1"],["fft7r1","fgd2c0"],["fft7c0","fgd2l1"],["fft7l1","fgd2l2"],["fft7l2","fgd2l1"],["fft7l1","fgd2c0"],["fft7c0","fgd2r1"],["fft7r1","fgd2r2"],
+		 ["fft7r2","fgd3r1"],["fft7r1","fgd3c0"],["fft7c0","fgd3l1"],["fft7l1","fgd3l2"],["fft7l2","fgd3l1"],["fft7l1","fgd3c0"],["fft7c0","fgd3r1"],["fft7r1","fgd3r2"],
+		 
+		 
+         // front bar - intermediate
+
+
+		  
+		  
+		  
+     ]
+		 
+}
+
+}

@@ -1,0 +1,73 @@
+{
+"picasso_roof": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Picasso Roof",
+	}
+    "slotType" : "picasso_roof",
+	"scalenodeWeight":0.95,
+	"scalebeamSpring":0.75,
+	"scalebeamDamp":0.73,
+	"scalebeamDeform":0.36,
+	"scalebeamStrength":0.65,
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["roof", ["roof"]],
+	 ],
+ 	"nodes": [
+
+	["id", "posX", "posY", "posZ"],
+         {"group":"roof"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true}
+         {"selfCollision":true}
+         {"nodeWeight":1.5},
+["arol1",-0.825,0.966,1.12	],
+["aril1",-0.783,0.885,1.14	],
+["arol2",-0.747,1.526,1.428	],
+["aril2",-0.691,1.501,1.482	],
+["arol3",-0.693,2.001,1.593	],
+["aril3",-0.596,2.104,1.677	],
+["arol4",-0.665,2.563,1.658	],
+["aril4",-0.582,2.497,1.719	],
+["arol5",-0.647,3.174,1.627	],
+["aril5",-0.585,3.186,1.707	],
+["arol6",-0.677,3.722,1.556	],
+["aril6",-0.598,3.683,1.635	],
+["aror1",0.825,0.966,1.12	],
+["arir1",0.783,0.885,1.14	],
+["aror2",0.747,1.526,1.428	],
+["arir2",0.691,1.501,1.482	],
+["aror3",0.693,2.001,1.593	],
+["arir3",0.596,2.104,1.677	],
+["aror4",0.665,2.563,1.658	],
+["arir4",0.582,2.497,1.719	],
+["aror5",0.647,3.174,1.627	],
+["arir5",0.585,3.186,1.707	],
+["aror6",0.677,3.722,1.556	],
+["arir6",0.598,3.683,1.635	],
+["rooc1",0,2.207,1.726	],
+["rool1",-0.321,2.207,1.721	],
+["roor1",0.321,2.207,1.721	],
+["rooc2",0,2.374,1.736	],
+["rool2",-0.319,2.374,1.731	],
+["roor2",0.319,2.374,1.731	],
+["rooc3",0,3.608,1.671	],
+["rool3",-0.304,3.607,1.665	],
+["roor3",0.304,3.607,1.665	],
+["rooc4",0,3.724,1.65	],
+["rool4",-0.304,3.716,1.665	],
+["roor4",0.304,3.716,1.665	],
+["roolh",0.403,3.76239,1.54477],
+["roorh",-0.403,3.76239,1.54477],
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":100000,"beamDamp":200},
+		  {"beamDeform":5000,"beamStrength":35500},
+     ]
+		 
+}
+}
