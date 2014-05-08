@@ -1,0 +1,124 @@
+{
+"picasso_glassdoor_limo": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Tailgate Glass",
+	}
+    "slotType" : "picasso_glassdoor_limo",
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["limo_back_door_glass", ["limo_back_door_glass"]],
+	 ],
+ 	"nodes": [
+
+	["id", "posX", "posY", "posZ"],
+         {"group":"limo_back_door_glass"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_GLASS"},
+         {"collision":true}
+         {"selfCollision":true}
+
+         {"nodeWeight":0.8},
+   		 ["bdg1l2", 0.64669, 4.73670, 1.56021],
+   		 ["bdg1l1", 0.37857, 4.79180, 1.57552],
+   		 ["bdg1c1", 0.00000, 4.81988, 1.58412],
+   		 ["bdg1r1", -.37857, 4.79180, 1.57552],
+   		 ["bdg1r2", -.64669, 4.73670, 1.56021],
+
+         {"nodeWeight":0.5},
+   		 ["bdg2l2", 0.68887, 4.99120, 1.41265],
+   		 ["bdg2l1", 0.38689, 5.05097, 1.48102],
+   		 ["bdg2c1", 0.00000, 5.08953, 1.48932],
+   		 ["bdg2r1", -.38689, 5.05097, 1.48102],
+   		 ["bdg2r2", -.68887, 4.99120, 1.41265],
+
+   		 ["bdg3l2", 0.73105, 5.24570, 1.23589],
+   		 ["bdg3l1", 0.39680, 5.31525, 1.21167],
+   		 ["bdg3c1", 0.00000, 5.33758, 1.21813],
+   		 ["bdg3r1", -.39680, 5.31525, 1.21167],
+   		 ["bdg3r2", -.73105, 5.24570, 1.23589],
+
+		 
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":500000,"beamDamp":100},
+		  {"beamDeform":7500,"beamStrength":7500},
+		  
+		  //first grade
+		  
+		  // Longitudinal
+		  ["bdg1l2","bdg1l1"],["bdg1l1","bdg1c1"],["bdg1c1","bdg1r1"],["bdg1r1","bdg1r2"],
+		  ["bdg2l2","bdg2l1"],["bdg2l1","bdg2c1"],["bdg2c1","bdg2r1"],["bdg2r1","bdg2r2"],
+		  ["bdg3l2","bdg3l1"],["bdg3l1","bdg3c1"],["bdg3c1","bdg3r1"],["bdg3r1","bdg3r2"],
+		  
+		  // Traversal
+		  ["bdg1l2","bdg2l2"],["bdg2l2","bdg3l2"],
+		  ["bdg1l1","bdg2l1"],["bdg2l1","bdg3l1"],
+		  ["bdg1c1","bdg2c1"],["bdg2c1","bdg3c1"],
+		  ["bdg1r1","bdg2r1"],["bdg2r1","bdg3r1"],
+		  ["bdg1r2","bdg2r2"],["bdg2r2","bdg3r2"],
+		  
+		  // Diagonal
+		  ["bdg1l2","bdg2l1"],["bdg1l1","bdg2c1"],["bdg1c1","bdg2r1"],["bdg1r1","bdg2r2"],
+		  ["bdg2l2","bdg3l1"],["bdg2l1","bdg3c1"],["bdg2c1","bdg3r1"],["bdg2r1","bdg3r2"],
+  		  ["bdg2l2","bdg1l1"],["bdg2l1","bdg1c1"],["bdg2c1","bdg1r1"],["bdg2r1","bdg1r2"],
+  		  ["bdg3l2","bdg2l1"],["bdg3l1","bdg2c1"],["bdg3c1","bdg2r1"],["bdg3r1","bdg2r2"],
+
+		  //second grade
+		  // Longitudinal
+		  ["bdg1l2","bdg1c1"],["bdg1l1","bdg1r1"],["bdg1c1","bdg1r2"],
+		  ["bdg2l2","bdg2c1"],["bdg2l1","bdg2r1"],["bdg2c1","bdg2r2"],
+		  ["bdg3l2","bdg3c1"],["bdg3l1","bdg3r1"],["bdg3c1","bdg3r2"],
+
+		  // Traversal
+		  ["bdg1l2","bdg3l2"],
+		  ["bdg1l1","bdg3l1"],
+		  ["bdg1c1","bdg3c1"],
+		  ["bdg1r1","bdg3r1"],
+		  ["bdg1r2","bdg3r2"],
+
+		  // Diagonal
+		  ["bdg1l2","bdg3c1"],["bdg1l1","bdg3r1"],["bdg1c1","bdg3r2"],
+		  ["bdg3l2","bdg1c1"],["bdg3l1","bdg1r1"],["bdg3c1","bdg1r2"],
+		  
+		  //third grade
+		  // Longitudinal
+		  ["bdg1l2","bdg1r1"],["bdg1l1","bdg1r2"],
+		  ["bdg2l2","bdg2r1"],["bdg2l1","bdg2r2"],
+		  ["bdg3l2","bdg3r1"],["bdg3l1","bdg3r2"],
+
+		  //forth grade
+		  // Longitudinal
+		  ["bdg1l2","bdg1r2"],
+		  ["bdg2l2","bdg2r2"],
+		  ["bdg3l2","bdg3r2"],
+		  
+		  // Mount
+		  {"beamSpring":200000,"beamDamp":150},
+		  
+		  // Hinge
+		  ["bdg1l1","bdi4l2"],["bdg1l1","bdi4l1"],["bdg1l1","bdi4c0"],
+		  ["bdg1r1","bdi4r2"],["bdg1r1","bdi4r1"],["bdg1r1","bdi4c0"],
+		  ["bdg1l1","bdi3l2"],["bdg1l1","bdi3l1"],["bdg1l1","bdi3c0"],
+		  ["bdg1r1","bdi3r2"],["bdg1r1","bdi3r1"],["bdg1r1","bdi3c0"],
+		  ["bdg1l1","bd4l2"],["bdg1l1","bd4l1"],["bdg1l1","bd4c0"],
+		  ["bdg1r1","bd4r2"],["bdg1r1","bd4r1"],["bdg1r1","bd4c0"],
+		  ["bdg1l1","bd3l2"],["bdg1l1","bd3l1"],["bdg1l1","bd3c0"],
+		  ["bdg1r1","bd3r2"],["bdg1r1","bd3r1"],["bdg1r1","bd3c0"],
+
+		  // Lock
+  		  {"beamSpring":20000,"beamDamp":100},
+		  ["bdg3c1","bd3c0"],
+		  
+		  //Support
+          {"beamPrecompression":1, "beamType":"|SUPPORT", "beamLongBound":10,}, 
+		  {"beamSpring":20000,"beamDamp":150},
+		  ["bdg2l2","bdi3l2"],["bdg2l1","bdi3l1"],["bdg2c1","bdi3c0"],["bdg2r1","bdi3r1"],["bdg2r2","bdi2r2"],
+		  ["bdg3l2","bdi3l2"],["bdg3l1","bdi3l1"],["bdg3c1","bdi3c0"],["bdg3r1","bdi3r1"],["bdg3r2","bdi3r2"],
+		  ["bdg3l2","bdi2l2"],["bdg3l1","bdi2l1"],["bdg3c1","bdi2c0"],["bdg3r1","bdi2r1"],["bdg3r2","bdi2r2"],
+     ]
+}
+
+}
