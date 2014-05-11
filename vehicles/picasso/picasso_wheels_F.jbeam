@@ -79,10 +79,10 @@
 			{"frictionCoef":1.5},
 			
 			//
-			{"pressurePSI":50},
+			{"pressurePSI":60},
 			{"maxPressurePSI":1400},
-			{"reinforcementPressurePSI":50},
-			{"pressureSpring":601000},
+			{"reinforcementPressurePSI":60},
+			{"pressureSpring":401000},
 			{"reinforcementPressureSpring":201000},
 			{"pressureDamp":16},
 			{"reinforcementPressureDamp":16},

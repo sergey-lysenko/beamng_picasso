@@ -141,7 +141,7 @@
         ["picasso_rear_pillars", "picasso_rear_pillars", "Rear Pillars"],
 	    ["picasso_luggage_cover", "picasso_luggage_cover", "Luggage cover"],
 	    ["picasso_trunk_load", "picasso_trunk_load_32kg", "Trunk load"],
-	    ["picasso_door_back", "picasso_door_back", "Back Door"],
+	    ["picasso_door_back", "picasso_door_back", "Tailgate"],
 	    ["picasso_rear_bumper", "picasso_rear_bumper", "Rear Bumper"],
 	],
 }
@@ -160,7 +160,7 @@
         ["picasso_rear_pillars_limo", "picasso_rear_pillars_limo", "Rear Pillars"],
 	    ["picasso_luggage_cover_limo", "picasso_luggage_cover_limo", "Luggage cover"],
 	    ["picasso_trunk_load_limo", "picasso_trunk_load_limo_32kg", "Trunk load"],
-	    ["picasso_door_back_limo", "picasso_door_back_limo", "Back Door"],
+	    ["picasso_door_back_limo", "picasso_door_back_limo", "Tailgate"],
 	    ["picasso_rear_bumper_limo", "picasso_rear_bumper_limo", "Rear Bumper"],
 	],
 }

@@ -199,11 +199,12 @@ singleton Material(picasso_White_Glass)
 singleton Material(picasso_Body_Polished)
 {
    mapTo = "Body_Polished";
-   diffuseColor[0] = "0.159372 0.203656 0.558557 1";
-   specular[0] = "0.249724 0.250924 0.254523 1";
-   specularPower[0] = "75";
+   diffuseColor[0] = "0.858824 0.858824 0.858824 1";
+   specular[0] = "0.992157 0.992157 0.992157 1";
+   specularPower[0] = "128";
    doubleSided = "1";
    translucentBlendOp = "None";
+   pixelSpecular[0] = "1";
 };
 
 singleton Material(picasso_White_cloth_001)
