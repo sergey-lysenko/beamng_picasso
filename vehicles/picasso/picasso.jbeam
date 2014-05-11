@@ -36,9 +36,9 @@
 	    {"collision":false}
 		{"beamSpring":10000,"beamDamp":5},
 		// Driver's view
-		[0.40, 2.2, 1.35, 70, "fft2c0","fft2l2","fft4c0","fft4l2","fft6c0","fft6l2"],
+		[0.40, 2.3, 1.35, 70, "fft2c0","fft2l2","fft4c0","fft4l2","fft6c0","fft6l2"],
 		// Front passenger's view
-		[-.40, 2.2, 1.35, 80, "fft2c0","fft2r2","fft4c0","fft4r2","fft6c0","fft6r2"],
+		[-.40, 2.3, 1.35, 80, "fft2c0","fft2r2","fft4c0","fft4r2","fft6c0","fft6r2"],
 		// Rear passenger's view
 		[0.0, 3.2, 1.35, 80, "fft1c0","fft1l1","fft1r1","fft2c0","fft2l1","fft2r1"],
 		// Dashcam - internal view

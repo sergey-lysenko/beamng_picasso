@@ -67,19 +67,19 @@
 		{"hubFrictionCoef":0.7},
 			
 		//tire options
-		{"wheelTreadBeamSpring":221000,"wheelTreadBeamDamp":16,"wheelTreadBeamDeform":38000,"wheelTreadBeamStrength":55000},
-		{"wheelPeripheryBeamSpring":221000,"wheelPeripheryBeamDamp":16,"wheelPeripheryBeamDeform":38000,"wheelPeripheryBeamStrength":55000},
+			{"wheelTreadBeamSpring":521000,"wheelTreadBeamDamp":56,"wheelTreadBeamDeform":38000,"wheelTreadBeamStrength":55000},
+			{"wheelPeripheryBeamSpring":421000,"wheelPeripheryBeamDamp":16,"wheelPeripheryBeamDeform":38000,"wheelPeripheryBeamStrength":55000},
 		{"springExpansion":351000, "dampExpansion":8},
 		{"nodeWeight":0.21},
 		{"nodeMaterial":"|NM_RUBBER"},
 		{"frictionCoef":1.3},
 			
 		//
-		{"pressurePSI":80},
+		{"pressurePSI":50},
 		{"maxPressurePSI":1400},
-		{"reinforcementPressurePSI":80},
-		{"pressureSpring":501000},
-		{"reinforcementPressureSpring":101000},
+		{"reinforcementPressurePSI":50},
+			{"pressureSpring":601000},
+			{"reinforcementPressureSpring":201000},
 		{"pressureDamp":16},
 		{"reinforcementPressureDamp":16},
 			
@@ -175,7 +175,7 @@
 		{"springExpansion":351000, "dampExpansion":8},
 		{"nodeWeight":0.21},
 		{"nodeMaterial":"|NM_RUBBER"},
-		{"frictionCoef":1.4},
+		{"frictionCoef":1.5},
 			
 		//
 		{"pressurePSI":80},

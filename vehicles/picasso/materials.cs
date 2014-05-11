@@ -58,11 +58,14 @@ singleton Material(picasso_Black_rubber)
 singleton Material(picasso_Red_Glass)
 {
    mapTo = "Red_Glass";
-   diffuseColor[0] = "0.2 0 0 0.9";
-   specular[0] = "0.5 0.5 0.5 1";
-   specularPower[0] = "50";
+   diffuseColor[0] = "1 0 0.0235294 0.755";
+   specular[0] = "1 0.0705882 0 1";
+   specularPower[0] = "128";
    doubleSided = "1";
    translucent = "1";
+   pixelSpecular[0] = "1";
+   subSurfaceRolloff[0] = "1";
+   materialTag0 = "Miscellaneous";
 };
 
 singleton Material(picasso_Chrome_001)
@@ -262,4 +265,14 @@ singleton Material(picasso_Numberplate)
    normalMap[0] = "vehicles/picasso/textures/numberplate01_normalmap.png";
    materialTag0 = "beamng";
    materialTag1 = "vehicle";
+};
+
+singleton Material(picasso_Gray_bumpy_plastic)
+{
+   mapTo = "Gray_bumpy_plastic";
+   diffuseColor[0] = "0.12 0.12 0.12 1";
+   specular[0] = "0.0908344 0.0908344 0.0908344 1";
+   specularPower[0] = "50";
+   doubleSided = "1";
+   translucentBlendOp = "None";
 };

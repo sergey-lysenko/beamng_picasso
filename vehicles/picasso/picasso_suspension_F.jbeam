@@ -460,7 +460,7 @@
 		{"enableABS":true}
 		//{"ABSthreshold":3},
 		{"brakeTorque":2000},
-		{"parkingTorque":450},
+		{"parkingTorque":0},
 	],
 	"engine": {
 		//"ABSrate":12

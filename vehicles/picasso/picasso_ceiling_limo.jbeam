@@ -7,7 +7,7 @@
     "slotType" : "picasso_ceiling_limo",
 	"slots": [
 	["type", "default", "description"],
-	 //["picasso_glassroof_limo", "picasso_glassroof_limo", "Limo Glass Roof"],
+	 ["picasso_glassroof_limo", "picasso_glassroof_limo", "Limo Glass Roof"],
 	],
 	
 	"flexbodies": [
