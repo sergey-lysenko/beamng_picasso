@@ -63,9 +63,9 @@
 		 
 
          ["cld4l1", 0.65225, 2.63767, 1.65725],
-         ["cld4l2", 0.66120, 3.35293, 1.61897],
+         ["cld4l2", 0.65356, 3.55710, 1.65594],
          ["cld4r1", -.65225, 2.63767, 1.65725],
-         ["cld4r2", -.66120, 3.35293, 1.61897],
+         ["cld4r2", -.65356, 3.55710, 1.65594],
 
 
 		 ]
@@ -147,27 +147,30 @@
 		  ["cpl2r5","cld1r3"],["cpl2r5","cld1r2"],["cpl2r5","cld1r4"],["cpl2r5","cld2r3"],["cpl2r5","cld2r2"],["cpl2r5","cld2r4"],
 		  ["cpl3r5","cld1r1"],["cpl3r5","cld1r4"],["cpl3r5","cld1r5"],["cpl3r5","cld2r1"],["cpl3r5","cld2r4"],["cpl3r5","cld2r5"],
 
-          //Lock
-  		  ["lpl2l2","cld3l2"],
-  		  ["lpl2r2","cld3r2"],
+        //Lock
+		["lpl2l2","cld3l2"],
+  		["lpl2r2","cld3r2"],
 
-		  //Support
-		  {"beamSpring":300000,"beamDamp":100},
-          {"beamPrecompression":1, "beamType":"|SUPPORT", "beamLongBound":10,}, 
-		  ["cld1l3","cpl1l4"],["cld1l3","cpl2l4"],["cld1l3","fft2l1"],
- 		  ["cld1r3","cpl1r4"],["cld1r3","cpl2r4"],["cld1r3","fft2r1"],
+		//Support
+		{"beamSpring":400000,"beamDamp":300},
+        {"beamPrecompression":1, "beamType":"|SUPPORT", "beamLongBound":10,}, 
 
-		["cld3l1","lpl3l2"],["cld3l1","lpl3l3"],["cld3l1","lpl3l4"],
-		["cld3l3","fft8l1"],["cld3l3","fft8l2"],["cld3l3","fft8l3"],["cld3l3","ffb8l2"],
-		["cld4l1","cei5l1"],["cld4l1","cew2l1"],["cld4l1","cei7l1"],
-		["cld4l2","cei9l1"],["cld4l2","cei4l1"],["cld4l2","lpl5l3"],
-		["cld3r1","lpl3r2"],["cld3r1","lpl3r3"],["cld3r1","lpl3r4"],
-		["cld3r3","fft8r1"],["cld3r3","fft8r2"],["cld3r3","fft8r3"],["cld3l3","ffb8l2"],
-		["cld4r1","cei5r1"],["cld4r1","cew2r1"],["cld4r1","cei7r1"],
-		["cld4r2","cei9r1"],["cld4r2","cei4r1"],["cld4r2","lpl5r3"],
+		["cld3l1","lpl3l4"],
+		["cld3l2","lpl2l4"],
+		["cld3l3","ffb8l2"],["cld3l3","ffb8l3"],["cld3l3","ffb1l3"],
+		["cld4l2","cew9l1"],
+		["cld4l1","cew2l1"],
+		["cld3r1","lpl3r4"],
+		["cld3r2","lpl2r4"],
+		["cld3r3","ffb8r2"],["cld3r3","ffb8r3"],["cld3r3","ffb1r3"],
+		["cld4r2","cew9r1"],
+		["cld4r1","cew2r1"],
 
-
-
+        {"beamPrecompression":0.45, "beamType":"|SUPPORT", "beamLongBound":10,}, 
+		["cld1l1","cpl3l3"],
+		["cld1l2","cpl2l3"],
+		["cld1r1","cpl3r3"],
+		["cld1r2","cpl2r3"],
     ]
 }
 

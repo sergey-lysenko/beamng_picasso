@@ -223,7 +223,6 @@
         ["stwl2","stwl3"],["stwl2","stwl4"],
         ["stwl3","stwl4"],
         ["stwl4","stml1"],["stwl4","stml4"],
-		  
 		["stwr1","stwr2"],["stwr1","stwr3"],["stwr1","stwr4"],["stwr1","stmr1"],["stwr1","stmr2"],
         ["stwr2","stwr3"],["stwr2","stwr4"],
         ["stwr3","stwr4"],
@@ -284,7 +283,12 @@
         ["stur1","sacr0"],["stul1","sacl0"],
         {"beamPrecompression":0.80, "beamType":"|SUPPORT"}, 
 	    ["stmr4","mffb5l1"],["stmr2","mffb5l1"],["stml4","mffb5r1"],["stml2","mffb5r1"],
-		  
+		
+        {"beamPrecompression":0.80, "beamType":"|SUPPORT"}, 
+		["stwl1","sfl1r1"],["stwl2","sfl1r1"],
+		["stwr1","sfl1l1"],["stwr2","sfl1l1"],
+		["stwl3","sfl2r1"],["stwl4","sfl2r1"],
+		["stwr3","sfl2l1"],["stwr4","sfl2l1"],
 		
 	],
 	"triangles": [
