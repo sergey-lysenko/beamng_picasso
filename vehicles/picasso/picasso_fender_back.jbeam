@@ -189,7 +189,7 @@
 		["bfi1l1","mfft1l3"],["bfi1r1","mfft1r3"],
 
 		// Mount to front floor
-		{"beamSpring":1500000,"beamDamp":110},
+		{"beamSpring":1000000,"beamDamp":110},
 		["mfft1l2","fft1l2"],
 		["mfft1l3","fft1l3"],
 		["mffb1l2","ffb1l2"],
@@ -200,7 +200,7 @@
 		["mffb1r3","ffb1r3"],
 		  
 		// Mount to rear floor
-		{"beamSpring":1500000,"beamDamp":110},
+		{"beamSpring":1000000,"beamDamp":110},
 		["mrftl2","rftl2"],
 		["mrftl4","rftl4"],
 		["mrftl6","rftl6"],

@@ -267,7 +267,7 @@
 
 		// Wheel connection
 		{"beamSpring":5000000},
-		{"beamStrength":60000},
+		{"beamStrength":80000},
 		["fwil","stwl1"],["fwil","stwl2"],["fwil","stwl3"],["fwil","stwl4"],
 		["fwml","stwl1"],["fwml","stwl2"],["fwml","stwl3"],["fwml","stwl4"],
 		["fwir","stwr1"],["fwir","stwr2"],["fwir","stwr3"],["fwir","stwr4"],
