@@ -51,7 +51,7 @@
 	"beams": [
 		["id1:", "id2:"],
 		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":15000,"beamDamp":35},
+		{"beamSpring":10000,"beamDamp":35},
 		{"beamDeform":6000,"beamStrength":135500},
 
 		// Longitudinal
@@ -96,22 +96,21 @@
  		//Mount
  		//Hinges
 		{"beamSpring":300000,"beamDamp":35},
+		{"beamStrength":5000},
         ["hoo3l3","ffi5l0"],["hoo3l3","ffi5l1"],["hoo3l3","ffi4l1"],["hoo3l3","fft7l2"],
 		["hoo3r3","ffi5r0"],["hoo3r3","ffi5r1"],["hoo3r3","ffi4r1"],["hoo3r3","fft7r2"],
-		  //Lock
-		  ["cbuc0","hoo1c0"],
+		//Lock
+		["cbuc0","hoo1c0"],
 		  
-		  //Support
-          {"beamPrecompression":1, "beamType":"|SUPPORT", "beamLongBound":10}, 
+		//Support
+        {"beamPrecompression":1, "beamType":"|SUPPORT", "beamLongBound":10}, 
 
-		  ["hoo1l2","lnur1"],["hoo1l2","lnur2"],
-		  ["hoo1l1","lnur1"],["hoo1l1","lnur2"],
-		  ["hoo1c0","lnur1"],["hoo1c0","lnur2"],
-		  ["hoo1c0","lnul1"],["hoo1c0","lnul2"],
-		  ["hoo1r1","lnul1"],["hoo1r1","lnul2"],
-		  ["hoo1r2","lnul1"],["hoo1r2","lnul2"],
-		  
+		["hoo1l2","lnur1"],["hoo1l2","lnur2"],
+		["hoo1l1","lnur1"],["hoo1l1","lnur2"],
+		["hoo1c0","lnur1"],["hoo1c0","lnur2"],
+		["hoo1c0","lnul1"],["hoo1c0","lnul2"],
+		["hoo1r1","lnul1"],["hoo1r1","lnul2"],
+		["hoo1r2","lnul1"],["hoo1r2","lnul2"],
      ]
-		 
 }
 }
