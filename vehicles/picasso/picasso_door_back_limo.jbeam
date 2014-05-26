@@ -24,11 +24,11 @@
 
          {"group":"limo_back_door"},
 
-		 {"nodeWeight":0.8}
+		 {"nodeWeight":0.4}
 		 ["bd3l2", 0.71335, 5.24513, 1.23503],
 		 ["bd3r2", -.71335, 5.24513, 1.23503],
 
-		 {"nodeWeight":0.42}
+		 {"nodeWeight":0.25}
 		 ["bd1r2", -.60441, 5.37759, 0.56924],
 		 ["bd1r1", -.28207, 5.40186, 0.57264],
 		 ["bd1c0", 0.00000, 5.40953, 0.57604],
@@ -77,119 +77,108 @@
 		 
 		 
      ]
-	"beams": [
-		  ["id1:", "id2:"],
-		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":100000,"beamDamp":100},
-		  {"beamDeform":6000,"beamStrength":135500},
+		"beams": [
+		["id1:", "id2:"],
+		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		{"beamSpring":60000,"beamDamp":50},
+		{"beamDeform":6000,"beamStrength":135500},
+
+		// Longitudinal
+		["bd1l2","bd1l1"],["bd1l1","bd1c0"],["bd1c0","bd1r1"],["bd1r1","bd1r2"],
+		["bd2l2","bd2l1"],["bd2l1","bd2c0"],["bd2c0","bd2r1"],["bd2r1","bd2r2"],
+		["bd3l2","bd3l1"],["bd3l1","bd3c0"],["bd3c0","bd3r1"],["bd3r1","bd3r2"],
+		["bd4l2","bd4l1"],["bd4l1","bd4c0"],["bd4c0","bd4r1"],["bd4r1","bd4r2"],
+
+ 		["bdi1l2","bdi1l1"],["bdi1l1","bdi1c0"],["bdi1c0","bdi1r1"],["bdi1r1","bdi1r2"],
+		["bdi2l2","bdi2l1"],["bdi2l1","bdi2c0"],["bdi2c0","bdi2r1"],["bdi2r1","bdi2r2"],
+		["bdi3l2","bdi3l1"],["bdi3l1","bdi3c0"],["bdi3c0","bdi3r1"],["bdi3r1","bdi3r2"],
+		["bdi4l2","bdi4l1"],["bdi4l1","bdi4c0"],["bdi4c0","bdi4r1"],["bdi4r1","bdi4r2"],
 		  
+  		// Traversal
+		["bd1l2","bd2l2"],["bd2l2","bd3l2"],["bd3l2","bd4l2"],
+		["bd1l1","bd2l1"],["bd2l1","bd3l1"],["bd3l1","bd4l1"],
+		["bd1c0","bd2c0"],["bd2c0","bd3c0"],["bd3c0","bd4c0"],
+		["bd1r2","bd2r2"],["bd2r2","bd3r2"],["bd3r2","bd4r2"],
+		["bd1r1","bd2r1"],["bd2r1","bd3r1"],["bd3r1","bd4r1"],
 
-		  // Longitudinal
-		  ["bd1l2","bd1l1"],["bd1l1","bd1c0"],["bd1c0","bd1r1"],["bd1r1","bd1r2"],
-		  ["bd2l2","bd2l1"],["bd2l1","bd2c0"],["bd2c0","bd2r1"],["bd2r1","bd2r2"],
-		  ["bd3l2","bd3l1"],["bd3l1","bd3c0"],["bd3c0","bd3r1"],["bd3r1","bd3r2"],
-		  ["bd4l2","bd4l1"],["bd4l1","bd4c0"],["bd4c0","bd4r1"],["bd4r1","bd4r2"],
-
- 		  ["bdi1l2","bdi1l1"],["bdi1l1","bdi1c0"],["bdi1c0","bdi1r1"],["bdi1r1","bdi1r2"],
-		  ["bdi2l2","bdi2l1"],["bdi2l1","bdi2c0"],["bdi2c0","bdi2r1"],["bdi2r1","bdi2r2"],
-		  ["bdi3l2","bdi3l1"],["bdi3l1","bdi3c0"],["bdi3c0","bdi3r1"],["bdi3r1","bdi3r2"],
-		  ["bdi4l2","bdi4l1"],["bdi4l1","bdi4c0"],["bdi4c0","bdi4r1"],["bdi4r1","bdi4r2"],
+		["bdi1l2","bdi2l2"],["bdi2l2","bdi3l2"],["bdi3l2","bdi4l2"],
+		["bdi1l1","bdi2l1"],["bdi2l1","bdi3l1"],["bdi3l1","bdi4l1"],
+		["bdi1c0","bdi2c0"],["bdi2c0","bdi3c0"],["bdi3c0","bdi4c0"],
+		["bdi1r2","bdi2r2"],["bdi2r2","bdi3r2"],["bdi3r2","bdi4r2"],
+		["bdi1r1","bdi2r1"],["bdi2r1","bdi3r1"],["bdi3r1","bdi4r1"],
 		  
-  		  // Traversal
-		  ["bd1l2","bd2l2"],["bd2l2","bd3l2"],["bd3l2","bd4l2"],
-		  ["bd1l1","bd2l1"],["bd2l1","bd3l1"],["bd3l1","bd4l1"],
-		  ["bd1c0","bd2c0"],["bd2c0","bd3c0"],["bd3c0","bd4c0"],
-		  ["bd1r2","bd2r2"],["bd2r2","bd3r2"],["bd3r2","bd4r2"],
-		  ["bd1r1","bd2r1"],["bd2r1","bd3r1"],["bd3r1","bd4r1"],
+  		// Diagonal - surface
+		["bdi4r2","bdi3r1"],["bdi4r1","bdi3c0"],["bdi4c0","bdi3l1"],["bdi4l1","bdi3l2"],["bdi4r1","bdi3r2"],["bdi4c0","bdi3r1"],["bdi4l1","bdi3c0"],["bdi4l2","bdi3l1"],
+		["bdi3r2","bdi2r1"],["bdi3r1","bdi2c0"],["bdi3c0","bdi2l1"],["bdi3l1","bdi2l2"],["bdi3r1","bdi2r2"],["bdi3c0","bdi2r1"],["bdi3l1","bdi2c0"],["bdi3l2","bdi2l1"],
+		["bdi2r2","bdi1r1"],["bdi2r1","bdi1c0"],["bdi2c0","bdi1l1"],["bdi2l1","bdi1l2"],["bdi2r1","bdi1r2"],["bdi2c0","bdi1r1"],["bdi2l1","bdi1c0"],["bdi2l2","bdi1l1"],
+		["bd4r2","bd3r1"],["bd4r1","bd3c0"],["bd4c0","bd3l1"],["bd4l1","bd3l2"],["bd4r1","bd3r2"],["bd4c0","bd3r1"],["bd4l1","bd3c0"],["bd4l2","bd3l1"],
+		["bd3r2","bd2r1"],["bd3r1","bd2c0"],["bd3c0","bd2l1"],["bd3l1","bd2l2"],["bd3r1","bd2r2"],["bd3c0","bd2r1"],["bd3l1","bd2c0"],["bd3l2","bd2l1"],
+		["bd2r2","bd1r1"],["bd2r1","bd1c0"],["bd2c0","bd1l1"],["bd2l1","bd1l2"],["bd2r1","bd1r2"],["bd2c0","bd1r1"],["bd2l1","bd1c0"],["bd2l2","bd1l1"],
 
-		  ["bdi1l2","bdi2l2"],["bdi2l2","bdi3l2"],["bdi3l2","bdi4l2"],
-		  ["bdi1l1","bdi2l1"],["bdi2l1","bdi3l1"],["bdi3l1","bdi4l1"],
-		  ["bdi1c0","bdi2c0"],["bdi2c0","bdi3c0"],["bdi3c0","bdi4c0"],
-		  ["bdi1r2","bdi2r2"],["bdi2r2","bdi3r2"],["bdi3r2","bdi4r2"],
-		  ["bdi1r1","bdi2r1"],["bdi2r1","bdi3r1"],["bdi3r1","bdi4r1"],
-		  
-  		  // Diagonal - surface
-		  ["bdi4r2","bdi3r1"],["bdi4r1","bdi3c0"],["bdi4c0","bdi3l1"],["bdi4l1","bdi3l2"],["bdi4r1","bdi3r2"],["bdi4c0","bdi3r1"],["bdi4l1","bdi3c0"],["bdi4l2","bdi3l1"],
-		  ["bdi3r2","bdi2r1"],["bdi3r1","bdi2c0"],["bdi3c0","bdi2l1"],["bdi3l1","bdi2l2"],["bdi3r1","bdi2r2"],["bdi3c0","bdi2r1"],["bdi3l1","bdi2c0"],["bdi3l2","bdi2l1"],
-		  ["bdi2r2","bdi1r1"],["bdi2r1","bdi1c0"],["bdi2c0","bdi1l1"],["bdi2l1","bdi1l2"],["bdi2r1","bdi1r2"],["bdi2c0","bdi1r1"],["bdi2l1","bdi1c0"],["bdi2l2","bdi1l1"],
-		  ["bd4r2","bd3r1"],["bd4r1","bd3c0"],["bd4c0","bd3l1"],["bd4l1","bd3l2"],["bd4r1","bd3r2"],["bd4c0","bd3r1"],["bd4l1","bd3c0"],["bd4l2","bd3l1"],
-		  ["bd3r2","bd2r1"],["bd3r1","bd2c0"],["bd3c0","bd2l1"],["bd3l1","bd2l2"],["bd3r1","bd2r2"],["bd3c0","bd2r1"],["bd3l1","bd2c0"],["bd3l2","bd2l1"],
-		  ["bd2r2","bd1r1"],["bd2r1","bd1c0"],["bd2c0","bd1l1"],["bd2l1","bd1l2"],["bd2r1","bd1r2"],["bd2c0","bd1r1"],["bd2l1","bd1c0"],["bd2l2","bd1l1"],
+   		// Diagonal - horizontal
+		["bd1l2","bdi1l1"],["bd1l1","bdi1c0"],["bd1c0","bdi1r1"],["bd1r1","bdi1r2"],["bdi1l2","bd1l1"],["bdi1l1","bd1c0"],["bdi1c0","bd1r1"],["bdi1r1","bd1r2"],
+		["bd2l2","bdi2l1"],["bd2l1","bdi2c0"],["bd2c0","bdi2r1"],["bd2r1","bdi2r2"],["bdi2l2","bd2l1"],["bdi2l1","bd2c0"],["bdi2c0","bd2r1"],["bdi2r1","bd2r2"],
+		["bd3l2","bdi3l1"],["bd3l1","bdi3c0"],["bd3c0","bdi3r1"],["bd3r1","bdi3r2"],["bdi3l2","bd3l1"],["bdi3l1","bd3c0"],["bdi3c0","bd3r1"],["bdi3r1","bd3r2"],
+		["bd4l2","bdi4l1"],["bd4l1","bdi4c0"],["bd4c0","bdi4r1"],["bd4r1","bdi4r2"],["bdi4l2","bd4l1"],["bdi4l1","bd4c0"],["bdi4c0","bd4r1"],["bdi4r1","bd4r2"],
 
-		  {"beamSpring":50000,"beamDamp":100},
-   		  // Diagonal - horizontal
-		  ["bd1l2","bdi1l1"],["bd1l1","bdi1c0"],["bd1c0","bdi1r1"],["bd1r1","bdi1r2"],["bdi1l2","bd1l1"],["bdi1l1","bd1c0"],["bdi1c0","bd1r1"],["bdi1r1","bd1r2"],
-		  ["bd2l2","bdi2l1"],["bd2l1","bdi2c0"],["bd2c0","bdi2r1"],["bd2r1","bdi2r2"],["bdi2l2","bd2l1"],["bdi2l1","bd2c0"],["bdi2c0","bd2r1"],["bdi2r1","bd2r2"],
-		  ["bd3l2","bdi3l1"],["bd3l1","bdi3c0"],["bd3c0","bdi3r1"],["bd3r1","bdi3r2"],["bdi3l2","bd3l1"],["bdi3l1","bd3c0"],["bdi3c0","bd3r1"],["bdi3r1","bd3r2"],
-		  ["bd4l2","bdi4l1"],["bd4l1","bdi4c0"],["bd4c0","bdi4r1"],["bd4r1","bdi4r2"],["bdi4l2","bd4l1"],["bdi4l1","bd4c0"],["bdi4c0","bd4r1"],["bdi4r1","bd4r2"],
-
-   		  // Diagonal - vertical
-		  ["bd1l2","bdi2l2"],["bd2l2","bdi3l2"],["bd3l2","bdi4l2"],["bdi1l2","bd2l2"],["bdi2l2","bd3l2"],["bdi3l2","bd4l2"],
-		  ["bd1l1","bdi2l1"],["bd2l1","bdi3l1"],["bd3l1","bdi4l1"],["bdi1l1","bd2l1"],["bdi2l1","bd3l1"],["bdi3l1","bd4l1"],
-		  ["bd1c0","bdi2c0"],["bd2c0","bdi3c0"],["bd3c0","bdi4c0"],["bdi1c0","bd2c0"],["bdi2c0","bd3c0"],["bdi3c0","bd4c0"],
-		  ["bd1r1","bdi2r1"],["bd2r1","bdi3r1"],["bd3r1","bdi4r1"],["bdi1r1","bd2r1"],["bdi2r1","bd3r1"],["bdi3r1","bd4r1"],
-		  ["bd1r2","bdi2r2"],["bd2r2","bdi3r2"],["bd3r2","bdi4r2"],["bdi1r2","bd2r2"],["bdi2r2","bd3r2"],["bdi3r2","bd4r2"],
+   		// Diagonal - vertical
+		["bd1l2","bdi2l2"],["bd2l2","bdi3l2"],["bd3l2","bdi4l2"],["bdi1l2","bd2l2"],["bdi2l2","bd3l2"],["bdi3l2","bd4l2"],
+		["bd1l1","bdi2l1"],["bd2l1","bdi3l1"],["bd3l1","bdi4l1"],["bdi1l1","bd2l1"],["bdi2l1","bd3l1"],["bdi3l1","bd4l1"],
+		["bd1c0","bdi2c0"],["bd2c0","bdi3c0"],["bd3c0","bdi4c0"],["bdi1c0","bd2c0"],["bdi2c0","bd3c0"],["bdi3c0","bd4c0"],
+		["bd1r1","bdi2r1"],["bd2r1","bdi3r1"],["bd3r1","bdi4r1"],["bdi1r1","bd2r1"],["bdi2r1","bd3r1"],["bdi3r1","bd4r1"],
+		["bd1r2","bdi2r2"],["bd2r2","bdi3r2"],["bd3r2","bdi4r2"],["bdi1r2","bd2r2"],["bdi2r2","bd3r2"],["bdi3r2","bd4r2"],
 
 		  
-   		  // Through
-		  ["bd1l2","bdi1l2"],["bd1l1","bdi1l1"],["bd1c0","bdi1c0"],["bd1r1","bdi1r1"],["bd1r2","bdi1r2"],
-		  ["bd2l2","bdi2l2"],["bd2l1","bdi2l1"],["bd2c0","bdi2c0"],["bd2r1","bdi2r1"],["bd2r2","bdi2r2"],
-		  ["bd3l2","bdi3l2"],["bd3l1","bdi3l1"],["bd3c0","bdi3c0"],["bd3r1","bdi3r1"],["bd3r2","bdi3r2"],
-		  ["bd4l2","bdi4l2"],["bd4l1","bdi4l1"],["bd4c0","bdi4c0"],["bd4r1","bdi4r1"],["bd4r2","bdi4r2"],
+   		// Through
+		["bd1l2","bdi1l2"],["bd1l1","bdi1l1"],["bd1c0","bdi1c0"],["bd1r1","bdi1r1"],["bd1r2","bdi1r2"],
+		["bd2l2","bdi2l2"],["bd2l1","bdi2l1"],["bd2c0","bdi2c0"],["bd2r1","bdi2r1"],["bd2r2","bdi2r2"],
+		["bd3l2","bdi3l2"],["bd3l1","bdi3l1"],["bd3c0","bdi3c0"],["bd3r1","bdi3r1"],["bd3r2","bdi3r2"],
+		["bd4l2","bdi4l2"],["bd4l1","bdi4l1"],["bd4c0","bdi4c0"],["bd4r1","bdi4r1"],["bd4r2","bdi4r2"],
 
-   		  // Diagonal - internal
-		  ["bd1l2","bdi2l1"],["bd2l2","bdi3l1"],["bdi1l2","bd2l1"],["bdi2l2","bd3l1"],
-		  ["bd1l1","bdi2c0"],["bd2l1","bdi3c0"],["bdi1l1","bd2c0"],["bdi2l1","bd3c0"],
-		  ["bd1c0","bdi2r1"],["bd2c0","bdi3r1"],["bdi1c0","bd2r1"],["bdi2c0","bd3r1"],
-		  ["bd1r1","bdi2r2"],["bd2r1","bdi3r2"],["bdi1r1","bd2r2"],["bdi2r1","bd3r2"],
+   		// Diagonal - internal
+		["bd1l2","bdi2l1"],["bd2l2","bdi3l1"],["bdi1l2","bd2l1"],["bdi2l2","bd3l1"],
+		["bd1l1","bdi2c0"],["bd2l1","bdi3c0"],["bdi1l1","bd2c0"],["bdi2l1","bd3c0"],
+		["bd1c0","bdi2r1"],["bd2c0","bdi3r1"],["bdi1c0","bd2r1"],["bdi2c0","bd3r1"],
+		["bd1r1","bdi2r2"],["bd2r1","bdi3r2"],["bdi1r1","bd2r2"],["bdi2r1","bd3r2"],
 
-  		  ["bd1l1","bdi2l2"],["bd2l1","bdi3l2"],["bdi1l1","bd2l2"],["bdi2l1","bd3l2"],
-		  ["bd1c0","bdi2l1"],["bd2c0","bdi3l1"],["bdi1c0","bd2l1"],["bdi2c0","bd3l1"],
-		  ["bd1r1","bdi2c0"],["bd2r1","bdi3c0"],["bdi1r1","bd2c0"],["bdi2r1","bd3c0"],
-		  ["bd1r2","bdi2r1"],["bd2r2","bdi3r1"],["bdi1r2","bd2r1"],["bdi2r2","bd3r1"],
+  		["bd1l1","bdi2l2"],["bd2l1","bdi3l2"],["bdi1l1","bd2l2"],["bdi2l1","bd3l2"],
+		["bd1c0","bdi2l1"],["bd2c0","bdi3l1"],["bdi1c0","bd2l1"],["bdi2c0","bd3l1"],
+		["bd1r1","bdi2c0"],["bd2r1","bdi3c0"],["bdi1r1","bd2c0"],["bdi2r1","bd3c0"],
+		["bd1r2","bdi2r1"],["bd2r2","bdi3r1"],["bdi1r2","bd2r1"],["bdi2r2","bd3r1"],
 		 
- 		  //Mount
-		  {"beamSpring":1000000,"beamDamp":100},
+ 		//Mount
  		  
-		  //Hinges
-		  //["bd3l2","rdhl"],["bd3l1","rdhl"],["bd3c0","rdhl"],["bd3r1","rdhl"],["bd3r2","rdhl"],
-		  //["bd3l2","rdhr"],["bd3l1","rdhr"],["bd3c0","rdhr"],["bd3r1","rdhr"],["bd3r2","rdhr"],
-
-		  //["rdhl","bd4l2"],["rdhl","bd4l1"],["rdhl","bd4c0"],
-		  //["rdhl","bdi4l2"],["rdhl","bdi4l1"],["rdhl","bdi4c0"],
-		  //["rdhr","bd4r2"],["rdhr","bd4r1"],["rdhr","bd4c0"],
-		  //["rdhr","bdi4r2"],["rdhr","bdi4r1"],["rdhr","bdi4c0"],
-
-		  ["rdhl","bd4l2"],["rdhl","bd4l1"],
-		  ["rdhl","bdi4l2"],["rdhl","bdi4l1"],
-		  ["rdhr","bd4r2"],["rdhr","bd4r1"],
-		  ["rdhr","bdi4r2"],["rdhr","bdi4r1"],
+		//Hinges
+		{"beamSpring":200000,"beamDamp":300},
+		{"beamStrength":10000},
+        ["rdhl","bd4l2"],["rdhl","bd4l1"],
+		["rdhl","bdi4l2"],["rdhl","bdi4l1"],
+		["rdhr","bd4r2"],["rdhr","bd4r1"],
+		["rdhr","bdi4r2"],["rdhr","bdi4r1"],
 		  
-          //Lock
-		  {"beamSpring":200000,"beamDamp":100},
-		  ["rltc1","bd1c0"],
+        //Lock
+		{"beamSpring":200000,"beamDamp":200},
+		{"beamDeform":6000,"beamStrength":8000},
+		["rltc1","bd1c0"],
 		  
-		  // Spings
-		  {"beamSpring":200000,"beamDamp":100},
-		  {"beamPrecompression":4},
-		  //["bd3r2","rrp3r1"],
-		  //["bd3l2","rrp3l2"],
-		  
-		  //Support
-		  {"beamSpring":250000,"beamDamp":100},
+		// Spings
+		{"beamPrecompression":4},
+		//["bd3r2","rrp3r1"],
+		//["bd3l2","rrp3l2"],
+		
+		//Support
         {"beamPrecompression":1, "beamType":"|SUPPORT", "beamLongBound":10,}, 
-	  ["bfi1l3","bd3l2"],["bfi2l3","bd3l2"],["bfi3l3","bd3l2"],
-	  ["rftr3","bd2l2"],["bfi1l3","bd2l2"],["bfi2l3","bd2l2"],
-	  ["rftr6","bd1l2"],["bfi1l4","bd1l2"],["rftr5","bd1l2"],["bfi1l3","bd1l2"],["rftr3","bd1l2"],
-  	  ["rftr5","bd1l1"],["rftr6","bd1l1"],["rftc3","bd1l1"],["rftr4","bd1l1"],["rftc2","bd1l1"],
-  	  ["rftc3","bd1c0"],["rftr5","bd1c0"],["rftl5","bd1c0"],["rftr3","bd1c0"],["rftl3","bd1c0"],
-  	  ["rftl5","bd1r1"],["rftl6","bd1r1"],["rftc3","bd1r1"],["rftl4","bd1r1"],["rftc2","bd1r1"],
-	  ["rftl6","bd1r2"],["bfi1r4","bd1r2"],["rftl5","bd1r2"],["bfi1r3","bd1r2"],["rftl3","bd1r2"],
-	  ["rftl3","bd2r2"],["bfi1r3","bd2r2"],["bfi2r3","bd2r2"],
-	  ["bfi1r3","bd3r2"],["bfi2r3","bd3r2"],["bfi3r3","bd3r2"],
-		  
+		{"beamDeform":16000,"beamStrength":135500},
+	    ["bfi1l3","bd3l2"],["bfi2l3","bd3l2"],["bfi3l3","bd3l2"],
+	    ["rftr3","bd2l2"],["bfi1l3","bd2l2"],["bfi2l3","bd2l2"],
+	    ["rftr6","bd1l2"],["bfi1l4","bd1l2"],["rftr5","bd1l2"],["bfi1l3","bd1l2"],["rftr3","bd1l2"],
+  	    ["rftr5","bd1l1"],["rftr6","bd1l1"],["rftc3","bd1l1"],["rftr4","bd1l1"],["rftc2","bd1l1"],
+  	    ["rftc3","bd1c0"],["rftr5","bd1c0"],["rftl5","bd1c0"],["rftr3","bd1c0"],["rftl3","bd1c0"],
+  	    ["rftl5","bd1r1"],["rftl6","bd1r1"],["rftc3","bd1r1"],["rftl4","bd1r1"],["rftc2","bd1r1"],
+	    ["rftl6","bd1r2"],["bfi1r4","bd1r2"],["rftl5","bd1r2"],["bfi1r3","bd1r2"],["rftl3","bd1r2"],
+	    ["rftl3","bd2r2"],["bfi1r3","bd2r2"],["bfi2r3","bd2r2"],
+	    ["bfi1r3","bd3r2"],["bfi2r3","bd3r2"],["bfi3r3","bd3r2"],
      ]
-		 
 }
 }
 

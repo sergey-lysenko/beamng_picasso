@@ -7,7 +7,7 @@
     "slotType" : "picasso_rear_pillars",
 	"slots": [
 	["type", "default", "description"],
-	  //["picasso_rear_sideglass", "picasso_rear_sideglass", "Rear Side Glass"],
+	  ["picasso_rear_sideglass", "picasso_rear_sideglass", "Rear Side Glass"],
 	],
 	"flexbodies": [
 	 	 ["mesh", "[group]:", "nonFlexMaterials"],
@@ -88,8 +88,8 @@
 		 
         {"group":""},
         {"nodeWeight":1.0},
-		["rdhl", 0.40337, 3.76239, 1.54477],
-		["rdhr", -.40337, 3.76239, 1.54477],
+		["rdhl", 0.40337, 3.71239, 1.54477],
+		["rdhr", -.40337, 3.71239, 1.54477],
 
      ]
 	"beams": [

@@ -76,7 +76,7 @@
 			{"springExpansion":351000, "dampExpansion":8},
 			{"nodeWeight":0.22},
 			{"nodeMaterial":"|NM_RUBBER"},
-			{"frictionCoef":1.5},
+			{"frictionCoef":1.4},
 			
 			//
 			{"pressurePSI":50},
