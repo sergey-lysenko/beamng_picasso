@@ -74,9 +74,7 @@
 		  ["frs1l3","ffb4l3"],
 		  ["frs1l4","ffb4l3"],
 		  
- 		  ["frs2l1","fft1l1"],["frs2l1","fft1l2"],
-		  ["frs2l2","fft1l1"],["frs2l2","fft1l2"],
-
+ 
      ]
 }
 
@@ -154,8 +152,7 @@
 		  ["frs1r3","ffb4r3"],
 		  ["frs1r4","ffb4r3"],
 
-  		  ["frs2r1","fft1r1"],["frs2r1","fft1r2"],
-		  ["frs2r2","fft1r1"],["frs2r2","fft1r2"],
+
 		  ]
 }
 }

@@ -65,12 +65,6 @@
   		  ["lrs1l1","fft8l3"],
 		  ["lrs1l3","fft8l3"],
 		  ["lrs1l4","fft8l3"],
-		  
-  		  ["lrs2l1","rftr3"],
-		  ["lrs2l1","rftr4"],
-		  ["lrs2l2","rftr3"],
-		  ["lrs2l2","rftr4"],
-
      ]
 }
 
@@ -140,11 +134,6 @@
   		  ["lrs1r1","fft8r3"],
 		  ["lrs1r3","fft8r3"],
 		  ["lrs1r4","fft8r3"],
-		  
-  		  ["lrs2r1","rftl3"],
-		  ["lrs2r1","rftl4"],
-		  ["lrs2r2","rftl3"],
-		  ["lrs2r2","rftl4"],
      ]
 }
 
@@ -201,9 +190,6 @@
 		  ["lrs1c2","fft9r1"],["lrs1c2","fft8r1"],["lrs1c2","fft9l1"],["lrs1c2","fft8l1"],["lrs1c2","rftl1"],["lrs1c2","rftr1"],
 		  ["lrs1c3","fft9r1"],["lrs1c3","fft8r1"],["lrs1c3","fft9l1"],["lrs1c3","fft8l1"],["lrs1c3","rftl1"],["lrs1c3","rftr1"],
 		  ["lrs1c4","fft9r1"],["lrs1c4","fft8r1"],["lrs1c4","fft9l1"],["lrs1c4","fft8l1"],["lrs1c4","rftl1"],["lrs1c4","rftr1"],
-
-  		  ["lrs2c1","rftr3"],["lrs2c1","rftl3"],["lrs2c2","rftr3"],["lrs2c2","rftl3"],
-
  
      ]
 }

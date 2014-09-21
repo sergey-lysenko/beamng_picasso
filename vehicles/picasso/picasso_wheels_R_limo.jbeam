@@ -1,0 +1,104 @@
+{
+"picasso_wheels_R_limo": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Limo Picasso Rear 18 inches Wheels",
+	}
+    "slotType" : "picasso_wheels_R_limo",
+	"flexbodies": [
+		["mesh", "[group]:", "nonFlexMaterials"],
+		//wheels
+		["limo_rear_right_wheel", ["limo_rear_right_wheel"]],
+		["limo_rear_left_wheel", ["limo_rear_left_wheel"]],
+	],
+	"nodes": [
+		["id", "posX", "posY", "posZ"],
+		//rear wheel nodes
+		{"frictionCoef":0.7},
+		{"nodeMaterial":"|NM_METAL"},
+		{"selfCollision":true}
+		{"collision":true}
+		{"nodeWeight":3.0},
+		{"group":"limo_rear_right_wheel"},
+		["ax1r", -0.685, 4.7923, 0.3442],
+		{"group":"limo_rear_left_wheel"},
+		["ax1l", 0.685, 4.7923, 0.3442],
+		{"selfCollision":true}
+		{"collision":true}
+		{"group":"limo_rear_right_wheel"},
+		["axwr", -0.85, 4.7923, 0.3442],
+		{"group":"limo_rear_left_wheel"},
+		["axwl", 0.85, 4.7923, 0.3442],
+		{"group":""},
+	],
+	
+	"beams": [
+		["id1:", "id2:"],
+		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		//rear wheels
+		{"breakGroupType":0},
+		{"beamSpring":3000000,"beamDamp":45},
+		{"beamDeform":65000,"beamStrength":620000},
+		["ax1r","axwr"],
+		["ax1l","axwl"],
+		{"breakGroup":""},
+		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  
+	],
+	"hubWheels": [
+        ["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"], 
+		{"enableTireSideSupportBeams":true},
+
+		//general settings
+		{"radius":0.330},
+		{"hubRadius":0.260},
+		{"wheelOffset":-0.075},
+		{"hubWidth":0.215},
+		{"tireWidth":0.215},
+		{"numRays":18},
+			
+		//hub options
+		{"hubBeamSpring":1141000, "hubBeamDamp":10}
+		{"beamSpring":1141000, "beamDamp":10},
+		{"hubBeamDeform":54000, "hubBeamStrength":148000},
+		{"beamDeform":240000,"beamStrength":380000},
+		{"hubNodeWeight":0.425},
+		{"hubNodeMaterial":"|NM_METAL"},
+		{"hubFrictionCoef":0.7},
+			
+		//tire options
+		{"wheelTreadBeamSpring":251000,"wheelTreadBeamDamp":16,"wheelTreadBeamDeform":38000,"wheelTreadBeamStrength":55000},
+		{"wheelPeripheryBeamSpring":251000,"wheelPeripheryBeamDamp":16,"wheelPeripheryBeamDeform":38000,"wheelPeripheryBeamStrength":55000},
+		{"springExpansion":351000, "dampExpansion":8},
+		{"nodeWeight":0.22},
+		{"nodeMaterial":"|NM_RUBBER"},
+		{"frictionCoef":1.5},
+			
+		//
+		{"pressurePSI":50},
+		{"maxPressurePSI":1400},
+		{"reinforcementPressurePSI":50},
+		{"pressureSpring":301000},
+		{"reinforcementPressureSpring":201000},
+		{"pressureDamp":16},
+		{"reinforcementPressureDamp":16},
+			
+		//rear
+		{"selfCollision":true}
+		{"collision":true}
+		{"enableHubcaps":false},
+		{"axleBeams":["axle_RR"]}
+        ["RR", "limo_rear_right_wheel", "axwr", "ax1r", 9999,  "aclr1", 1, {"speedo" : true}],
+		{"axleBeams":["axle_RL"]}
+        ["RL", "limo_rear_left_wheel", "axwl", "ax1l", 9999,  "acll1",-1]
+		{"selfCollision":true}
+		{"axleBeams":[]}
+		{"propulsed":0}
+
+	],
+	"triangles": [
+		["id1:","id2:","id3:"],
+		{"group":""},
+	],
+}
+}
