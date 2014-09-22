@@ -65,6 +65,14 @@
   		  ["rrs1l1","fft2l3"],
 		  ["rrs1l3","fft2l3"],
 		  ["rrs1l4","fft2l3"],
+		  
+   		  {"beamSpring":750000,"beamDamp":300},
+  		  ["rrs2l1","fft9l2"],
+  		  ["rrs2l1","fft9c0"],
+  		  ["rrs2l2","fft9l2"],
+  		  ["rrs2l2","fft9c0"],
+
+		  
      ]
 }
 
@@ -135,6 +143,12 @@
 		  ["rrs1r3","fft2r3"],
 		  ["rrs1r4","fft2r3"],
 
+   		  {"beamSpring":750000,"beamDamp":300},
+  		  ["rrs2r1","fft9r2"],
+  		  ["rrs2r1","fft9c0"],
+  		  ["rrs2r2","fft9r2"],
+  		  ["rrs2r2","fft9c0"],
+
  
      ]
 }
@@ -192,6 +206,13 @@
 		  ["rrs1c2","fft1r1"],["rrs1c2","fft2r1"],["rrs1c2","fft1l1"],["rrs1c2","fft2l1"],["rrs1c2","fft1l1"],["rrs1c2","ffb1r1"],
 		  ["rrs1c3","fft1r1"],["rrs1c3","fft2r1"],["rrs1c3","fft1l1"],["rrs1c3","fft2l1"],["rrs1c3","fft1l1"],["rrs1c3","ffb1r1"],
 		  ["rrs1c4","fft1r1"],["rrs1c4","fft2r1"],["rrs1c4","fft1l1"],["rrs1c4","fft2l1"],["rrs1c4","fft1l1"],["rrs1c4","ffb1r1"],
+		  
+  		  {"beamSpring":750000,"beamDamp":300},
+  		  ["rrs2c1","fft9l1"],
+  		  ["rrs2c1","fft9r1"],
+  		  ["rrs2c2","fft9l1"],
+  		  ["rrs2c2","fft9r1"],
+
  
      ]
 }

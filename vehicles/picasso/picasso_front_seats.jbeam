@@ -74,6 +74,11 @@
 		  ["frs1l3","ffb4l3"],
 		  ["frs1l4","ffb4l3"],
 		  
+		  {"beamSpring":750000,"beamDamp":300},
+		  ["frs2l1","ffb1c0"],
+		  ["frs2l1","ffb1l2"],
+		  ["frs2l2","ffb1c0"],
+		  ["frs2l2","ffb1l2"],
  
      ]
 }
@@ -152,6 +157,11 @@
 		  ["frs1r3","ffb4r3"],
 		  ["frs1r4","ffb4r3"],
 
+		  {"beamSpring":750000,"beamDamp":300},
+		  ["frs2r1","ffb1c0"],
+		  ["frs2r1","ffb1r2"],
+		  ["frs2r2","ffb1c0"],
+		  ["frs2r2","ffb1r2"],
 
 		  ]
 }
