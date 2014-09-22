@@ -146,17 +146,17 @@
 		{"selfCollision":true}
 		{"collision":true}
 
- 		{"nodeWeight":3.8},
-		{"group":"front_strut_right"},
-		["strr", 0.74597, 1.07906, 0.33714],
-		 
-        {"group":"front_strut_left"},
-		["strl", -0.74597, 1.07906, 0.33714],
-		 
 		{"nodeWeight":3.5},
         {"group":""},
 		["stmr0", 0.70914, 0.97939, 0.70214],
 		["stml0", -0.70914, 0.97939, 0.70214],
+		
+ 		{"nodeWeight":3.8},
+		{"group":"front_strut_left"},
+		["strr", 0.74597, 1.07906, 0.33714],
+		 
+        {"group":"front_strut_right"},
+		["strl", -0.74597, 1.07906, 0.33714],
 
 		{"group":"front_strut_right"},
 		["stcl", -0.69005, 0.95573, 0.41654],
@@ -164,10 +164,10 @@
 		["stcr", 0.69005, 0.95573, 0.41654],
 
 		{"nodeWeight":3.4},
-		{"group":"front_strut_right"},
+		{"group":"front_strut_left"},
 		["stur1", 0.67739, 0.99126, 0.84326],
 		 
-        {"group":"front_strut_left"},
+        {"group":"front_strut_right"},
 		["stul1", -0.67739, 0.99126, 0.84326],
 		 
 		{"nodeWeight":3.25},

@@ -34,7 +34,7 @@
 	"engine":{
 		"idleRPM":700,
 		"shiftDownRPM":1000,
-		"shiftUpRPM":5700,
+		"shiftUpRPM":6700,
 		"maxRPM":7000,
 		"inertia":0.16,
 		"friction":24,
@@ -209,11 +209,11 @@
 		"lowShiftDownRPM":1000,
 		"lowShiftUpRPM":2000,
 		"highShiftDownRPM":2000,
-		"highShiftUpRPM":4000,
+		"highShiftUpRPM":6000,
 		// -1, 0 (neutral), 1, etc
 		"gears":[-1.917, 0, 3.417, 1.783, 1.121, 0.795, 0.647, 0.534]
-		"clutchDuration":0.3
-		"clutchTorque":940
+		"clutchDuration":0.33
+		"clutchTorque":290
 		"viscousCoupling":6
 		"lockingTorqueLimit":500
 		"enableLocking":false
