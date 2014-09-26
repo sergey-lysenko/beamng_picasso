@@ -111,6 +111,23 @@
 		["hoo1c0","lnul1"],["hoo1c0","lnul2"],
 		["hoo1r1","lnul1"],["hoo1r1","lnul2"],
 		["hoo1r2","lnul1"],["hoo1r2","lnul2"],
-     ]
+     ],
+	 
+	"triangles": [
+		["id1:","id2:","id3:"],
+		["hoo1c0","hoo1l1","hoo2c0"],["hoo2l1","hoo1l1","hoo1l2"],
+		//["hoo2l1","hoo2l2","hoo1l2"],["hoo2l1","hoo1l1","hoo2c0"],
+		["hoo1c0","hoo1r1","hoo2c0"],["hoo2r1","hoo1r1","hoo1r2"],
+		//["hoo2r1","hoo2r2","hoo1r2"],["hoo2r1","hoo1r1","hoo2c0"],
+		
+		//["hoo2c0","hoo2l1","hoo3c0"],
+		//["hoo2c0","hoo2r1","hoo3c0"],
+		
+		//["hoo3l1","hoo2l1","hoo3c0"],["hoo3l1","hoo2l1","hoo3l2"],
+		//["hoo3r1","hoo2r1","hoo3c0"],["hoo3r1","hoo2r1","hoo3r2"],
+
+		
+		
+	],
 }
 }

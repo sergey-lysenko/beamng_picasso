@@ -112,7 +112,24 @@
      ["mlnur2","lnur2"],
      ["mlnlr1","lnlr1"],
      ["mlnlr2","lnlr2"],
-     ]
+     ],
+	 	 	"triangles": [
+		["id1:","id2:","id3:"],
+		
+		//["cblc0","cbuc0","cbul1"],
+		//["cblc0","cbuc0","cbur1"],
+		
+		//["cblc0","cbll1","cbul1"],
+		//["cblc0","cblr1","cbur1"],
+		
+		//["cbll2","cbll1","cbul1"],
+		//["cblr2","cblr1","cbur1"],
+		
+		//["cbll2","cbll1","cbul2"],
+		//["cblr2","cblr1","cbur2"],
+
+	]
+
 		 
 }
 }

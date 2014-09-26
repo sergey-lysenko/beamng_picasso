@@ -16,7 +16,7 @@
 		{"selfCollision":true}
 		{"collision":true}
         {"group":"front_bumper"},
-		{"nodeWeight":0.16}
+		{"nodeWeight":0.18}
         ["mcbul2",-0.57864,0.23702,0.67122],
         ["mcbul1",-0.33624,0.21605,0.67122],
         ["mcbuc0",0.00000,0.21605,0.67122],
@@ -27,7 +27,7 @@
         ["mcblc0",0.00000,0.21605,0.56077],
         ["mcblr1",0.33624,0.21609,0.56077],
         ["mcblr2",0.57864,0.23706,0.56077],
-		{"nodeWeight":0.13}
+		{"nodeWeight":0.15}
  		["msfl0l2", 0.62700, 0.48238, 0.24863],
   		["msfl0r2", -0.62700, 0.48238, 0.24863],
 		["fbul2", -0.96304, 0.68132, 0.67271],
@@ -72,14 +72,14 @@
 		["fbir2", 0.43610, 0.19341, 0.82634],
 		["fbir3", 0.52903, 0.13366, 0.79634],
 		["fbir5", 0.87529, 0.42873, 0.82597],
- 		{"nodeWeight":0.14}
+ 		{"nodeWeight":0.16}
 		["msfl0c0", 0.00000, 0.48252, 0.24863],
     ]
 	"beams": [
 		["id1:", "id2:"],
 		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":15000,"beamDamp":30},
-		{"beamDeform":6000,"beamStrength":1500},
+		{"beamSpring":15000,"beamDamp":65},
+		{"beamDeform":6000,"beamStrength":5500},
 		// Longitudinal
 		["fbuc1","fbul7"],["fbul7","fbul6"],["fbul6","fbul5"],["fbul5","fbul3"],["fbul3","fbul2"],
 		["fbuc1","fbur7"],["fbur7","fbur6"],["fbur6","fbur5"],["fbur5","fbur3"],["fbur3","fbur2"],
@@ -92,7 +92,7 @@
   	    ["msfl0l2","msfl0c0"],["msfl0c0","msfl0r2"],
 		["fbir5","fbir3"],["fbir3","fbir2"],["fbir2","fbir1"],["fbir1","fbic1"],["fbic1","fbil1"],["fbil1","fbil2"],["fbil2","fbil3"],
 	   	// Vertical
-		{"beamSpring":15000,"beamDamp":30},
+		{"beamSpring":15000,"beamDamp":55},
         ["mcbul2","mcbll2"],["mcbul1","mcbll1"],["mcbuc0","mcblc0"],["mcbur1","mcblr1"],["mcbur2","mcblr2"],
 		["fbil5","fbul2"],["fbil5","fbul3"],["fbil5","fbul3"],["fbil5","fbwl2"],["fbil5","fbwl3"],["fbil5","fbwl3"],
 		["fbil3","fbul3"],["fbil3","fbul5"],["fbil3","fbwl3"],["fbil3","fbwl3"],["fbil3","fbwl5"],
@@ -157,7 +157,7 @@
 		["msfl0l2","fblr2"],["msfl0l2","fblr3"],["msfl0l2","fblr3"],["msfl0l2","fblr5"],["msfl0l2","fblr6"],
 		["msfl0c0","fbll5"],["msfl0c0","fbll6"],["msfl0c0","fbll7"],["msfl0c0","fblc1"],["msfl0c0","fblr5"],["msfl0c0","fblr6"],["msfl0c0","fblr7"],
         // Mount
-  		{"beamStrength":10000},
+  		{"beamStrength":1500},
 		{"beamSpring":140000,"beamDamp":50},
         // To crushbar
 		["mcbul2","cbul2"],["mcbul1","cbul1"],["mcbuc0","cbuc0"],["mcbur1","cbur1"],["mcbur2","cbur2"],
@@ -171,14 +171,14 @@
      ],
 	 	"triangles": [
 		["id1:","id2:","id3:"],
-		// --- First row ---
-		//["fblc1","fbwc1","fbwl7"],["fblc1","fbll7","fbwl7"],["fbll6","fbll7","fbwl7"],["fbll6","fbwl6","fbwl7"],["fblc1","fbwc1","fbwr7"],["fblc1","fblr7","fbwr7"],["fblr6","fblr7","fbwr7"],["fblr6","fbwr6","fbwr7"],["fbll6","fbwl6","fbll5"],["fbll6","fbwl5","fbll5"],["fbll3","fbwl5","fbll5"],["fbll3","fbwl3","fbwl5"],["fblr6","fbwr6","fblr5"],["fblr6","fbwr5","fblr5"],["fblr3","fbwr5","fblr5"],["fblr3","fbwr3","fbwr5"],["fbll3","fbwl3","fbwl3"],["fbll3","fbwl3","fbll3"],["fbll2","fbwl3","fbll3"],["fbll2","fbwl3","fbwl2"],["fblr3","fbwr3","fbwr3"],["fblr3","fbwr3","fblr3"],["fblr2","fbwr3","fblr3"],["fblr2","fbwr3","fbwr2"],
-		// --- Second row ---
-		//["fblc1","fbuc1","fbul7"],["fblc1","fbll7","fbul7"],["fbll6","fbll7","fbul7"],["fbll6","fbul6","fbul7"],["fblc1","fbuc1","fbur7"],["fblc1","fblr7","fbur7"],["fblr6","fblr7","fbur7"],["fblr6","fbur6","fbur7"],["fbll6","fbul6","fbll5"],["fbll6","fbul5","fbll5"],["fbll3","fbul5","fbll5"],["fbll3","fbul3","fbul5"],["fblr6","fbur6","fblr5"],["fblr6","fbur5","fblr5"],["fblr3","fbur5","fblr5"],["fblr3","fbur3","fbur5"],["fbll3","fbul3","fbul3"],["fbll3","fbul3","fbll3"],["fbll2","fbul3","fbll3"],["fbll2","fbul3","fbul2"],["fblr3","fbur3","fbur3"],["fblr3","fbur3","fblr3"],["fblr2","fbur3","fblr3"],["fblr2","fbur3","fbur2"],
-		// --- Third row ---
-		//["fblc1","fbuc1","fbul7"],["fblc1","fbll7","fbul7"],["fbll6","fbll7","fbul7"],["fbll6","fbul6","fbul7"],["fblc1","fbuc1","fbur7"],["fblc1","fblr7","fbur7"],["fblr6","fblr7","fbur7"],["fblr6","fbur6","fbur7"],["fbll6","fbul6","fbll5"],["fbll6","fbul5","fbll5"],["fbll3","fbul5","fbll5"],["fbll3","fbul3","fbul5"],["fblr6","fbur6","fblr5"],["fblr6","fbur5","fblr5"],["fblr3","fbur5","fblr5"],["fblr3","fbur3","fbur5"],["fbll3","fbul3","fbul3"],["fbll3","fbul3","fbll3"],["fbll2","fbul3","fbll3"],["fbll2","fbul3","fbul2"],["fblr3","fbur3","fbur3"],["fblr3","fbur3","fblr3"],["fblr2","fbur3","fblr3"],["fblr2","fbur3","fbur2"],
-		// --- Forth row ---
-		//["fbic1","fbuc1","fbul7"],["fbic1","fbil7","fbul7"],["fbil6","fbil7","fbul7"],["fbil6","fbul6","fbul7"],["fbic1","fbuc1","fbur7"],["fbic1","fbir7","fbur7"],["fbir6","fbir7","fbur7"],["fbir6","fbur6","fbur7"],["fbil6","fbul6","fbil5"],["fbil6","fbul5","fbil5"],["fbil3","fbul5","fbil5"],["fbil3","fbul3","fbul5"],["fbir6","fbur6","fbir5"],["fbir6","fbur5","fbir5"],["fbir3","fbur5","fbir5"],["fbir3","fbur3","fbur5"],
+		["fblr3","fbwr5","fbwr3"],["fblr6","fblr5","fbwr5"],
+		["fbll3","fbwl5","fbwl3"],["fbll6","fbll5","fbwl5"],
+		["fblr6","fbwr6","fbwr7"],["fblc1","fblr7","fbwr7"],
+		["fbll6","fbwl6","fbwl7"],["fblc1","fbll7","fbwl7"],
+		["fbil1","fbic1","fbul7"],["fbil2","fbul6","fbul7"],
+		["fbir1","fbic1","fbur7"],["fbir2","fbur6","fbur7"],
+		["fbll6","fbul6","fbul5"],["fbuc1","fbul7","fbll7"],
+		["fblr6","fbur6","fbur5"],["fbuc1","fbur7","fblr7"],
 	],
 }
 }

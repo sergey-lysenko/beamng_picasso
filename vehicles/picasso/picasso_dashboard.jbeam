@@ -153,7 +153,7 @@
           ["dsh4r3","dsh1r3"],["dsh4r2","dsh1r3"],["dsh4r3","dsh0r1"],["dsh4r2","dsh0r1"],
 
   		  //Mount
-		  ["dsh0l1","fft5l1"],["dsh0c0","fft5c0"],["dsh0r1","fft5r1"],
+		  ["dsh0l1","fft5l1"],["dsh0r1","fft5r1"],
           ["dsh5l2","fgd3l2"],["dsh5l1","fgd3l1"],["dsh5c0","fgd3c0"],["dsh5r1","fgd3r1"],["dsh5r2","fgd3r2"],
 		  ["dsh1l3","fft6l2"],["dsh1l3","fft5l2"],["dsh1l3","fft4l2"],
 		  ["dsh3l3","fft5l2"],["dsh3l3","fft6l2"],["dsh3l3","fft7l2"],

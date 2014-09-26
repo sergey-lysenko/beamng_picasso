@@ -19,7 +19,7 @@
 		 {"nodeMaterial":"|NM_METAL"},
 		 {"selfCollision":true}
 		 {"collision":true}
-		 {"nodeWeight":2}
+		 {"nodeWeight":2.1}
          {"group":"rear_left_seat"},
 
 		 ["rrs1l1", 0.76543, 3.21583, 0.50518],
@@ -97,7 +97,7 @@
 		 {"nodeMaterial":"|NM_METAL"},
 		 {"selfCollision":true}
 		 {"collision":true}
-		 {"nodeWeight":2}
+		 {"nodeWeight":2.1}
          {"group":"rear_right_seat"},
 
 		 ["rrs1r1", -.76543, 3.21583, 0.50518],
@@ -174,7 +174,7 @@
 		 {"nodeMaterial":"|NM_METAL"},
 		 {"selfCollision":true}
 		 {"collision":true}
-		 {"nodeWeight":2}
+		 {"nodeWeight":2.1}
          {"group":"rear_center_seat"},
 
 		 ["rrs1c1", 0.24996, 3.21583, 0.50518],

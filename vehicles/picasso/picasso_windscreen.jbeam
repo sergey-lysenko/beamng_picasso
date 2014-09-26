@@ -147,35 +147,26 @@
   		  // Diagonal
 		  ["wnd1r2","wnd5l2"],["wnd5r2","wnd1l2"],
 		  
-		  // Mount
-		  {"beamStrength":155000},
-		  {"beamSpring":200000,"beamDamp":75},
+		// Mount
+		{"beamStrength":155000},
+		{"beamSpring":200000,"beamDamp":75},
 		  
-		  // Bottom and sides
-		  ["wnd3l2","frp3l2"],["wnd2l2","frp4l2"],["wnd1l2","fgd2l2"],["wnd1l1","fgd2l1"],
-          ["wnd1c1","fgd2c0"],
-		  ["wnd3r2","frp3r2"],["wnd2r2","frp4r2"],["wnd1r2","fgd2r2"],["wnd1r1","fgd2r1"],
+		// Bottom and sides
+		["wnd3l2","frp3l2"],["wnd2l2","frp4l2"],["wnd1l2","fgd2l2"],["wnd1l1","fgd2l1"],
+        ["wnd1c1","fgd2c0"],
+		["wnd3r2","frp3r2"],["wnd2r2","frp4r2"],["wnd1r2","fgd2r2"],["wnd1r1","fgd2r1"],
 
-		  // Top
-		  ["wnd5l1","frp6l2"],["wnd5l2","frp1l2"],["wnd4l2","frp2l3"],
-		  ["wnd5c1","frp7c2"],
-		  ["wnd5r1","frp6r2"],["wnd5r2","frp1r2"],["wnd4r2","frp2r3"],
-		  
-		  /*
-		  ["wnd4l2","frp3l3"],["wnd4l2","frp2l3"],["wnd4l2","frp1l3"],
-		  ["wnd5l2","frp6l3"],["wnd5l2","frp1l1"],["wnd5l2","frp2l1"],
-		  ["wnd5l1","frp7c3"],["wnd5l1","frp6l3"],["wnd5l1","frp1l1"],
-		  ["wnd5c1","frp7l3"],["wnd5c1","frp7c3"],["wnd5c1","frp7r3"],
-		  ["wnd5r1","frp7c3"],["wnd5r1","frp6r3"],["wnd5r1","frp1r1"],
-		  ["wnd5r2","frp6r3"],["wnd5r2","frp1r1"],["wnd5r2","frp2r1"],
-		  ["wnd4r2","frp3r3"],["wnd4r2","frp2r3"],["wnd4r2","frp1r3"],
-		  
- 		  ["wnd3l2","frp3l2"],["wnd2l2","frp4l2"],["wnd1l2","fgd2l2"],["wnd1l1","fgd2l1"],["wnd1c1","fgd2c0"],["wnd1r1","fgd2r1"],["wnd1r2","fgd2r2"],["wnd2r2","frp4r2"],["wnd3r2","frp3r2"],
-
-*/
-
-		  
-     ]
+		// Top
+		["wnd5l1","frp6l2"],["wnd5l2","frp1l2"],["wnd4l2","frp2l3"],
+		["wnd5c1","frp7c2"],
+		["wnd5r1","frp6r2"],["wnd5r2","frp1r2"],["wnd4r2","frp2r3"],
+    ],
+	"triangles": [
+		["id1:","id2:","id3:"],
+		["wnd2c1","wnd3l1","wnd2l1"],["wnd3c1","wnd4l1","wnd3l1"],//["wnd4c1","wnd5l1","wnd4l1"],
+		["wnd2c1","wnd3r1","wnd2r1"],["wnd3c1","wnd4r1","wnd3r1"],//["wnd4c1","wnd5r1","wnd4r1"],
+		//["wnd2l1","wnd3l2","wnd2l2"],["wnd3l1","wnd4l2","wnd3l2"],["wnd4l1","wnd5l2","wnd4l2"],
+    ]
 		 
 }
 

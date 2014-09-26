@@ -62,10 +62,13 @@
 		  ["hdl1r1","ffi5r0"],["hdl1r1","ffi5r1"],["hdl1r1","ffi6r0"],["hdl1r1","ffi6r1"],
 		  ["hdl1r3","lnll1"],["hdl1r3","lnll2"],["hdl1r3","lnul1"],["hdl1r3","lnul2"],
 		  ["hdl1r4","lnll1"],["hdl1r4","lnll2"],["hdl1r4","lnul1"],["hdl1r4","lnul2"],
-		  
-		  
-		  
-     ]
+    ],
+	 	"triangles": [
+		["id1:","id2:","id3:"],
+		{"group":""},
+		["hdl1l3","hdl1l5","hdl2l2"],
+		["hdl1r3","hdl1r5","hdl2r2"],
+	]
 }
 
 }

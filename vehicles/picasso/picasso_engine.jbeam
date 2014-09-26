@@ -213,7 +213,7 @@
 		// -1, 0 (neutral), 1, etc
 		"gears":[-1.917, 0, 3.417, 1.783, 1.121, 0.795, 0.647, 0.534]
 		"clutchDuration":0.33
-		"clutchTorque":290
+		"clutchTorque":390
 		"viscousCoupling":6
 		"lockingTorqueLimit":500
 		"enableLocking":false
@@ -246,7 +246,8 @@
 	],
 	"triangles": [
 			["id1:","id2:","id3:"],
-			
+		["engl4","engu4","engu1"],["engl3","engl4","engl1"],["engl3","engl2","engu3"],["engu3","engu4","engu2"],
+
 			
 	],
 }

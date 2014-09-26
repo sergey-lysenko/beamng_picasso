@@ -135,7 +135,20 @@
 	 ["rdi1l1","ffi5l0"],["rdi1l1","ffi5l3"],["rdi2l1","ffi5l0"],["rdi2l1","ffi5l3"],
 	 ["rdi1r1","ffi5r0"],["rdi1r1","ffi5r3"],["rdi2r1","ffi5r0"],["rdi2r1","ffi5r3"],
 
-     ]
+     ],
+	 
+	 	"triangles": [
+		["id1:","id2:","id3:"],
+		
+		//["rdo3c0","rdo2c0","rdo2l1"],["rdo2c0","rdo1c0","rdo1l1"],
+		//["rdo3c0","rdo2c0","rdo2r1"],["rdo2c0","rdo1c0","rdo1r1"],
+		["rdo3c0","rdo3l1","rdo2l1"],["rdo2c0","rdo2l1","rdo1l1"],
+		["rdo3c0","rdo3r1","rdo2r1"],["rdo2c0","rdo2r1","rdo1r1"],
+
+		
+		
+	]
+
 		 
 }
 }

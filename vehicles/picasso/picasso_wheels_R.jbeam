@@ -20,15 +20,15 @@
 		{"collision":true}
 		{"nodeWeight":3.0},
 		{"group":"rear_right_wheel"},
-		["ax1r", -0.685, 3.7923, 0.3442],
+		["ax1r", -0.696, 3.79226, 0.34500],
 		{"group":"rear_left_wheel"},
-		["ax1l", 0.685, 3.7923, 0.3442],
+		["ax1l", 0.696, 3.79226, 0.34500],
 		{"selfCollision":true}
 		{"collision":true}
 		{"group":"rear_right_wheel"},
-		["axwr", -0.85, 3.7923, 0.3442],
+		["axwr", -0.93421, 3.79226, 0.34500],
 		{"group":"rear_left_wheel"},
-		["axwl", 0.85, 3.7923, 0.3442],
+		["axwl", 0.93421, 3.79226, 0.34500],
 		{"group":""},
 	],
 	
@@ -52,7 +52,7 @@
 		//general settings
 		{"radius":0.330},
 		{"hubRadius":0.260},
-		{"wheelOffset":-0.075},
+		{"wheelOffset":-0.01},
 		{"hubWidth":0.215},
 		{"tireWidth":0.215},
 		{"numRays":18},

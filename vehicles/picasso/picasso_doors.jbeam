@@ -164,7 +164,7 @@
 		  ["rdhr","bdi4r2"],["rdhr","bdi4r1"],
 		  
           //Lock
-		  {"beamSpring":200000,"beamDamp":100},
+		  {"beamSpring":20000,"beamDamp":100},
 		  ["rltc1","bd1c0"],
 		  
 		  // Spings
@@ -341,21 +341,13 @@
 		  {"beamSpring":1000000,"beamDamp":100},
  		  
 		  //Hinges
-		  //["bd3l2","rdhl"],["bd3l1","rdhl"],["bd3c0","rdhl"],["bd3r1","rdhl"],["bd3r2","rdhl"],
-		  //["bd3l2","rdhr"],["bd3l1","rdhr"],["bd3c0","rdhr"],["bd3r1","rdhr"],["bd3r2","rdhr"],
-
-		  //["rdhl","bd4l2"],["rdhl","bd4l1"],["rdhl","bd4c0"],
-		  //["rdhl","bdi4l2"],["rdhl","bdi4l1"],["rdhl","bdi4c0"],
-		  //["rdhr","bd4r2"],["rdhr","bd4r1"],["rdhr","bd4c0"],
-		  //["rdhr","bdi4r2"],["rdhr","bdi4r1"],["rdhr","bdi4c0"],
-
 		  ["rdhl","bd4l2"],["rdhl","bd4l1"],
 		  ["rdhl","bdi4l2"],["rdhl","bdi4l1"],
 		  ["rdhr","bd4r2"],["rdhr","bd4r1"],
 		  ["rdhr","bdi4r2"],["rdhr","bdi4r1"],
 		  
           //Lock
-		  {"beamSpring":200000,"beamDamp":100},
+		  {"beamSpring":20000,"beamDamp":100},
 		  ["rltc1","bd1c0"],
 		  
 		  // Spings
@@ -739,8 +731,8 @@
  		["fld3l4", 0.76640, 2.32296, 0.56989],
  		["fld3l5", 0.76198, 2.35395, 0.80316],
 		{"nodeWeight":0.05}
-        ["fld4l1", 0.68312, 2.00188, 1.59107],
-        ["fld4l2", 0.65356, 2.55710, 1.65594],
+        ["fld4l1", 0.71312, 2.00188, 1.59107],
+        ["fld4l2", 0.68356, 2.55710, 1.65594],
 		]
 	"beams": [
 		["id1:", "id2:"],
@@ -794,6 +786,10 @@
 		["fld4l2","cei5l1"],["fld4l2","cei7l1"],["fld4l2","cpl5l3"],
         {"beamPrecompression":0.93, "beamType":"|SUPPORT", "beamLongBound":1000}, 
 		["fld1l2","fft4l1"],
+	    ],
+	"triangles": [
+		["id1:","id2:","id3:"],
+		//["fld2l3","fld2l2","fld3l2"],["fld2l1","fld2l2","fld3l1"],//["fld4l1","fld2l1","fld4l2"],
 	    ]
 }
 
