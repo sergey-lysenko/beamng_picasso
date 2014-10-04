@@ -60,7 +60,7 @@
 		//hub options
 		{"hubBeamSpring":1141000, "hubBeamDamp":10}
 		{"beamSpring":1141000, "beamDamp":10},
-		{"hubBeamDeform":54000, "hubBeamStrength":148000},
+		{"hubBeamDeform":18000, "hubBeamStrength":148000},
 		{"beamDeform":240000,"beamStrength":380000},
 		{"hubNodeWeight":0.425},
 		{"hubNodeMaterial":"|NM_METAL"},
@@ -72,7 +72,7 @@
 		{"springExpansion":351000, "dampExpansion":8},
 		{"nodeWeight":0.22},
 		{"nodeMaterial":"|NM_RUBBER"},
-		{"frictionCoef":1.35},
+		{"frictionCoef":1.4},
 			
 		//
 		{"pressurePSI":50},

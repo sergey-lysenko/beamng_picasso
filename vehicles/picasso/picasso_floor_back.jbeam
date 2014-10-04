@@ -19,30 +19,24 @@
 		{"nodeMaterial":"|NM_METAL"},
 		{"selfCollision":true}
 		{"collision":true}
+
         {"group":"rear_floor"},
-		
         {"nodeWeight":2.6},
 		["rftl4",-0.687,3.79,0.558],
         ["rftr4",0.687,3.79,0.558],
-
         {"nodeWeight":2.4},
         ["rftl2",-0.687,3.397,0.558],
         ["rftr2",0.687,3.397,0.558],
-		
         {"nodeWeight":2.3},
         ["rftl1",-0.336,3.397,0.558],
         ["rftr1",0.336,3.397,0.558],
-		 
         {"nodeWeight":1.9},
         ["rftc2",0,3.79,0.558],
-
         {"nodeWeight":1.8},
 		["rftl3",-0.336,3.79,0.558],
         ["rftr3",0.336,3.79,0.558],
-
         {"nodeWeight":1.7},
         ["rftc1",0,3.397,0.558],
-
         {"nodeWeight":1.6},
         ["rfbl2",-0.687,3.397,0.342],
         ["rfbl1",-0.336,3.397,0.342],
@@ -57,26 +51,21 @@
         ["rfbc3",0,4.257,0.442],
         ["rfbr5",0.336,4.257,0.442],
         ["rfbr6",0.67761,4.25712,0.44862],
-         
         ["rftl6",-0.59999,4.28705,0.55428],
         ["rftl5",-0.336,4.257,0.558],
         ["rftc3",0,4.257,0.558],
         ["rftr5",0.336,4.257,0.558],
         ["rftr6",0.59999,4.28705,0.55428],
-		 
-		 
         ["rfb1r2",-0.83813,3.12353,0.24581],
         ["rfb1r1",-0.40000,3.12610,0.25426],
         ["rfb1c0",0.00000,3.12611,0.24707],
         ["rfb1l1",0.40000,3.12610,0.25426],
         ["rfb1l2",0.83813,3.12353,0.24581],
-
         ["rft1r2",-0.85653,3.12618,0.38587],
         ["rft1r1",-0.40009,3.12691,0.37341],
         ["rft1c0",0.00000,3.12691,0.37341],
         ["rft1l1",0.40009,3.12691,0.37341],
         ["rft1l2",0.85653,3.12618,0.38587],
-
         ["rfbl3",-0.336,3.79,0.442],
         ["rfbr3",0.336,3.79,0.442],
      ]
@@ -89,36 +78,29 @@
   		// Longitudinal
 		["rfb1r2","rfbl2"],["rfb1r1","rfbl1"],["rfb1c0","rfbc1"],["rfb1l1","rfbr1"],["rfb1l2","rfbr2"],
 		["rft1r2","rftl2"],["rft1r1","rftl1"],["rft1c0","rftc1"],["rft1l1","rftr1"],["rft1l2","rftr2"],
-
         // rear floor - transverse - top
         ["rftr2","rftr1"],["rftr1","rftc1"],["rftc1","rftl1"],["rftl1","rftl2"],
         ["rftr4","rftr3"],["rftr3","rftc2"],["rftc2","rftl3"],["rftl3","rftl4"],
         ["rftr6","rftr5"],["rftr5","rftc3"],["rftc3","rftl5"],["rftl5","rftl6"],
         ["rft1l2","rft1l1"],["rft1l1","rft1c0"],["rft1c0","rft1r1"],["rft1r1","rft1r2"],
-
 		// rear floor - transverse - bottom
         ["rfbr2","rfbr1"],["rfbr1","rfbc1"],["rfbc1","rfbl1"],["rfbl1","rfbl2"],
         ["rfbr4","rfbr3"],["rfbr3","rfbc2"],["rfbc2","rfbl3"],["rfbl3","rfbl4"],
         ["rfbr6","rfbr5"],["rfbr5","rfbc3"],["rfbc3","rfbl5"],["rfbl5","rfbl6"],
         ["rfb1l2","rfb1l1"],["rfb1l1","rfb1c0"],["rfb1c0","rfb1r1"],["rfb1r1","rfb1r2"],
-		  
         // rear floor - longitudinal - bottom
 	    ["rfbr2","rfbr4"],["rfbr4","rfbr6"],["rfbl2","rfbl4"],["rfbl4","rfbl6"]
 	    ["rfbr1","rfbr3"],["rfbr3","rfbr5"],["rfbl1","rfbl3"],["rfbl3","rfbl5"]
 	    ["rfbc1","rfbc2"],["rfbc2","rfbc3"]
-
   		// Through
 		{"beamSpring":5000000,"beamDamp":150},
         // rear floor - through
 	    ["rftc1","rfbc1"],["rftc2","rfbc2"],["rftc3","rfbc3"],
 	    ["rftl1","rfbl1"],["rftl2","rfbl2"],["rftl3","rfbl3"],["rftl4","rfbl4"],["rftl5","rfbl5"],["rftl6","rfbl6"],
 	    ["rftr1","rfbr1"],["rftr2","rfbr2"],["rftr3","rfbr3"],["rftr4","rfbr4"],["rftr5","rfbr5"],["rftr6","rfbr6"],
-	      
 		["rfb1l2","rft1l2"],["rfb1l1","rft1l1"],["rfb1c0","rft1c0"],["rfb1r1","rft1r1"],["rfb1r2","rft1r2"],
-		
         // Longitudinal + through diagonal
 		{"beamSpring":200000,"beamDamp":150},
-
 		["rfb1r2","rftl2"],["rfb1r1","rftl1"],["rfb1c0","rftc1"],["rfb1l1","rftr1"],["rfb1l2","rftr2"],
 		["rft1r2","rfbl2"],["rft1r1","rfbl1"],["rft1c0","rfbc1"],["rft1l1","rfbr1"],["rft1l2","rfbr2"],
 	    ["rftc1","rfbc2"],["rftl1","rfbl3"],["rftr1","rfbr3"],["rftl2","rfbl4"],["rftr2","rfbr4"],
@@ -134,21 +116,17 @@
 	    ["rftr2","rftr4"],["rftr4","rftr6"],["rftl2","rftl4"],["rftl4","rftl6"]
 	    ["rftr1","rftr3"],["rftr3","rftr5"],["rftl1","rftl3"],["rftl3","rftl5"]
 	    ["rftc1","rftc2"],["rftc2","rftc3"]
-   		  
         // rear floor - diagonal - top
 	    ["rftc1","rftl3"],["rftc1","rftr3"],["rftl1","rftl4"],["rftr1","rftr4"],
 	    ["rftc2","rftl5"],["rftc2","rftr5"],["rftl3","rftl6"],["rftr3","rftr6"],
 	    ["rftc2","rftl1"],["rftc2","rftr1"],["rftl3","rftl2"],["rftr3","rftr2"],
 	    ["rftc3","rftl3"],["rftc3","rftr3"],["rftl5","rftl4"],["rftr5","rftr4"],
-		  
 		// Top diagonal
 		["rft1r1","rftl2"],["rft1c0","rftl1"],["rft1c0","rftr1"],["rft1l1","rftr2"],
 		["rft1r2","rftl1"],["rft1r1","rftc1"],["rft1l1","rftc1"],["rft1l2","rftr1"],
-
   		// Bottom diagonal
 		["rfb1r1","rfbl2"],["rfb1c0","rfbl1"],["rfb1c0","rfbr1"],["rfb1l1","rfbr2"],
 		["rfb1r2","rfbl1"],["rfb1r1","rfbc1"],["rfb1l1","rfbc1"],["rfb1l2","rfbr1"],
-
         // rear floor - through transverse diagonal
         ["rftc1","rfbr1"],["rftc1","rfbl1"],["rftr1","rfbr2"],["rftl1","rfbl2"],
         ["rftc2","rfbr3"],["rftc2","rfbl3"],["rftr3","rfbr4"],["rftl3","rfbl4"],
@@ -158,22 +136,18 @@
         ["rfbc3","rftr5"],["rfbc3","rftl5"],["rfbr5","rftr6"],["rfbl5","rftl6"],
         ["rfbl2","rftl2"],["rfbl1","rftl1"],["rfbc1","rftc1"],["rfbr1","rftr1"],["rfbr2","rftr2"],
 	    ["rftl2","rfbl2"],["rftl1","rfbl1"],["rftc1","rfbc1"],["rftr1","rfbr1"],["rftr2","rfbr2"],
-		  
         ["rft1l2","rfb1l1"],["rft1l1","rfb1c0"],["rft1c0","rfb1r1"],["rft1r1","rfb1r2"],
         ["rfb1l2","rft1l1"],["rfb1l1","rft1c0"],["rfb1c0","rft1r1"],["rfb1r1","rft1r2"],
-	  
         // Internal rigidifying diagonals
 		{"beamSpring":3000000,"beamDamp":50},
         ["rftc1","rfbl3"],["rfbc1","rftl3"],["rftl1","rfbc2"],["rfbl1","rftc2"],["rftl1","rfbl4"],["rfbl1","rftl4"],["rftl2","rfbl3"],["rfbl2","rftl3"],
         ["rftc2","rfbl5"],["rfbc2","rftl5"],["rftl3","rfbc3"],["rfbl3","rftc3"],["rftl3","rfbl6"],["rfbl3","rftl6"],["rftl4","rfbl5"],["rfbl4","rftl5"],
         ["rftc1","rfbr3"],["rfbc1","rftr3"],["rftr1","rfbc2"],["rfbr1","rftc2"],["rftr1","rfbr4"],["rfbr1","rftr4"],["rftr2","rfbr3"],["rfbr2","rftr3"],
         ["rftc2","rfbr5"],["rfbc2","rftr5"],["rftr3","rfbc3"],["rfbr3","rftc3"],["rftr3","rfbr6"],["rfbr3","rftr6"],["rftr4","rfbr5"],["rfbr4","rftr5"],
-
         // To front floor
 		{"beamSpring":1000000,"beamDamp":250},
         ["rft1l2","fft1l2"],["rft1l1","fft1l1"],["rft1c0","fft1c0"],["rft1r1","fft1r1"],["rft1r2","fft1r2"],
         ["rfb1l2","ffb1l2"],["rfb1l1","ffb1l1"],["rfb1c0","ffb1c0"],["rfb1r1","ffb1r1"],["rfb1r2","ffb1r2"],
-	  
 		// Anti-hinging beams
 		{"beamSpring":1000000,"beamDamp":500},
 		["rftr1","fft2l1"],
@@ -183,37 +157,28 @@
         // other beams
         {"beamSpring":100000,"beamDamp":100},
         {"beamDeform":10000,"beamStrength":"50000"},
-	 
         // rear lip
 	    ["rltc1","rlbc1"],["rltl1","rlbl1"],["rltl2","rlbl2"],["rltl3","rlbl3"],["rltr1","rlbr1"],["rltr2","rlbr2"],["rltr3","rlbr3"],
 	    ["rltc1","rltl1"],["rltl1","rltl2"],["rltl2","rltl3"],["rltc1","rltr1"],["rltr1","rltr2"],["rltr2","rltr3"],
 	    ["rlbc1","rlbl1"],["rlbl1","rlbl2"],["rlbl2","rlbl3"],["rlbc1","rlbr1"],["rlbr1","rlbr2"],["rlbr2","rlbr3"],
-	 
 	    ["rltc1","rlbl1"],["rltl1","rlbl2"],["rltl2","rlbl3"],["rltc1","rlbr1"],["rltr1","rlbr2"],["rltr2","rlbr3"],
 	    ["rlbc1","rltl1"],["rlbl1","rltl1"],["rlbl2","rltl3"],["rlbc1","rltr1"],["rlbr1","rltr1"],["rlbr2","rltr3"],
-
 	    // rear lip to rear floor
 	    ["rltc1","rftc3"],["rltc1","rfbc3"],["rltc1","rftl5"],["rltc1","rftr5"],
 	    ["rlbc1","rfbc3"],["rlbc1","rftc3"],["rlbc1","rfbl5"],["rlbc1","rfbr5"],
-
 	    ["rltl1","rftl5"],["rltl1","rfbl5"],["rltl1","rftl6"],["rltl1","rftc3"],
 	    ["rlbl1","rfbl5"],["rlbl1","rftl5"],["rlbl1","rfbl6"],["rlbl1","rfbc3"],
-
  	    ["rltr1","rftr5"],["rltr1","rfbr5"],["rltr1","rftr6"],["rltr1","rftc3"],
 	    ["rlbr1","rfbr5"],["rlbr1","rftr5"],["rlbr1","rfbr6"],["rlbr1","rfbc3"],
-	 
 	    ["rltl2","rftl6"],["rltl2","rfbl6"],["rltl2","rftl5"],
 	    ["rlbl2","rfbl6"],["rlbl2","rftl6"],["rlbl2","rfbl5"],
-
 	    ["rltr2","rftr6"],["rltr2","rfbr6"],["rltr2","rftr5"],
 	    ["rlbr2","rfbr6"],["rlbr2","rftr6"],["rlbr2","rfbr5"],
-
 	    ["rltl3","rftl6"],["rltl3","rfbl6"],
 	    ["rlbl3","rfbl6"],["rlbl3","rftl6"],
-
 	    ["rltr3","rftr6"],["rltr3","rfbr6"],
 	    ["rlbr3","rfbr6"],["rlbr3","rftr6"],
-     ]
+    ]
 }
 
 "picasso_floor_back_limo": {

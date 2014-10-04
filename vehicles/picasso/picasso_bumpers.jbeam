@@ -6,40 +6,39 @@
 	}
     "slotType" : "picasso_bumper_rear_internal",
 	"flexbodies": [
-	 	 ["mesh", "[group]:", "nonFlexMaterials"],
-	 	 ["rear_internal_bumper", ["rear_internal_bumper"]],
+	 	["mesh", "[group]:", "nonFlexMaterials"],
+	 	["rear_internal_bumper", ["rear_internal_bumper"]],
 	 ],
  	"nodes": [
 
 	["id", "posX", "posY", "posZ"],
-         {"group":"rear_internal_bumper"},
-         {"frictionCoef":0.7},
-         {"nodeMaterial":"|NM_METAL"},
-         {"collision":true}
-         {"selfCollision":true}
-         {"nodeWeight":1.5},
-		 ["rltc1",0,4.376,0.565	],
-         ["rltl1",-0.3,4.376,0.565	],
-         ["rltl2",-0.601,4.367,0.565	],
-         ["rltl3",-0.849,4.338,0.539	],
-         ["rltr1",0.3,4.376,0.565	],
-         ["rltr2",0.601,4.367,0.565	],
-         ["rltr3",0.849,4.338,0.539	],
-         ["rlbc1",0,4.384,0.405	],
-         ["rlbl1",-0.303,4.384,0.405	],
-         ["rlbl2",-0.595,4.367,0.405	],
-         ["rlbl3",-0.733,4.359,0.42	],
-         ["rlbr1",0.303,4.384,0.405	],
-         ["rlbr2",0.595,4.367,0.405	],
-         ["rlbr3",0.733,4.359,0.42	],
+        {"group":"rear_internal_bumper"},
+        {"frictionCoef":0.7},
+        {"nodeMaterial":"|NM_METAL"},
+        {"collision":true}
+        {"selfCollision":true}
+        {"nodeWeight":1.5},
+		["rltc1",0,4.376,0.565	],
+        ["rltl1",-0.3,4.376,0.565	],
+        ["rltl2",-0.601,4.367,0.565	],
+        ["rltl3",-0.849,4.338,0.539	],
+        ["rltr1",0.3,4.376,0.565	],
+        ["rltr2",0.601,4.367,0.565	],
+        ["rltr3",0.849,4.338,0.539	],
+        ["rlbc1",0,4.384,0.405	],
+        ["rlbl1",-0.303,4.384,0.405	],
+        ["rlbl2",-0.595,4.367,0.405	],
+        ["rlbl3",-0.733,4.359,0.42	],
+        ["rlbr1",0.303,4.384,0.405	],
+        ["rlbr2",0.595,4.367,0.405	],
+        ["rlbr3",0.733,4.359,0.42	],
      ]
 	"beams": [
-		  ["id1:", "id2:"],
-		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  {"beamSpring":100000,"beamDamp":200},
-		  {"beamDeform":5000,"beamStrength":35500},
+		["id1:", "id2:"],
+		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		{"beamSpring":100000,"beamDamp":200},
+		{"beamDeform":5000,"beamStrength":35500},
      ]
-		 
 }
 
 "picasso_bumper_rear_internal_limo": {

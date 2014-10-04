@@ -144,6 +144,13 @@
         ["ffi1r2","fft4r1"],["ffi2r1","fft4r1"],["ffi1r2","fft5r1"],["ffi2r1","fft5r1"],["ffi1r2","fft3r1"],["ffi2r1","fft3r1"],
 		["ffi1l2","fft2l3"],["ffi2l1","fft2l3"],["ffi1l2","fft2l2"],["ffi2l1","fft2l2"],["ffi1l2","fft3l3"],["ffi2l1","fft3l3"],
 		["ffi1r2","fft2r3"],["ffi2r1","fft2r3"],["ffi1r2","fft2r2"],["ffi2r1","fft2r2"],["ffi1r2","fft3r3"],["ffi2r1","fft3r3"],
+		
+   		// Additional beams
+		["ffi5l0","fgd2l2"],["ffi5l0","fgd2l1"],
+		["ffi5r0","fgd2r2"],["ffi5r0","fgd2r1"],
+		["ffi5l1","fgd3l2"],["ffi5l1","fgd3l1"],
+		["ffi5r1","fgd3r2"],["ffi5r1","fgd3r1"],
+
 	],
 		"triangles": [
 		["id1:","id2:","id3:"],

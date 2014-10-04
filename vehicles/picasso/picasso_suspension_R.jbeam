@@ -745,7 +745,7 @@
             ["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
 			//brakes
 			{"enableABS":true}
-			//{"ABSthreshold":3},
+			//{"ABSthreshold":0},
 			{"brakeTorque":750},
 			{"parkingTorque":750},
 	],

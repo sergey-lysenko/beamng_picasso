@@ -11,99 +11,70 @@
 	"scalebeamDeform":1,
 	"scalebeamStrength":1,
 	"flexbodies": [
-	 	 ["mesh", "[group]:", "nonFlexMaterials"],
-	 	 ["crushbar", ["crushbar"]],
+	 	["mesh", "[group]:", "nonFlexMaterials"],
+	 	["crushbar", ["crushbar"]],
 	 ],
  	"nodes": [
-		 ["id", "posX", "posY", "posZ"],
-		 {"frictionCoef":0.7},
-		 {"nodeMaterial":"|NM_PLASTIC"},
-		 {"selfCollision":true}
-		 {"collision":true}
-         {"nodeWeight":0.62},
-         {"group":"crushbar"},
-         ["cbul2",-0.57864,0.23702,0.67122],
-         ["cbul1",-0.33624,0.21605,0.67122],
-         ["cbuc0",0.00000,0.21605,0.67122],
-         ["cbur1",0.33624,0.21605,0.67122],
-         ["cbur2",0.57864,0.23702,0.67122],
-         ["cbll2",-0.57864,0.23706,0.56077],
-         ["cbll1",-0.33624,0.21609,0.56077],
-         ["cblc0",0.00000,0.21605,0.56077],
-         ["cblr1",0.33624,0.21609,0.56077],
-         ["cblr2",0.57864,0.23706,0.56077],
-		 
-         {"nodeWeight":0.7},
-         ["mlnul1",-0.446,0.427,0.671],
-         ["mlnul2",-0.559,0.427,0.671],
-         ["mlnll1",-0.446,0.427,0.561],
-         ["mlnll2",-0.559,0.427,0.561],
-         ["mlnur1",0.446,0.427,0.671],
-         ["mlnur2",0.559,0.427,0.671],
-         ["mlnlr1",0.446,0.427,0.561],
-         ["mlnlr2",0.559,0.427,0.561],
-
-		 {"selfCollision":false}
-		 {"collision":false}
-         {"nodeWeight":0.72},
-         ["cbucZ",0.0,0.5,0.77122],
-         ["cblcZ",0.0,0.5,0.46077],
-
-		 
+		["id", "posX", "posY", "posZ"],
+		{"frictionCoef":0.7},
+		{"nodeMaterial":"|NM_PLASTIC"},
+		{"selfCollision":true}
+		{"collision":true}
+        {"nodeWeight":0.62},
+        {"group":"crushbar"},
+        ["cbul2",-0.57864,0.23702,0.67122],
+        ["cbul1",-0.33624,0.21605,0.67122],
+        ["cbuc0",0.00000,0.21605,0.67122],
+        ["cbur1",0.33624,0.21605,0.67122],
+        ["cbur2",0.57864,0.23702,0.67122],
+        ["cbll2",-0.57864,0.23706,0.56077],
+        ["cbll1",-0.33624,0.21609,0.56077],
+        ["cblc0",0.00000,0.21605,0.56077],
+        ["cblr1",0.33624,0.21609,0.56077],
+        ["cblr2",0.57864,0.23706,0.56077],
+        {"nodeWeight":0.7},
+        ["mlnul1",-0.446,0.427,0.671],
+        ["mlnul2",-0.559,0.427,0.671],
+        ["mlnll1",-0.446,0.427,0.561],
+        ["mlnll2",-0.559,0.427,0.561],
+        ["mlnur1",0.446,0.427,0.671],
+        ["mlnur2",0.559,0.427,0.671],
+        ["mlnlr1",0.446,0.427,0.561],
+        ["mlnlr2",0.559,0.427,0.561],
+		{"selfCollision":false}
+		{"collision":false}
+        {"nodeWeight":0.72},
+        ["cbucZ",0.0,0.5,0.77122],
+        ["cblcZ",0.0,0.5,0.46077],
      ]
 	"beams": [
-		  ["id1:", "id2:"],
-		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-		  
-		  
-		  	 // Aluminum
-     {"beamSpring":390000,"beamDamp":100},
-     {"beamDeform":5000,"beamStrength":"150000"},
-	 
+		["id1:", "id2:"],
+		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		// Aluminum
+        {"beamSpring":390000,"beamDamp":100},
+        {"beamDeform":5000,"beamStrength":"150000"},
 	 // Crush bar - longitudinal
 	 ["cbuc0","cbul1"],["cbul1","cbul2"],["cblc0","cbll1"],["cbll1","cbll2"],
 	 ["cbuc0","cbur1"],["cbur1","cbur2"],["cblc0","cblr1"],["cblr1","cblr2"],
-
 	 // Crush bar - traversal
 	 ["cbuc0","mlnul1"],["cbul1","mlnul1"],["cbul2","mlnul2"],["cblc0","mlnll1"],["cbll1","mlnll1"],["cbll2","mlnll2"],
 	 ["cbuc0","mlnur1"],["cbur1","mlnur1"],["cbur2","mlnur2"],["cblc0","mlnlr1"],["cblr1","mlnlr1"],["cblr2","mlnlr2"],
-
  	 // Crush bar - vertical
      ["cbul2","cbll2"],["cbul1","cbll1"],["cbuc0","cblc0"],["cbur1","cblr1"],["cbur2","cblr2"],
-	 
 	 // Crush bar - diagonal external
 	 ["cbuc0","cbll1"],["cbul1","cbll2"],["cbul2","mlnll2"],["cblc0","cbul1"],["cbll1","cbul2"],["cbll2","mlnul2"],["cbul1","mlnul2"],["cbul2","mlnul1"],
 	 ["cbuc0","cblr1"],["cbur1","cblr2"],["cbur2","mlnlr2"],["cblc0","cbur1"],["cblr1","cbur2"],["cblr2","mlnur2"],["cbur1","mlnur2"],["cbur2","mlnur1"],
-	 
 	 // Crush bar - diagonal internal
 	 ["cbuc0","mlnll1"],["cblc0","mlnul1"],["cbul1","mlnll1"],["cbll1","mlnul1"],["cbul2","mlnll1"],["cbll2","mlnul1"],
 	 ["cbuc0","mlnlr1"],["cblc0","mlnur1"],["cbur1","mlnlr1"],["cblr1","mlnur1"],["cbur2","mlnlr1"],["cblr2","mlnur1"],
-
 	 // Crush bar - structural 
 	 ["cbucZ","cblcZ"],
-
 	 ["cbucZ","cblc0"],["cbucZ","cbuc0"],
 	 ["cblcZ","cblc0"],["cblcZ","cbuc0"],
-
 	 ["cbucZ","mlnul1"],["cbucZ","mlnll1"],["cbucZ","mlnur1"],["cbucZ","mlnlr1"],
 	 ["cblcZ","mlnul1"],["cblcZ","mlnll1"],["cblcZ","mlnur1"],["cblcZ","mlnlr1"],
-
  	 ["cbucZ","cbul1"],["cbucZ","cbll1"],["cbucZ","cbur1"],["cbucZ","cblr1"],
 	 ["cblcZ","cbul1"],["cblcZ","cbll1"],["cblcZ","cbur1"],["cblcZ","cblr1"],
-
-	 
-	 /*
-	 ["cbucZ","mlnul2"],["cbucZ","mlnll2"],["cbucZ","mlnur2"],["cbucZ","mlnlr2"],
-	 ["cblcZ","mlnul2"],["cblcZ","mlnll2"],["cblcZ","mlnur2"],["cblcZ","mlnlr2"],
-
-	 ["cbucZ","mlnul3"],["cbucZ","mlnll3"],["cbucZ","mlnur3"],["cbucZ","mlnlr3"],
-	 ["cblcZ","mlnul3"],["cblcZ","mlnll3"],["cblcZ","mlnur3"],["cblcZ","mlnlr3"],
-	 
-	 ["cbucZ","mlnul4"],["cbucZ","mlnll4"],["cbucZ","mlnur4"],["cbucZ","mlnlr4"],
-	 ["cblcZ","mlnul4"],["cblcZ","mlnll4"],["cblcZ","mlnur4"],["cblcZ","mlnlr4"],
-	 */
-	 
-	 
 	 ["mlnul1","lnul1"],
 	 ["mlnul2","lnul2"],
      ["mlnll1","lnll1"],

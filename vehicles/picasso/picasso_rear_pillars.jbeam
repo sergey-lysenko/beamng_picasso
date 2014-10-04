@@ -10,8 +10,8 @@
 	  ["picasso_rear_sideglass", "picasso_rear_sideglass", "Rear Side Glass"],
 	],
 	"flexbodies": [
-	 	 ["mesh", "[group]:", "nonFlexMaterials"],
-	 	 ["rear_pillar", ["rear_pillar"]],
+	 	["mesh", "[group]:", "nonFlexMaterials"],
+	 	["rear_pillar", ["rear_pillar"]],
 	 ],
  	"nodes": [
 

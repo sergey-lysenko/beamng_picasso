@@ -17,12 +17,12 @@
  	"nodes": [
 
 	["id", "posX", "posY", "posZ"],
-         {"group":"roof_glass"},
-         {"frictionCoef":0.7},
-         {"nodeMaterial":"|NM_GLASS"},
-         {"collision":true}
-         {"selfCollision":true}
-         {"nodeWeight":0.4},
+        {"group":"roof_glass"},
+        {"frictionCoef":0.7},
+        {"nodeMaterial":"|NM_GLASS"},
+        {"collision":true}
+        {"selfCollision":true}
+        {"nodeWeight":0.4},
 
    		 ["glr1l2", 0.58635, 2.37242, 1.71387],
    		 ["glr1l1", 0.31988, 2.37246, 1.78236],
@@ -465,6 +465,97 @@
 		  ["mmbfi2r1","mbfi2r1"],
  		  ["mmbfi3r5","mbfi3r5"],
  		  ["mmbfi3r6","mbfi3r6"],
+   		  ["mrrp3r2","rrp3r2"],
+   		  ["mrrp4r1","rrp4r1"],
+   		  ["mrrp5r2","rrp5r2"],
+   		  ["mrrp5r1","rrp5r1"],
+   		  ["mrrp2r2","rrp2r2"],
+     ]
+}
+
+"picasso_rear_sideglass_fixed": {
+	"information":{
+		"authors":"Sergey Lysenko",
+		"name":"Rear Side Glass",
+	}
+    "slotType" : "picasso_rear_sideglass_fixed",
+	"flexbodies": [
+	 	 ["mesh", "[group]:", "nonFlexMaterials"],
+	 	 ["rear_sideglass", ["rear_sideglass"]],
+	 ],
+ 	"nodes": [
+
+	["id", "posX", "posY", "posZ"],
+         {"group":"rear_sideglass"},
+         {"frictionCoef":0.7},
+         {"nodeMaterial":"|NM_GLASS"},
+         {"collision":true}
+         {"selfCollision":true}
+         {"nodeWeight":0.1},
+
+   		 ["mmbfi2l1", 0.85329, 3.57581, 1.16388],
+ 		 ["mmbfi3l5", 0.84282, 3.91322, 1.18415],
+ 		 ["mmbfi3l6", 0.84993, 3.74501, 1.17402],
+   		 ["mrrp3l2", 0.74014, 3.98172, 1.38580],
+   		 ["mrrp4l1", 0.76732, 3.46487, 1.39133],
+   		 ["mrrp5l2", 0.66120, 3.35293, 1.61897],
+   		 ["mrrp5l1", 0.66745, 3.49155, 1.59821],
+   		 ["mrrp2l2", 0.67493, 3.72353, 1.55743],
+   		 ["rsg1l1", 0.79746, 4.17442, 1.23223],
+   		 ["rsg2l2", 0.76689, 3.70291, 1.38992],
+
+   		 ["mmbfi2r1", -.85329, 3.57581, 1.16388],
+ 		 ["mmbfi3r5", -.84282, 3.91322, 1.18415],
+ 		 ["mmbfi3r6", -.84993, 3.74501, 1.17402],
+   		 ["mrrp3r2", -.74014, 3.98172, 1.38580],
+   		 ["mrrp4r1", -.76732, 3.46487, 1.39133],
+   		 ["mrrp5r2", -.66120, 3.35293, 1.61897],
+   		 ["mrrp5r1", -.66745, 3.49155, 1.59821],
+   		 ["mrrp2r2", -.67493, 3.72353, 1.55743],
+   		 ["rsg1r1", -.79746, 4.17442, 1.23223],
+   		 ["rsg2r2", -.76689, 3.70291, 1.38992],
+     ]
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  {"beamSpring":10000,"beamDamp":50},
+		  {"beamDeform":7500,"beamStrength":7500},
+		  
+		  
+		  // Longitudinal
+		  ["mrrp5l2","mrrp5l1"],["mrrp5l1","mrrp2l2",], 
+		  ["mrrp4l1","rsg2l2"],["rsg2l2","mrrp3l2",], 
+		  ["mmbfi2l1","mmbfi3l6"],["mmbfi3l6","mmbfi3l5"],["mmbfi3l5","rsg1l1"],
+		  ["mrrp5r2","mrrp5r1"],["mrrp5r1","mrrp2r2",], 
+		  ["mrrp4r1","rsg2r2"],["rsg2r2","mrrp3r2",], 
+		  ["mmbfi2r1","mmbfi3r6"],["mmbfi3r6","mmbfi3r5"],["mmbfi3r5","rsg1r1"],
+		  
+		  // Traversal
+		  ["mrrp5l2","mrrp4l1"],["mrrp5l1","rsg2l2"],["mrrp2l2","mrrp3l2"], 
+		  ["mrrp4l1","mmbfi2l1"],["rsg2l2","mmbfi3l6"],["mrrp3l2","mmbfi3l5"], 
+		  ["mrrp5r2","mrrp4r1"],["mrrp5r1","rsg2r2"],["mrrp2r2","mrrp3r2"], 
+		  ["mrrp4r1","mmbfi2r1"],["rsg2r2","mmbfi3r6"],["mrrp3r2","mmbfi3r5"], 
+		  
+		  
+		  // Diagonal
+		  ["rsg2l2","mrrp5l2"],["rsg2l2","mmbfi2l1"],["rsg2l2","mrrp2l2"],["rsg2l2","rsg1l1"],["rsg2l2","rrp3l1"],
+		  ["rsg2r2","mrrp5r2"],["rsg2r2","mmbfi2r1"],["rsg2r2","mrrp2r2"],["rsg2r2","rsg1r1"],["rsg2r2","rrp3r1"],
+		  // Mount
+		  
+		  ["rsg1l1","bfi3l4"],["rsg1l1","bfi3l3"],["rsg1l1","tll2l2"],["rsg1l1","tll2l1"],
+		  ["rsg1r1","bfi3r4"],["rsg1r1","bfi3r3"],["rsg1r1","tll2r2"],["rsg1r1","tll2r1"],
+		  {"beamSpring":10000,"beamDamp":50},
+		  ["mmbfi2l1","bfi2l1"],
+ 		  ["mmbfi3l5","bfi3l5"],
+ 		  ["mmbfi3l6","bfi3l6"],
+   		  ["mrrp3l2","rrp3l2"],
+   		  ["mrrp4l1","rrp4l1"],
+   		  ["mrrp5l2","rrp5l2"],
+   		  ["mrrp5l1","rrp5l1"],
+   		  ["mrrp2l2","rrp2l2"],
+		  ["mmbfi2r1","bfi2r1"],
+ 		  ["mmbfi3r5","bfi3r5"],
+ 		  ["mmbfi3r6","bfi3r6"],
    		  ["mrrp3r2","rrp3r2"],
    		  ["mrrp4r1","rrp4r1"],
    		  ["mrrp5r2","rrp5r2"],

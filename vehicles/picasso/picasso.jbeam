@@ -8,10 +8,8 @@
     "slotType" : "main",
 	"slots": [
 	["type", "default", "description"],
-        ["picasso_bow", "picasso_bow", "Bow"],
-        ["picasso_deck", "picasso_deck", "Deck"],
+        ["picasso_type", "picasso_solid", "Model Type"],
 	],
-
 	"dragCoef":0.5,
 	"refNodes":[
         ["ref:", "back:", "left:", "up:"]
@@ -46,6 +44,65 @@
 		// Dashcam - external view
 		[0.0, 2.1, 1.9, 110, "wnd5c1","wnd4c1","wnd5l1","wnd4l2","wnd5r1","wnd4r2",],
 	 ],
+}
+"picasso_solid": {
+    "information":{
+        "authors":"Sergey Lysenko",
+        "name":"Solid",
+    }
+    "slotType" : "picasso_type",
+	"slots": [
+	["type", "default", "description"],
+        ["picasso_body", "picasso_body", "Body"],
+		// Essential parts
+		["picasso_engine", "picasso_engine", "Engine"],
+        ["picasso_suspension_F", "picasso_suspension_F", "Front Suspension"],
+  	    ["picasso_rear_suspension_mount", "picasso_rear_suspension_mount", "Rear Suspension Mount"],
+		["picasso_radiator", "picasso_radiator", "Radiator"],
+		// Interior
+	    ["picasso_dashboard", "picasso_dashboard", "Dashboard"],
+        ["picasso_steering_column", "picasso_steering_column", "Steering Columns"],
+        ["picasso_front_left_seat", "picasso_front_left_seat", "Front Left Seat"],
+        ["picasso_front_right_seat", "picasso_front_right_seat", "Front Right Seat"],
+        ["picasso_rear_left_seat", "picasso_rear_left_seat", "Rear Left Seat"],
+        ["picasso_rear_center_seat", "picasso_rear_center_seat", "Rear Center Seat"],
+        ["picasso_rear_right_seat", "picasso_rear_right_seat", "Rear Right Seat"],
+	    ["picasso_luggage_cover", "picasso_luggage_cover", "Luggage cover"],
+	    ["picasso_trunk_load", "picasso_trunk_load_32kg", "Trunk load"],
+		// Glass
+        ["picasso_windscreen", "picasso_windscreen", "Windscreen"],
+        ["picasso_front_sideglass", "picasso_front_sideglass", "Side Glass"],
+        ["picasso_glassroof", "picasso_glassroof", "Glass Roof"],
+	    ["picasso_rear_sideglass_fixed", "picasso_rear_sideglass_fixed", "Rear Side Glass"],
+		// Doors
+	    ["picasso_hood", "picasso_hood", "Hood"],
+   	    ["picasso_door_front_left", "picasso_door_front_left", "Front Left Door"],
+	    ["picasso_door_front_right", "picasso_door_front_right", "Front Right Door"],
+        ["picasso_door_rear_left", "picasso_door_rear_left", "Rear Doors"],
+	    ["picasso_door_back", "picasso_door_back_fixed", "Tailgate"],
+		// Fenders and bumpers
+        ["picasso_bumper_front", "picasso_bumper_front", "Front Bumper"],
+		["picasso_fender_front_left", "picasso_fender_front_left", "Front Left Fender"],
+	    ["picasso_fender_front_right", "picasso_fender_front_right", "Front Right Fender"],
+	    ["picasso_fender_back_left", "picasso_fender_back_left", "Back Left Fender"],
+	    ["picasso_fender_back_right", "picasso_fender_back_right", "Back Right Fender"],
+	    ["picasso_rear_bumper", "picasso_rear_bumper", "Rear Bumper"],
+		// Lights
+	    ["picasso_headlights", "picasso_headlights", "Headlights"],
+        ["picasso_taillights", "picasso_taillights", "Tail Lights"],
+	],
+}
+"picasso_composite": {
+    "information":{
+        "authors":"Sergey Lysenko",
+        "name":"Composite",
+    }
+    "slotType" : "picasso_type",
+	"slots": [
+	["type", "default", "description"],
+        ["picasso_bow", "picasso_bow", "Bow"],
+        ["picasso_deck", "picasso_deck", "Deck"],
+	],
 }
 "picasso_bow": {
     "information":{
